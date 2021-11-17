@@ -1,6 +1,12 @@
 {
   "name": "@vue-storefront/shopify-theme",
   "version": "1.0.6",
+  "yarn": true,
+  "sideEffects": [
+    ".css",
+    ".scss",
+    ".vue"
+  ],
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build -m",
