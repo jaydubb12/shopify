@@ -33,6 +33,7 @@ const params: UseUserFactoryParams<User, any, any> = {
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   updateUser: async (context: Context, { currentUser, updatedUserData }) => {
     const appKey = context.$shopify.config.app.$config.appKey;
     const token = context.$shopify.config.app.$cookies.get(appKey + '_token');
@@ -84,6 +85,7 @@ const params: UseUserFactoryParams<User, any, any> = {
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   changePassword: async (context: Context, { currentUser, currentPassword, newPassword }) => {
     const appKey = context.$shopify.config.app.$config.appKey;
     let token = context.$shopify.config.app.$cookies.get(appKey + '_token');

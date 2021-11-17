@@ -15,6 +15,7 @@ type ProductVariantFilters = any
 export const getProductName = (product: ProductVariant): string => product?.name || 'Product\'s name';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getProductSlug = (product: ProductVariant): string => {
   if (product) {
     return product._slug;
@@ -55,7 +56,7 @@ export const getProductGallery = (product: ProductVariant): AgnosticMediaGallery
         normal: imgNormal
       });
     });
-
+// @ts-ignore
 export const getActiveVariantImage = (product) => {
   if (product) {
     let productImg = product._coverImage.originalSrc;
@@ -70,6 +71,7 @@ export const getActiveVariantImage = (product) => {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getProductFiltered = (products, filters: ProductVariantFilters | any = {}) => {
   if (!products) {
     return [];
@@ -84,7 +86,7 @@ export const getFilteredSingle = (product) => {
   product = Array.isArray(product) ? product : [product];
   return enhanceProduct(product);
 };
-
+// @ts-ignore
 export const getSelectedVariant = (product: ProductVariant, attribs) => {
   return attribs;
 };
@@ -185,6 +187,7 @@ export const getProductCoverImage = (product, size = 'normal') => {
 
 export const getProductCollections = (product, field = 'all') => {
   if (!product) {
+    // @ts-ignore
     return;
   }
   if (product.collections && Object.keys(product.collections).length > 0) {
@@ -270,9 +273,11 @@ export const getBreadcrumbs = (product: ProductVariant): any => {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getProductTotalReviews = (product: ProductVariant): number => 0;
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getProductAverageRating = (product: ProductVariant): number => 0;
 
 const productGetters: ProductGetters<ProductVariant, ProductVariantFilters> = {

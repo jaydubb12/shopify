@@ -1,5 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const enhanceProduct = (productResponse: Array<any>) => {
+  // @ts-ignore
   if (Object.keys(productResponse).length === 0) return;
   const enhancedProductResponse = productResponse.map((product) => ({
     ...product,

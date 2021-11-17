@@ -37,6 +37,7 @@ export const getCartItemPrice = (product: any): AgnosticPrice => {
 export const getCartItemQty = (product: LineItem): number => product?.quantity;
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getCartItemAttributes = (product: LineItem, filterByAttributeName?: Array<string>) => {
   const formatAttedattributeList = formatSelectedAttributeList(product?.variant.selectedOptions);
   if (formatAttedattributeList.length) {
@@ -53,6 +54,7 @@ export const getCartItemAttributes = (product: LineItem, filterByAttributeName?:
 export const getCartItemSku = (product: any): string => product?.variant.sku || '-';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getCartTotals = (cart: Cart): AgnosticTotals => {
   if (cart && cart !== null) {
     return {
@@ -63,6 +65,7 @@ export const getCartTotals = (cart: Cart): AgnosticTotals => {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getCartShippingPrice = (cart: Cart): number => 0;
 
 export const getcheckoutURL = (cart: Cart): string => {
@@ -80,9 +83,11 @@ export const getCartTotalItems = (cart: Cart): number => {
 export const getFormattedPrice = (price: number) => String(price);
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getCoupons = (cart: Cart): AgnosticCoupon[] => [];
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getDiscounts = (cart: Cart): AgnosticDiscount[] => [];
 
 const cartGetters: CartGetters<Cart, LineItem> = {

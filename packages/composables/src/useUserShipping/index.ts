@@ -58,6 +58,7 @@ const sortDefaultAtTop = (a, b) => {
 };
 
 const params: UseUserShippingFactoryParams<any, any> = {
+  // @ts-ignore
   addAddress: async (context: Context, params?) => {
     console.log('Mocked: addAddress', params.address);
 
@@ -75,7 +76,7 @@ const params: UseUserShippingFactoryParams<any, any> = {
 
     return Promise.resolve(shipping);
   },
-
+// @ts-ignore
   deleteAddress: async (context: Context, params?) => {
     console.log('Mocked: deleteAddress', params);
 
@@ -87,7 +88,7 @@ const params: UseUserShippingFactoryParams<any, any> = {
     addresses.splice(indexToRemove, 1);
     return Promise.resolve(shipping);
   },
-
+// @ts-ignore
   updateAddress: async (context: Context, params?) => {
     console.log('Mocked: updateAddress', params);
 
@@ -111,11 +112,12 @@ const params: UseUserShippingFactoryParams<any, any> = {
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   load: async (context: Context, params?) => {
     console.log('Mocked: load');
     return Promise.resolve(shipping);
   },
-
+// @ts-ignore
   setDefaultAddress: async (context: Context, params?) => {
     console.log('Mocked: setDefault');
     const isDefault = id => addresses[0].id === id;

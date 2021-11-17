@@ -15,6 +15,7 @@ import { getCategoryTree as buildCategoryTree } from './categoryGetters';
 const getAll = (searchData, criteria?: string[]): AgnosticFacet[] => buildFacets(searchData, reduceForFacets, criteria);
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+// @ts-ignore
 const getGrouped = (searchData, criteria?: string[]): AgnosticGroupedFacet[] => [];
 // buildFacets(searchData, reduceForGroupedFacets, criteria);
 

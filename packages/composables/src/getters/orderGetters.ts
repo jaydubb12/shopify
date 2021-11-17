@@ -75,6 +75,7 @@ export const getItemPrice = (item: any): number => item?.originalTotalPrice?.amo
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const getFormattedPrice = (price: number) => String(price);
 // eslint-disable-next-line
+// @ts-ignore
 function getOrdersTotal(orders: any): number {
   return 1;
 }

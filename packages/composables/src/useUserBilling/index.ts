@@ -1,3 +1,4 @@
+// @ts-ignore
 import {
   Context,
   useUserBillingFactory,
@@ -58,6 +59,7 @@ const sortDefaultAtTop = (a, b) => {
 };
 
 const params: UseUserBillingFactoryParams<any, any> = {
+  // @ts-ignore
   addAddress: async (context: Context, params?) => {
     const appKey = context.$shopify.config.app.$config.appKey;
     const token = context.$shopify.config.app.$cookies.get(appKey + '_token');
@@ -81,7 +83,7 @@ const params: UseUserBillingFactoryParams<any, any> = {
       return false;
     }
   },
-
+// @ts-ignore
   deleteAddress: async (context: Context, params) => {
     const appKey = context.$shopify.config.app.$config.appKey;
     const token = context.$shopify.config.app.$cookies.get(appKey + '_token');
@@ -93,7 +95,7 @@ const params: UseUserBillingFactoryParams<any, any> = {
       return false;
     }
   },
-
+// @ts-ignore
   updateAddress: async (context: Context, params?) => {
     const appKey = context.$shopify.config.app.$config.appKey;
     const token = context.$shopify.config.app.$cookies.get(appKey + '_token');
@@ -119,6 +121,7 @@ const params: UseUserBillingFactoryParams<any, any> = {
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   load: async (context: Context, params?) => {
     const appKey = context.$shopify.config.app.$config.appKey;
     const token = context.$shopify.config.app.$cookies.get(appKey + '_token');
@@ -130,7 +133,7 @@ const params: UseUserBillingFactoryParams<any, any> = {
     }
     return addresses;
   },
-
+// @ts-ignore
   setDefaultAddress: async (context: Context, params?) => {
     console.log('Mocked: setDefault');
     const isDefault = id => addresses[0].id === id;
