@@ -47,12 +47,28 @@
     "@rollup/plugin-replace": "^2.3.3",
     "@types/jest": "^27.0.0",
     "@types/node": "^16.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "@vue/eslint-config-typescript": "^7.0.0",
     "all-contributors-cli": "^6.20.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.2.3",
     "commitizen": "^4.2.4",
     "concurrently": "^6.2.1",
     "eslint": "7.32.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-vue-preset": "^0.5.0",
+    "eslint-import-resolver-custom-alias": "^1.2.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-nuxt": "^1.0.1",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-functional": "^4.0.2",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-lodash-template": "^0.19.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-total-functions": "^4.10.1",
     "eslint-plugin-vue": "^7.16.0",
+    "eslint-plugin-vue-scoped-css": "^1.2.2",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "lerna": "^4.0.0",
@@ -80,5 +96,11 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "resolutions": {
+    "chokidar": "^3.5.2",
+    "core-js": "^3.15.1",
+    "fsevents": "^2.3.2"
+  },
+  "packageManager": "yarn@3.1.0"
 }

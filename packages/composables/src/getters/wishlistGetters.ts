@@ -7,6 +7,7 @@ import {
 import { Wishlist, WishlistProduct } from '../types';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getWishlistItems = (wishlist: Wishlist): WishlistProduct[] => [
   {
     _id: 1,
@@ -43,15 +44,19 @@ export const getWishlistItemPrice = (product: any): AgnosticPrice => {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getWishlistItemQty = (product: WishlistProduct): number => 1;
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getWishlistItemAttributes = (product: WishlistProduct, filterByAttributeName?: string[]) => ({ color: 'red' });
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getWishlistItemSku = (product: any): string => product?.sku || 'some-sku';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getWishlistTotals = (wishlist: Wishlist): AgnosticTotals => {
   return {
     total: 10,
@@ -60,9 +65,11 @@ export const getWishlistTotals = (wishlist: Wishlist): AgnosticTotals => {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getWishlistShippingPrice = (wishlist: Wishlist): number => 0;
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getWishlistTotalItems = (wishlist: Wishlist): number => 1;
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

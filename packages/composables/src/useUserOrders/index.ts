@@ -9,6 +9,7 @@ import { OrdersResponse, OrderSearchParams } from '../types';
 
 const params: UseUserOrderFactoryParams<OrdersResponse, OrderSearchParams> = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   searchOrders: async (context: Context, params: OrderSearchParams): Promise<OrdersResponse> => {
     const appKey = context.$shopify.config.app.$config.appKey;
     const token = context.$shopify.config.app.$cookies.get(appKey + '_token');

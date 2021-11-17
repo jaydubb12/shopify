@@ -8,6 +8,7 @@ import { Cart, CartItem, Coupon, Product } from '../types';
 
 const params: UseCartFactoryParams<Cart, CartItem, Product> = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   load: async (context: Context, { customQuery }) => {
     // check if cart is already initiated
     const appKey = context.$shopify.config.app.$config.appKey;
@@ -36,6 +37,7 @@ const params: UseCartFactoryParams<Cart, CartItem, Product> = {
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   removeItem: async (context: Context, { currentCart, product, customQuery }) => {
     // Remove an item from the checkout
     return await context.$shopify.api.removeFromCart({currentCart, product}).then((checkout) => {
@@ -45,6 +47,7 @@ const params: UseCartFactoryParams<Cart, CartItem, Product> = {
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   updateItemQty: async (context: Context, { currentCart, product, quantity, customQuery }) => {
     // Update an item Quantity
     return await context.$shopify.api.updateCart({currentCart, product, quantity}).then((checkout) => {
@@ -54,11 +57,13 @@ const params: UseCartFactoryParams<Cart, CartItem, Product> = {
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   clear: async (context: Context, { currentCart }) => {
     return {};
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   applyCoupon: async (context: Context, { currentCart, couponCode, customQuery }) => {
     console.log('Mocked: useCart.applyCoupon');
     return {
@@ -68,6 +73,7 @@ const params: UseCartFactoryParams<Cart, CartItem, Product> = {
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   removeCoupon: async (context: Context, { currentCart, couponCode, customQuery }) => {
     console.log('Mocked: useCart.removeCoupon');
     return {
@@ -76,6 +82,7 @@ const params: UseCartFactoryParams<Cart, CartItem, Product> = {
   },
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
   isInCart: (context: Context, { currentCart, product }) => {
     const getBasketItemByProduct = ({ currentCart, product }) => {
       if (product) {

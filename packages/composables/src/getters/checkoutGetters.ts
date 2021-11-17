@@ -1,15 +1,19 @@
 import { ShippingMethod } from '@vue-storefront/shopify-api/src/types';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getShippingMethodId = (shippingMethod: ShippingMethod): string => '';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getShippingMethodName = (shippingMethod: ShippingMethod): string => '';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getShippingMethodDescription = (shippingMethod: ShippingMethod): string => '';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 export const getShippingMethodPrice = (shippingMethod: ShippingMethod): number => 0;
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
