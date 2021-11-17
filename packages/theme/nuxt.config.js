@@ -1,7 +1,8 @@
-require('isomorphic-fetch');
+import isomorphic_fetch from 'isomorphic-fetch';
 import webpack from 'webpack';
+import { version as version0 } from './package.json';
 
-/** @type { import('@nuxt/types').NuxtConfig } */ 
+/** @type { import('@nuxt/types').NuxtConfig } */
 const config = {
   server: {
     port: 3001,
@@ -172,35 +173,26 @@ const config = {
       new webpack.DefinePlugin({
         'process.VERSION': JSON.stringify({
           // eslint-disable-next-line global-require
-          version: require('./package.json').version,
+          version: version0.version,
           lastCommit: process.env.LAST_COMMIT || ''
         })
       })
     ],
+
     extend(config) {
-      config.resolve.extensions.push('.mjs')
+      config.resolve.extensions.push('.mjs');
 
       config.module.rules.push({
         test: /\.mjs$/,
         include: /node_modules/,
         type: 'javascript/auto'
-      })
+      });
     },
     extractCSS: {
       ignoreOrder: true
     }
   },
-  router: {
-    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-    scrollBehavior(_to, _from, savedPosition) {
-      if (savedPosition) {
-        return savedPosition;
-      } else {
-        return { x: 0, y: 0 };
-      }
-    }
-  },
-  pwa: {
+    pwa: {
     manifest: {
       name: 'VSF Next: Shopify APP',
       lang: 'en',
@@ -298,4 +290,4 @@ const config = {
   }
 };
 
-export default config
+export default config;
