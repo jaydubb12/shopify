@@ -1,0 +1,126 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>orderGetters.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/getters/orderGetters.ts</td><td class="">39.47%</td><td class="">87.27%</td><td class="">190</td><td class="">75</td><td class="">115</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* istanbul ignore file */
+
+import { UserOrderGetters } from &#x27;@vue-storefront/core&#x27;;
+import { Order, OrderItem } from &#x27;../types&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getDate = (order: any): any =&gt; {
+  const monthsArray = [&#x27;January&#x27;, &#x27;February&#x27;, &#x27;March&#x27;, &#x27;April&#x27;, &#x27;May&#x27;, &#x27;June&#x27;, &#x27;July&#x27;, &#x27;August&#x27;, &#x27;September&#x27;, &#x27;October&#x27;, &#x27;November&#x27;, &#x27;December&#x27;];
+  const OrderDate = new Date(order?.processedAt);
+  return monthsArray[OrderDate.getMonth()] + &#x27; &#x27; + OrderDate.getDate() + &#x27;, &#x27; + OrderDate.getFullYear() + &#x27; at &#x27; + OrderDate.getHours() + &#x27;:&#x27; + OrderDate.getMinutes();
+};
+
+export const getTracking = (order: any): string =&gt; {
+  if (order.fulfillmentStatus === &#x27;FULFILLED&#x27; &amp;&amp; order.successfulFulfillments[0].trackingInfo.length &gt; 0) {
+    return order.successfulFulfillments[0].trackingInfo[0].number;
+  }
+  return &#x27; - &#x27;;
+};
+export const getTrackingUrl = (order: any): string =&gt; {
+  if (order.fulfillmentStatus === &#x27;FULFILLED&#x27; &amp;&amp; order.successfulFulfillments[0].trackingInfo.length &gt; 0) {
+    return order.successfulFulfillments[0].trackingInfo[0].url;
+  }
+  return &#x27;&#x27;;
+};
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getId = (order: any): string =&gt; order?.orderNumber || &#x27;123&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getStatus = (order: any): string =&gt; order?.fulfillmentStatus || &#x27;Failed&#x27;;
+export const getPaymentStatus = (order: any): string =&gt; order?.financialStatus || &#x27;Pending&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getPrice = (order: any): number | null =&gt; order.currentTotalPrice.amount || 0;
+export const getSubtotalPrice = (order: any): number | null =&gt; order.currentSubtotalPrice.amount || 0;
+export const getTaxPrice = (order: any): number | null =&gt; order.currentTotalTax.amount || 0;
+export const getShippingPrice = (order: any): number | null =&gt; order.totalShippingPriceV2.amount || 0;
+export const getShippingAddress = (order: any): string | null =&gt; {
+  if (order.shippingAddress) {
+    return order?.shippingAddress?.formatted || &#x27;No shipping address available&#x27;;
+  }
+  return &#x27;No shipping address available&#x27;;
+};
+export const getCustomerName = (order: any): string | null =&gt; order?.shippingAddress?.name || &#x27; - &#x27;;
+export const getCustomerPhone = (order: any): string | null =&gt; order?.shippingAddress?.phone || &#x27;&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getItems = (order: any): any[] =&gt; order.lineItems || [];
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getItemSku = (item: any): string =&gt; item?.variant.sku || &#x27;-&#x27;;
+export const getItemImage = (item: any): string =&gt; {
+  if (item &amp;&amp; item?.variant.image) {
+    const imgPath = item?.variant.image.originalSrc.substring(0, item?.variant.image.originalSrc.lastIndexOf(&#x27;.&#x27;));
+    const imgext = item?.variant.image.originalSrc.split(&#x27;.&#x27;).pop();
+    const resizedImg = imgPath + &#x27;_100x100.&#x27; + imgext;
+    return resizedImg;
+  }
+  return &#x27;https://cdn.shopify.com/s/files/1/0102/2866/2368/files/placeholder-pdc_100x100.png?v=1621945081&#x27;;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getItemName = (item: any): string =&gt; item?.title || 0;
+
+export const getItemId = (item: any): string =&gt; item?.variant.product.id || &#x27;&#x27;;
+
+export const getItemSlug = (item: any): string =&gt; item?.variant.product.handle || &#x27;&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getItemQty = (item: any): number =&gt; item?.quantity || 0;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getItemPrice = (item: any): number =&gt; item?.originalTotalPrice?.amount || 0;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getFormattedPrice = (price: number) =&gt; String(price);
+// eslint-disable-next-line
+// @ts-ignore
+function getOrdersTotal(orders: any): number {
+  return 1;
+}
+const orderGetters: UserOrderGetters&lt;Order, OrderItem&gt; = {
+  getDate,
+  getTracking,
+  getTrackingUrl,
+  getCustomerName,
+  getCustomerPhone,
+  getShippingAddress,
+  getId,
+  getStatus,
+  getPaymentStatus,
+  getPrice,
+  getShippingPrice,
+  getItems,
+  getItemSku,
+  getItemName,
+  getItemQty,
+  getItemPrice,
+  getItemImage,
+  getFormattedPrice,
+  getSubtotalPrice,
+  getTaxPrice,
+  getItemId,
+  getItemSlug,
+  getOrdersTotal
+};
+
+export default orderGetters;
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:7,&quot;character&quot;:24,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:9,&quot;character&quot;:29,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:9,&quot;character&quot;:36,&quot;text&quot;:&quot;processedAt&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:13,&quot;character&quot;:28,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:6,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:12,&quot;text&quot;:&quot;fulfillmentStatus&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:49,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:55,&quot;text&quot;:&quot;successfulFulfillments&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:81,&quot;text&quot;:&quot;trackingInfo&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:94,&quot;text&quot;:&quot;length&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:11,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:17,&quot;text&quot;:&quot;successfulFulfillments&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:43,&quot;text&quot;:&quot;trackingInfo&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:59,&quot;text&quot;:&quot;number&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:31,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:6,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:12,&quot;text&quot;:&quot;fulfillmentStatus&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:49,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:55,&quot;text&quot;:&quot;successfulFulfillments&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:81,&quot;text&quot;:&quot;trackingInfo&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:94,&quot;text&quot;:&quot;length&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:11,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:17,&quot;text&quot;:&quot;successfulFulfillments&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:43,&quot;text&quot;:&quot;trackingInfo&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:59,&quot;text&quot;:&quot;url&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:26,&quot;character&quot;:22,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:26,&quot;character&quot;:45,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:26,&quot;character&quot;:52,&quot;text&quot;:&quot;orderNumber&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:29,&quot;character&quot;:26,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:29,&quot;character&quot;:49,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:29,&quot;character&quot;:56,&quot;text&quot;:&quot;fulfillmentStatus&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:30,&quot;character&quot;:33,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:30,&quot;character&quot;:56,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:30,&quot;character&quot;:63,&quot;text&quot;:&quot;financialStatus&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:33,&quot;character&quot;:25,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:33,&quot;character&quot;:55,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:33,&quot;character&quot;:61,&quot;text&quot;:&quot;currentTotalPrice&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:33,&quot;character&quot;:79,&quot;text&quot;:&quot;amount&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:34,&quot;character&quot;:33,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:34,&quot;character&quot;:63,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:34,&quot;character&quot;:69,&quot;text&quot;:&quot;currentSubtotalPrice&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:34,&quot;character&quot;:90,&quot;text&quot;:&quot;amount&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:28,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:58,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:64,&quot;text&quot;:&quot;currentTotalTax&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:80,&quot;text&quot;:&quot;amount&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:33,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:63,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:69,&quot;text&quot;:&quot;totalShippingPriceV2&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:90,&quot;text&quot;:&quot;amount&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:37,&quot;character&quot;:35,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:38,&quot;character&quot;:6,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:38,&quot;character&quot;:12,&quot;text&quot;:&quot;shippingAddress&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:39,&quot;character&quot;:11,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:39,&quot;character&quot;:18,&quot;text&quot;:&quot;shippingAddress&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:39,&quot;character&quot;:35,&quot;text&quot;:&quot;formatted&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:43,&quot;character&quot;:32,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:43,&quot;character&quot;:62,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:43,&quot;character&quot;:69,&quot;text&quot;:&quot;shippingAddress&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:43,&quot;character&quot;:86,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:44,&quot;character&quot;:33,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:44,&quot;character&quot;:63,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:44,&quot;character&quot;:70,&quot;text&quot;:&quot;shippingAddress&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:44,&quot;character&quot;:87,&quot;text&quot;:&quot;phone&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:25,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:47,&quot;text&quot;:&quot;order&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:53,&quot;text&quot;:&quot;lineItems&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:50,&quot;character&quot;:27,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:50,&quot;character&quot;:49,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:50,&quot;character&quot;:55,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:50,&quot;character&quot;:63,&quot;text&quot;:&quot;sku&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:51,&quot;character&quot;:29,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:52,&quot;character&quot;:6,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:52,&quot;character&quot;:14,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:52,&quot;character&quot;:20,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:52,&quot;character&quot;:28,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:20,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:26,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:34,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:40,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:52,&quot;text&quot;:&quot;substring&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:65,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:71,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:79,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:85,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:97,&quot;text&quot;:&quot;lastIndexOf&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:54,&quot;character&quot;:19,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:54,&quot;character&quot;:25,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:54,&quot;character&quot;:33,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:54,&quot;character&quot;:39,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:54,&quot;character&quot;:51,&quot;text&quot;:&quot;split&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:54,&quot;character&quot;:62,&quot;text&quot;:&quot;pop&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:55,&quot;character&quot;:23,&quot;text&quot;:&quot;imgPath&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:55,&quot;character&quot;:47,&quot;text&quot;:&quot;imgext&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:62,&quot;character&quot;:28,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:62,&quot;character&quot;:50,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:62,&quot;character&quot;:56,&quot;text&quot;:&quot;title&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:26,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:48,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:54,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:62,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:70,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:66,&quot;character&quot;:28,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:66,&quot;character&quot;:50,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:66,&quot;character&quot;:56,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:66,&quot;character&quot;:64,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:66,&quot;character&quot;:72,&quot;text&quot;:&quot;handle&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:69,&quot;character&quot;:27,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:69,&quot;character&quot;:49,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:69,&quot;character&quot;:55,&quot;text&quot;:&quot;quantity&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:72,&quot;character&quot;:29,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:72,&quot;character&quot;:51,&quot;text&quot;:&quot;item&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:72,&quot;character&quot;:57,&quot;text&quot;:&quot;originalTotalPrice&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:72,&quot;character&quot;:77,&quot;text&quot;:&quot;amount&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/orderGetters.ts&quot;,&quot;line&quot;:78,&quot;character&quot;:24,&quot;text&quot;:&quot;orders&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Wed, 17 Nov 2021 20:11:53 GMT</p>
+    </body>
+  </html>
+  

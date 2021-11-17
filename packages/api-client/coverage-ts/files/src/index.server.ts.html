@@ -1,0 +1,89 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>index.server.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/index.server.ts</td><td class="">82.61%</td><td class="">87.27%</td><td class="">69</td><td class="">57</td><td class="">12</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">import { apiClientFactory } from &#x27;@vue-storefront/core&#x27;;
+import getProduct from &#x27;./api/getProduct&#x27;;
+import getCategory from &#x27;./api/getCategory&#x27;;
+import editProfile from &#x27;./api/editProfile&#x27;;
+import getBlogPosts from &#x27;./api/getBlogPosts&#x27;;
+import getPages from &#x27;./api/getPages&#x27;;
+import updateCart from &#x27;./api/updateCart&#x27;;
+import createCart from &#x27;./api/createCart&#x27;;
+import addToCart from &#x27;./api/addToCart&#x27;;
+import removeFromCart from &#x27;./api/removeFromCart&#x27;;
+import signUp from &#x27;./api/signUp&#x27;;
+import signIn from &#x27;./api/signIn&#x27;;
+import signOut from &#x27;./api/signOut&#x27;;
+import changePassword from &#x27;./api/changePassword&#x27;;
+import forgotPassword from &#x27;./api/forgotPassword&#x27;;
+import fetchCustomer from &#x27;./api/fetchCustomer&#x27;;
+import fetchOrders from &#x27;./api/fetchOrders&#x27;;
+import fetchAddresses from &#x27;./api/fetchAddresses&#x27;;
+import deleteAddress from &#x27;./api/deleteAddress&#x27;;
+import addAddress from &#x27;./api/addAddress&#x27;;
+import updateAddress from &#x27;./api/updateAddress&#x27;;
+import checkOut from &#x27;./api/checkOut&#x27;;
+
+const CustomClient = require(&#x27;shopify-buy/index.unoptimized.umd.min.js&#x27;);
+const defaultSettings = {};
+const cookies = {
+  cartCookieName: &#x27;vsf-cart&#x27;
+};
+
+const onCreate = (settings) =&gt; {
+  return ({
+    config: {
+      ...defaultSettings,
+      ...settings
+    },
+    client: CustomClient.buildClient(settings.api),
+    cookies: (settings.api).cookies || cookies
+  });
+};
+
+const { createApiClient } = apiClientFactory&lt;any, any&gt;({
+  onCreate,
+  api: {
+    getProduct,
+    getCategory,
+    getBlogPosts,
+    getPages,
+    editProfile,
+    addToCart,
+    updateCart,
+    removeFromCart,
+    signUp,
+    signIn,
+    signOut,
+    changePassword,
+    forgotPassword,
+    fetchCustomer,
+    fetchOrders,
+    fetchAddresses,
+    deleteAddress,
+    addAddress,
+    updateAddress,
+    createCart,
+    checkOut,
+    cookies
+  }
+});
+
+export {
+  createApiClient
+};
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:29,&quot;character&quot;:18,&quot;text&quot;:&quot;settings&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:31,&quot;character&quot;:4,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:33,&quot;character&quot;:9,&quot;text&quot;:&quot;settings&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:4,&quot;text&quot;:&quot;client&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:12,&quot;text&quot;:&quot;CustomClient&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:25,&quot;text&quot;:&quot;buildClient&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:37,&quot;text&quot;:&quot;settings&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:46,&quot;text&quot;:&quot;api&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:4,&quot;text&quot;:&quot;cookies&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:14,&quot;text&quot;:&quot;settings&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:23,&quot;text&quot;:&quot;api&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/index.server.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:28,&quot;text&quot;:&quot;cookies&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Wed, 17 Nov 2021 20:11:04 GMT</p>
+    </body>
+  </html>
+  

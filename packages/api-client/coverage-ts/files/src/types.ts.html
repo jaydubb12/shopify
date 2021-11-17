@@ -1,0 +1,173 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>types.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/types.ts</td><td class="">86.80%</td><td class="">87.27%</td><td class="">250</td><td class="">217</td><td class="">33</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">/* eslint-disable @typescript-eslint/ban-types */
+export type Maybe&lt;T&gt; = T | null;
+export type Scalars = {
+  ID: string;
+  String: string;
+  Boolean: boolean;
+  Int: number;
+  Float: number;
+
+  /** The `Long` scalar type represents non-fractional signed whole numeric values.
+   * Long can represent values between -(2^63) and 2^63 - 1.
+   */
+  Long: any;
+
+  /** DateTime is a scalar value that represents an ISO8601 formatted date and time. */
+  DateTime: any;
+
+  /** [ISO 3166-1](http://en.wikipedia.org/wiki/ISO_3166-1) country code. */
+  Country: any;
+
+  /** Locale is a scalar value represented as a string language tag. */
+  Locale: any;
+
+  /** DateTime is a scalar value that represents an ISO8601 formatted date. */
+  Date: any;
+
+  /** Raw JSON value */
+  Json: any;
+
+  /** Array */
+  Array: any;
+
+  /** Represents a currency. Currencies are identified by their [ISO
+   * 4217](http://www.iso.org/iso/home/standards/currency_codes.htm) currency codes.
+   */
+  Currency: any;
+
+  /** A key that references a resource. */
+  KeyReferenceInput: any;
+
+  /** Search filter. It is represented as a string and has th same format as in REST API: &quot;field:filter_criteria&quot; */
+  SearchFilter: any;
+
+  /** Search sort */
+  SearchSort: any;
+
+  /** YearMonth is a scalar value that represents an ISO8601 formatted year and month. */
+  YearMonth: any;
+
+  /** The `BigDecimal` scalar type represents signed fractional values with arbitrary precision. */
+  BigDecimal: any;
+
+  /** Time is a scalar value that represents an ISO8601 formatted time. */
+  Time: any;
+};
+export type Cart = {
+  __typename?: &#x27;Cart&#x27;;
+  appliedGiftCards: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  completedAt: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  createdAt: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  currencyCode: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  customAttributes: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  discountApplications: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  email: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  errors: Maybe&lt;Scalars[&#x27;Json&#x27;]&gt;;
+  id: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  lineItems?: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  lineItemsSubtotalPrice?: Maybe&lt;Scalars[&#x27;Json&#x27;]&gt;;
+  note?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  order?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  orderStatusUrl?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  paymentDue?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  ready?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  requiresShipping?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  shippingAddress?: Maybe&lt;Scalars[&#x27;Json&#x27;]&gt;;
+  shippingLine?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  subtotalPrice?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  taxExempt?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  taxesIncluded?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  totalPrice?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  totalTax?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  updatedAt?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  userErrors?: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  webUrl?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+}
+
+export type CartItem = {
+  __typename?: &#x27;CartItem&#x27;;
+  id: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  variant?: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+}
+export type Wishlist = {}
+export type ProductVariant = {
+  __typename?: &#x27;ProductVariant&#x27;;
+  _id?: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  _description: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  _descriptionHtml: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  _slug: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  _categoriesRef: string[];
+  name: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  images: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  product?: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  options: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  variantBySelectedOptions?: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  _coverImage: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  price: {
+    original: number;
+    current: number;
+  };
+  variants?: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  available?: Maybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  productType: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  availableForSale?: Maybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+  totalInventory?: Maybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+}
+
+export type Category = {
+  id: number;
+  name: string;
+  slug: string;
+  items: Category[];
+}
+export type CategoryFilter = {}
+export type ShippingMethod = {}
+export type LineItem = {
+  __typename?: &#x27;LineItem&#x27;;
+  customAttributes: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  discountAllocations: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  hasNextPage: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  hasPreviousPage: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  id: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  quantity: Maybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+  title: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+  variant: {
+    available: Maybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+    compareAtPriceV2: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+    currentlyNotInStock: Maybe&lt;Scalars[&#x27;Boolean&#x27;]&gt;;
+    id: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+    image: {
+      altText: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+      id: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+      src: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+    };
+    price: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+    compareAtPrice: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+    priceV2: Maybe&lt;Scalars[&#x27;Json&#x27;]&gt;;
+    product: Maybe&lt;Scalars[&#x27;Json&#x27;]&gt;;
+    quantityAvailable: Maybe&lt;Scalars[&#x27;Int&#x27;]&gt;;
+    sku: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+    title: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+    unitPrice: Maybe&lt;Scalars[&#x27;String&#x27;]&gt;;
+    weight: Maybe&lt;Scalars[&#x27;Float&#x27;]&gt;;
+    selectedOptions?: Maybe&lt;Scalars[&#x27;Array&#x27;]&gt;;
+  };
+};
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:12,&quot;character&quot;:2,&quot;text&quot;:&quot;Long&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:2,&quot;text&quot;:&quot;DateTime&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:18,&quot;character&quot;:2,&quot;text&quot;:&quot;Country&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:2,&quot;text&quot;:&quot;Locale&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:24,&quot;character&quot;:2,&quot;text&quot;:&quot;Date&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:2,&quot;text&quot;:&quot;Json&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:30,&quot;character&quot;:2,&quot;text&quot;:&quot;Array&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:2,&quot;text&quot;:&quot;Currency&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:38,&quot;character&quot;:2,&quot;text&quot;:&quot;KeyReferenceInput&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:41,&quot;character&quot;:2,&quot;text&quot;:&quot;SearchFilter&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:44,&quot;character&quot;:2,&quot;text&quot;:&quot;SearchSort&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:2,&quot;text&quot;:&quot;YearMonth&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:50,&quot;character&quot;:2,&quot;text&quot;:&quot;BigDecimal&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:2,&quot;text&quot;:&quot;Time&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:57,&quot;character&quot;:2,&quot;text&quot;:&quot;appliedGiftCards&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:61,&quot;character&quot;:2,&quot;text&quot;:&quot;customAttributes&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:62,&quot;character&quot;:2,&quot;text&quot;:&quot;discountApplications&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:2,&quot;text&quot;:&quot;errors&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:66,&quot;character&quot;:2,&quot;text&quot;:&quot;lineItems&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:67,&quot;character&quot;:2,&quot;text&quot;:&quot;lineItemsSubtotalPrice&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:74,&quot;character&quot;:2,&quot;text&quot;:&quot;shippingAddress&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:82,&quot;character&quot;:2,&quot;text&quot;:&quot;userErrors&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:89,&quot;character&quot;:2,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:100,&quot;character&quot;:2,&quot;text&quot;:&quot;images&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:101,&quot;character&quot;:2,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:102,&quot;character&quot;:2,&quot;text&quot;:&quot;options&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:103,&quot;character&quot;:2,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:109,&quot;character&quot;:2,&quot;text&quot;:&quot;variants&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:2,&quot;text&quot;:&quot;customAttributes&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:127,&quot;character&quot;:2,&quot;text&quot;:&quot;discountAllocations&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:145,&quot;character&quot;:4,&quot;text&quot;:&quot;priceV2&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:146,&quot;character&quot;:4,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/types.ts&quot;,&quot;line&quot;:152,&quot;character&quot;:4,&quot;text&quot;:&quot;selectedOptions&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Wed, 17 Nov 2021 20:11:04 GMT</p>
+    </body>
+  </html>
+  

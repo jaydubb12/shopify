@@ -1,0 +1,173 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>index.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/useUserBilling/index.ts</td><td class="">52.82%</td><td class="">87.27%</td><td class="">301</td><td class="">159</td><td class="">142</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">// @ts-ignore
+import {
+  Context,
+  useUserBillingFactory,
+  UseUserBillingFactoryParams
+} from &#x27;@vue-storefront/core&#x27;;
+
+const addresses: any[] = [
+  {
+    id: 1,
+    email: &#x27;john@gmail.com&#x27;,
+    firstName: &#x27;John&#x27;,
+    lastName: &#x27;Doe&#x27;,
+    streetName: &#x27;Warsawska&#x27;,
+    apartment: &#x27;24/193A&#x27;,
+    city: &#x27;Phoenix&#x27;,
+    state: null,
+    zipCode: &#x27;26-620&#x27;,
+    country: &#x27;US&#x27;,
+    phoneNumber: &#x27;560123456&#x27;,
+    isDefault: true
+  },
+  {
+    id: 2,
+    email: &#x27;havaka@gmail.com&#x27;,
+    firstName: &#x27;Jonatan&#x27;,
+    lastName: &#x27;Doe&#x27;,
+    streetName: &#x27;Starachowicka&#x27;,
+    apartment: &#x27;20/193A&#x27;,
+    city: &#x27;Atlanta&#x27;,
+    state: null,
+    zipCode: &#x27;53-603&#x27;,
+    country: &#x27;US&#x27;,
+    phoneNumber: &#x27;560123456&#x27;,
+    isDefault: false
+  }
+];
+
+const billing = {
+  addresses
+};
+
+// const findBiggestId = () =&gt; Math.random().toString().substr(2);
+
+const disableOldDefault = () =&gt; {
+  const oldDefault = addresses.find(address =&gt; address.isDefault);
+  if (oldDefault) {
+    oldDefault.isDefault = false;
+  }
+};
+
+const sortDefaultAtTop = (a, b) =&gt; {
+  if (a.isDefault) {
+    return -1;
+  } else if (b.isDefault) {
+    return 1;
+  }
+  return 0;
+};
+
+const params: UseUserBillingFactoryParams&lt;any, any&gt; = {
+  // @ts-ignore
+  addAddress: async (context: Context, params?) =&gt; {
+    const appKey = context.$shopify.config.app.$config.appKey;
+    const token = context.$shopify.config.app.$cookies.get(appKey + &#x27;_token&#x27;);
+    const formatedAddress = {
+      address1: params.address.streetName,
+      address2: params.address.apartment,
+      city: params.address.city,
+      company: params.address.company,
+      country: params.address.country,
+      firstName: params.address.firstName,
+      lastName: params.address.lastName,
+      phone: params.address.phone,
+      province: params.address.state,
+      zip: params.address.postalCode
+    };
+    const result: any = await context.$shopify.api.addAddress({ token, address: formatedAddress});
+    if (result) {
+      if (result.customerUserErrors.length === 0) {
+        return true;
+      }
+      return false;
+    }
+  },
+// @ts-ignore
+  deleteAddress: async (context: Context, params) =&gt; {
+    const appKey = context.$shopify.config.app.$config.appKey;
+    const token = context.$shopify.config.app.$cookies.get(appKey + &#x27;_token&#x27;);
+    const result: any = await context.$shopify.api.deleteAddress({ token, AddressId: params.address.id });
+    if (result) {
+      if (result.customerUserErrors.length === 0) {
+        return true;
+      }
+      return false;
+    }
+  },
+// @ts-ignore
+  updateAddress: async (context: Context, params?) =&gt; {
+    const appKey = context.$shopify.config.app.$config.appKey;
+    const token = context.$shopify.config.app.$cookies.get(appKey + &#x27;_token&#x27;);
+    const formatedAddress = {
+      address1: params.address.streetName,
+      address2: params.address.apartment,
+      city: params.address.city,
+      company: params.address.company,
+      country: params.address.country,
+      firstName: params.address.firstName,
+      lastName: params.address.lastName,
+      phone: params.address.phone,
+      province: params.address.state,
+      zip: params.address.postalCode
+    };
+    const result: any = await context.$shopify.api.updateAddress({ token, AddressId: params.address.id, address: formatedAddress});
+    if (result) {
+      if (result.customerUserErrors.length === 0) {
+        return true;
+      }
+      return false;
+    }
+  },
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
+  load: async (context: Context, params?) =&gt; {
+    const appKey = context.$shopify.config.app.$config.appKey;
+    const token = context.$shopify.config.app.$cookies.get(appKey + &#x27;_token&#x27;);
+    const result: any = await context.$shopify.api.fetchAddresses(token);
+    let addresses = {};
+    if (result) {
+      addresses = result;
+      return addresses;
+    }
+    return addresses;
+  },
+// @ts-ignore
+  setDefaultAddress: async (context: Context, params?) =&gt; {
+    console.log(&#x27;Mocked: setDefault&#x27;);
+    const isDefault = id =&gt; addresses[0].id === id;
+
+    if (!isDefault(params.address.id)) {
+      const indexToUpdate = addresses.findIndex(address =&gt; address.id === params.address.id);
+      if (indexToUpdate &lt; 0) {
+        return Promise.reject(Error(&#x27;This address does not exist&#x27;));
+      }
+      disableOldDefault();
+      addresses[indexToUpdate].isDefault = true;
+      addresses.sort(sortDefaultAtTop);
+    }
+
+    return Promise.resolve(billing);
+  }
+};
+
+export default useUserBillingFactory&lt;any, any&gt;(params);
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:45,&quot;character&quot;:36,&quot;text&quot;:&quot;address&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:45,&quot;character&quot;:47,&quot;text&quot;:&quot;address&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:45,&quot;character&quot;:55,&quot;text&quot;:&quot;isDefault&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:46,&quot;character&quot;:6,&quot;text&quot;:&quot;oldDefault&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:4,&quot;text&quot;:&quot;oldDefault&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:15,&quot;text&quot;:&quot;isDefault&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:51,&quot;character&quot;:26,&quot;text&quot;:&quot;a&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:51,&quot;character&quot;:29,&quot;text&quot;:&quot;b&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:52,&quot;character&quot;:6,&quot;text&quot;:&quot;a&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:52,&quot;character&quot;:8,&quot;text&quot;:&quot;isDefault&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:54,&quot;character&quot;:13,&quot;text&quot;:&quot;b&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:54,&quot;character&quot;:15,&quot;text&quot;:&quot;isDefault&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:63,&quot;character&quot;:27,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:63,&quot;character&quot;:36,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:63,&quot;character&quot;:43,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:63,&quot;character&quot;:47,&quot;text&quot;:&quot;$config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:63,&quot;character&quot;:55,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:26,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:35,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:42,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:46,&quot;text&quot;:&quot;$cookies&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:55,&quot;text&quot;:&quot;get&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:59,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:66,&quot;character&quot;:6,&quot;text&quot;:&quot;address1&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:66,&quot;character&quot;:31,&quot;text&quot;:&quot;streetName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:67,&quot;character&quot;:6,&quot;text&quot;:&quot;address2&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:67,&quot;character&quot;:31,&quot;text&quot;:&quot;apartment&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:68,&quot;character&quot;:6,&quot;text&quot;:&quot;city&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:68,&quot;character&quot;:27,&quot;text&quot;:&quot;city&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:69,&quot;character&quot;:6,&quot;text&quot;:&quot;company&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:69,&quot;character&quot;:30,&quot;text&quot;:&quot;company&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:70,&quot;character&quot;:6,&quot;text&quot;:&quot;country&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:70,&quot;character&quot;:30,&quot;text&quot;:&quot;country&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:71,&quot;character&quot;:6,&quot;text&quot;:&quot;firstName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:71,&quot;character&quot;:32,&quot;text&quot;:&quot;firstName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:72,&quot;character&quot;:6,&quot;text&quot;:&quot;lastName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:72,&quot;character&quot;:31,&quot;text&quot;:&quot;lastName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:73,&quot;character&quot;:6,&quot;text&quot;:&quot;phone&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:73,&quot;character&quot;:28,&quot;text&quot;:&quot;phone&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:74,&quot;character&quot;:6,&quot;text&quot;:&quot;province&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:74,&quot;character&quot;:31,&quot;text&quot;:&quot;state&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:75,&quot;character&quot;:6,&quot;text&quot;:&quot;zip&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:75,&quot;character&quot;:26,&quot;text&quot;:&quot;postalCode&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:10,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:38,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:47,&quot;text&quot;:&quot;api&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:51,&quot;text&quot;:&quot;addAddress&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:64,&quot;text&quot;:&quot;token&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:78,&quot;character&quot;:8,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:79,&quot;character&quot;:10,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:79,&quot;character&quot;:17,&quot;text&quot;:&quot;customerUserErrors&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:79,&quot;character&quot;:36,&quot;text&quot;:&quot;length&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:87,&quot;character&quot;:27,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:87,&quot;character&quot;:36,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:87,&quot;character&quot;:43,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:87,&quot;character&quot;:47,&quot;text&quot;:&quot;$config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:87,&quot;character&quot;:55,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:88,&quot;character&quot;:26,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:88,&quot;character&quot;:35,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:88,&quot;character&quot;:42,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:88,&quot;character&quot;:46,&quot;text&quot;:&quot;$cookies&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:88,&quot;character&quot;:55,&quot;text&quot;:&quot;get&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:88,&quot;character&quot;:59,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:89,&quot;character&quot;:10,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:89,&quot;character&quot;:38,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:89,&quot;character&quot;:47,&quot;text&quot;:&quot;api&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:89,&quot;character&quot;:51,&quot;text&quot;:&quot;deleteAddress&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:89,&quot;character&quot;:67,&quot;text&quot;:&quot;token&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:89,&quot;character&quot;:74,&quot;text&quot;:&quot;AddressId&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:89,&quot;character&quot;:100,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:90,&quot;character&quot;:8,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:91,&quot;character&quot;:10,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:91,&quot;character&quot;:17,&quot;text&quot;:&quot;customerUserErrors&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:91,&quot;character&quot;:36,&quot;text&quot;:&quot;length&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:99,&quot;character&quot;:27,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:99,&quot;character&quot;:36,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:99,&quot;character&quot;:43,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:99,&quot;character&quot;:47,&quot;text&quot;:&quot;$config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:99,&quot;character&quot;:55,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:100,&quot;character&quot;:26,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:100,&quot;character&quot;:35,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:100,&quot;character&quot;:42,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:100,&quot;character&quot;:46,&quot;text&quot;:&quot;$cookies&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:100,&quot;character&quot;:55,&quot;text&quot;:&quot;get&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:100,&quot;character&quot;:59,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:102,&quot;character&quot;:6,&quot;text&quot;:&quot;address1&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:102,&quot;character&quot;:31,&quot;text&quot;:&quot;streetName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:103,&quot;character&quot;:6,&quot;text&quot;:&quot;address2&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:103,&quot;character&quot;:31,&quot;text&quot;:&quot;apartment&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:104,&quot;character&quot;:6,&quot;text&quot;:&quot;city&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:104,&quot;character&quot;:27,&quot;text&quot;:&quot;city&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:105,&quot;character&quot;:6,&quot;text&quot;:&quot;company&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:105,&quot;character&quot;:30,&quot;text&quot;:&quot;company&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:106,&quot;character&quot;:6,&quot;text&quot;:&quot;country&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:106,&quot;character&quot;:30,&quot;text&quot;:&quot;country&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:107,&quot;character&quot;:6,&quot;text&quot;:&quot;firstName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:107,&quot;character&quot;:32,&quot;text&quot;:&quot;firstName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:108,&quot;character&quot;:6,&quot;text&quot;:&quot;lastName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:108,&quot;character&quot;:31,&quot;text&quot;:&quot;lastName&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:109,&quot;character&quot;:6,&quot;text&quot;:&quot;phone&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:109,&quot;character&quot;:28,&quot;text&quot;:&quot;phone&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:110,&quot;character&quot;:6,&quot;text&quot;:&quot;province&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:110,&quot;character&quot;:31,&quot;text&quot;:&quot;state&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:6,&quot;text&quot;:&quot;zip&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:26,&quot;text&quot;:&quot;postalCode&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:113,&quot;character&quot;:10,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:113,&quot;character&quot;:38,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:113,&quot;character&quot;:47,&quot;text&quot;:&quot;api&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:113,&quot;character&quot;:51,&quot;text&quot;:&quot;updateAddress&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:113,&quot;character&quot;:67,&quot;text&quot;:&quot;token&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:113,&quot;character&quot;:74,&quot;text&quot;:&quot;AddressId&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:113,&quot;character&quot;:100,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:114,&quot;character&quot;:8,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:115,&quot;character&quot;:10,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:115,&quot;character&quot;:17,&quot;text&quot;:&quot;customerUserErrors&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:115,&quot;character&quot;:36,&quot;text&quot;:&quot;length&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:125,&quot;character&quot;:27,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:125,&quot;character&quot;:36,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:125,&quot;character&quot;:43,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:125,&quot;character&quot;:47,&quot;text&quot;:&quot;$config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:125,&quot;character&quot;:55,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:26,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:35,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:42,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:46,&quot;text&quot;:&quot;$cookies&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:55,&quot;text&quot;:&quot;get&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:59,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:127,&quot;character&quot;:10,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:127,&quot;character&quot;:38,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:127,&quot;character&quot;:47,&quot;text&quot;:&quot;api&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:127,&quot;character&quot;:51,&quot;text&quot;:&quot;fetchAddresses&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:127,&quot;character&quot;:66,&quot;text&quot;:&quot;token&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:129,&quot;character&quot;:8,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:138,&quot;character&quot;:22,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:138,&quot;character&quot;:41,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:138,&quot;character&quot;:48,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:140,&quot;character&quot;:34,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:141,&quot;character&quot;:48,&quot;text&quot;:&quot;address&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:141,&quot;character&quot;:59,&quot;text&quot;:&quot;address&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:141,&quot;character&quot;:67,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:141,&quot;character&quot;:89,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserBilling/index.ts&quot;,&quot;line&quot;:146,&quot;character&quot;:31,&quot;text&quot;:&quot;isDefault&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Wed, 17 Nov 2021 20:11:53 GMT</p>
+    </body>
+  </html>
+  

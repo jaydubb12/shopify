@@ -1,0 +1,45 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>index.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/useUserOrders/index.ts</td><td class="">58.62%</td><td class="">87.27%</td><td class="">58</td><td class="">34</td><td class="">24</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">/* istanbul ignore file */
+
+import {
+  Context,
+  useUserOrderFactory,
+  UseUserOrderFactoryParams
+} from &#x27;@vue-storefront/core&#x27;;
+import { OrdersResponse, OrderSearchParams } from &#x27;../types&#x27;;
+
+const params: UseUserOrderFactoryParams&lt;OrdersResponse, OrderSearchParams&gt; = {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // @ts-ignore
+  searchOrders: async (context: Context, params: OrderSearchParams): Promise&lt;OrdersResponse&gt; =&gt; {
+    const appKey = context.$shopify.config.app.$config.appKey;
+    const token = context.$shopify.config.app.$cookies.get(appKey + &#x27;_token&#x27;);
+    const result: any = await context.$shopify.api.fetchOrders(token);
+    const orders = {data: [], total: 0};
+    if (result) {
+      orders.data = result.customer.orders;
+      orders.total = result.customer.orders.length;
+      return orders;
+    }
+    return orders;
+  }
+};
+
+export default useUserOrderFactory&lt;OrdersResponse, OrderSearchParams&gt;(params);
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:13,&quot;character&quot;:27,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:13,&quot;character&quot;:36,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:13,&quot;character&quot;:43,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:13,&quot;character&quot;:47,&quot;text&quot;:&quot;$config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:13,&quot;character&quot;:55,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:26,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:35,&quot;text&quot;:&quot;config&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:42,&quot;text&quot;:&quot;app&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:46,&quot;text&quot;:&quot;$cookies&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:55,&quot;text&quot;:&quot;get&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:59,&quot;text&quot;:&quot;appKey&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:10,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:38,&quot;text&quot;:&quot;$shopify&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:47,&quot;text&quot;:&quot;api&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:51,&quot;text&quot;:&quot;fetchOrders&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:15,&quot;character&quot;:63,&quot;text&quot;:&quot;token&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:17,&quot;character&quot;:8,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:18,&quot;character&quot;:20,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:18,&quot;character&quot;:27,&quot;text&quot;:&quot;customer&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:18,&quot;character&quot;:36,&quot;text&quot;:&quot;orders&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:21,&quot;text&quot;:&quot;result&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:28,&quot;text&quot;:&quot;customer&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:37,&quot;text&quot;:&quot;orders&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/useUserOrders/index.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:44,&quot;text&quot;:&quot;length&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Wed, 17 Nov 2021 20:11:53 GMT</p>
+    </body>
+  </html>
+  

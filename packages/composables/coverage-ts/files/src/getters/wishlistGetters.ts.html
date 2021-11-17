@@ -1,0 +1,110 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>wishlistGetters.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/getters/wishlistGetters.ts</td><td class="">82.61%</td><td class="">87.27%</td><td class="">92</td><td class="">76</td><td class="">16</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import {
+  WishlistGetters,
+  AgnosticPrice,
+  AgnosticTotals
+} from &#x27;@vue-storefront/core&#x27;;
+import { Wishlist, WishlistProduct } from &#x27;../types&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getWishlistItems = (wishlist: Wishlist): WishlistProduct[] =&gt; [
+  {
+    _id: 1,
+    _description: &#x27;Some description&#x27;,
+    _categoriesRef: [
+      &#x27;1&#x27;,
+      &#x27;2&#x27;
+    ],
+    name: &#x27;Black jacket&#x27;,
+    sku: &#x27;black-jacket&#x27;,
+    images: [
+      &#x27;https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/081223_1_large.jpg&#x27;
+    ],
+    price: {
+      original: 12.34,
+      current: 10.00
+    },
+    qty: 1
+  }
+];
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getWishlistItemName = (product: any): string =&gt; product?.name || &#x27;Product\&#x27;s name&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getWishlistItemImage = (product: any): string =&gt; product?.images[0] || &#x27;https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/081223_1_large.jpg&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getWishlistItemPrice = (product: any): AgnosticPrice =&gt; {
+  return {
+    regular: product?.price?.original || 12,
+    special: product?.price?.current || 10
+  };
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getWishlistItemQty = (product: WishlistProduct): number =&gt; 1;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getWishlistItemAttributes = (product: WishlistProduct, filterByAttributeName?: string[]) =&gt; ({ color: &#x27;red&#x27; });
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getWishlistItemSku = (product: any): string =&gt; product?.sku || &#x27;some-sku&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getWishlistTotals = (wishlist: Wishlist): AgnosticTotals =&gt; {
+  return {
+    total: 10,
+    subtotal: 10
+  };
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getWishlistShippingPrice = (wishlist: Wishlist): number =&gt; 0;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getWishlistTotalItems = (wishlist: Wishlist): number =&gt; 1;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getFormattedPrice = (price: number): string =&gt; String(price);
+
+const wishlistGetters: WishlistGetters&lt;Wishlist, WishlistProduct&gt; = {
+  getTotals: getWishlistTotals,
+  getShippingPrice: getWishlistShippingPrice,
+  getItems: getWishlistItems,
+  getItemName: getWishlistItemName,
+  getItemImage: getWishlistItemImage,
+  getItemPrice: getWishlistItemPrice,
+  getItemQty: getWishlistItemQty,
+  getItemAttributes: getWishlistItemAttributes,
+  getItemSku: getWishlistItemSku,
+  getTotalItems: getWishlistTotalItems,
+  getFormattedPrice
+};
+
+export default wishlistGetters;
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:32,&quot;character&quot;:36,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:32,&quot;character&quot;:61,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:32,&quot;character&quot;:70,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:37,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:62,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:71,&quot;text&quot;:&quot;images&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:38,&quot;character&quot;:37,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:40,&quot;character&quot;:13,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:40,&quot;character&quot;:22,&quot;text&quot;:&quot;price&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:40,&quot;character&quot;:29,&quot;text&quot;:&quot;original&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:41,&quot;character&quot;:13,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:41,&quot;character&quot;:22,&quot;text&quot;:&quot;price&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:41,&quot;character&quot;:29,&quot;text&quot;:&quot;current&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:55,&quot;character&quot;:35,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:55,&quot;character&quot;:60,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/wishlistGetters.ts&quot;,&quot;line&quot;:55,&quot;character&quot;:69,&quot;text&quot;:&quot;sku&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Wed, 17 Nov 2021 20:11:53 GMT</p>
+    </body>
+  </html>
+  

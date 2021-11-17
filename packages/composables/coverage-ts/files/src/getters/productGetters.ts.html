@@ -1,0 +1,330 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>productGetters.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/getters/productGetters.ts</td><td class="">68.25%</td><td class="">87.27%</td><td class="">526</td><td class="">359</td><td class="">167</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import {
+  AgnosticMediaGalleryItem,
+  AgnosticAttribute,
+  AgnosticPrice,
+  ProductGetters
+} from &#x27;@vue-storefront/core&#x27;;
+import { ProductVariant } from &#x27;@vue-storefront/shopify-api/src/types&#x27;;
+import { enhanceProduct } from &#x27;../helpers/internals&#x27;;
+import { formatAttributeList, capitalize } from &#x27;./_utils&#x27;;
+
+type ProductVariantFilters = any
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getProductName = (product: ProductVariant): string =&gt; product?.name || &#x27;Product\&#x27;s name&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getProductSlug = (product: ProductVariant): string =&gt; {
+  if (product) {
+    return product._slug;
+  }
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getProductPrice = (product: ProductVariant): AgnosticPrice =&gt; {
+  return {
+    regular: product?.price?.original || 0,
+    special: product?.price?.current || 0
+  };
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getProductDiscountPercentage = (product): number =&gt; {
+  const regular = parseFloat(product?.price?.original) || 0;
+  const special = parseFloat(product?.price?.current) || 0;
+  if (special &lt; regular) {
+    const discount = regular - special;
+    const discountPercentage = (discount / regular) * 100;
+    return Math.round(discountPercentage);
+  }
+  return 0;
+};
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getProductGallery = (product: ProductVariant): AgnosticMediaGalleryItem[] =&gt;
+  (product ? product.images : [])
+    .map((image) =&gt; {
+      const imgPath = image.originalSrc.substring(0, image.originalSrc.lastIndexOf(&#x27;.&#x27;));
+      const imgext = image.originalSrc.split(&#x27;.&#x27;).pop();
+      const imgSmall = imgPath + &#x27;_160x160.&#x27; + imgext;
+      const imgBig = imgPath + &#x27;_295x295.&#x27; + imgext;
+      const imgNormal = imgPath + &#x27;_600x600.&#x27; + imgext;
+      return ({
+        small: imgSmall,
+        big: imgBig,
+        normal: imgNormal
+      });
+    });
+// @ts-ignore
+export const getActiveVariantImage = (product) =&gt; {
+  if (product) {
+    let productImg = product._coverImage.originalSrc;
+    if (product.variantBySelectedOptions &amp;&amp; product.variantBySelectedOptions !== null)
+      productImg = product.variantBySelectedOptions.image.originalSrc;
+    for (let i = 1; i &lt; (product.images).length; i++) {
+      if (product.images[i].originalSrc === productImg) {
+        return i;
+      }
+    }
+  }
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getProductFiltered = (products, filters: ProductVariantFilters | any = {}) =&gt; {
+  if (!products) {
+    return [];
+  }
+  products = Array.isArray(products) ? products : [products];
+  return Object.keys(products).length &gt; 0 ? enhanceProduct(products) : [];
+};
+export const getFilteredSingle = (product) =&gt; {
+  if (!product) {
+    return [];
+  }
+  product = Array.isArray(product) ? product : [product];
+  return enhanceProduct(product);
+};
+// @ts-ignore
+export const getSelectedVariant = (product: ProductVariant, attribs) =&gt; {
+  return attribs;
+};
+export const getProductOptions = (product: ProductVariant): Record&lt;string, AgnosticAttribute | string&gt; =&gt; {
+  const productOptions = (product as any).options;
+  return productOptions;
+};
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getProductAttributes = (products: ProductVariant, filterByAttributeName?: string[]): Record&lt;string, AgnosticAttribute | string&gt; =&gt; {
+  const isSingleProduct = !Array.isArray(products);
+  const productList = (isSingleProduct ? [products] : products) as ProductVariant[];
+  if (!products || productList.length === 0) {
+    return {} as any;
+  }
+
+  /* const formatAttributes = (products): AgnosticAttribute[] =&gt;{
+    return formatAttributeList(products.options);
+  }; */
+  const formatAttributes = (product: ProductVariant): AgnosticAttribute[] =&gt;
+    formatAttributeList(product.options).filter((attribute) =&gt; filterByAttributeName ? filterByAttributeName.includes(attribute.name) : attribute);
+
+  const reduceToUniques = (prev, curr) =&gt; {
+    const isAttributeExist = prev.some((el) =&gt; el.name === curr.name &amp;&amp; el.value === curr.value);
+
+    if (!isAttributeExist) {
+      return [...prev, curr];
+    }
+
+    return prev;
+  };
+
+  const reduceByAttributeName = (prev, curr) =&gt; ({
+    ...prev,
+    [capitalize(curr.name)]: isSingleProduct ? curr.value : [
+      ...(prev[curr.name] || []),
+      {
+        value: curr.value,
+        label: curr.label
+      }
+    ]
+  });
+  return productList
+    .map((product) =&gt; formatAttributes(product))
+    .reduce((prev, curr) =&gt; [...prev, ...curr], [])
+    .reduce(reduceToUniques, [])
+    .reduce(reduceByAttributeName, {});
+};
+
+export const getProductDescription = (product: ProductVariant, isWantHtml?: boolean): any =&gt; {
+  if (product) {
+    if (isWantHtml) {
+      return product._descriptionHtml;
+    }
+    return product._description;
+  }
+};
+
+export const getProductCategoryIds = (product: ProductVariant): string[] =&gt; (product as any)?._categoriesRef || &#x27;&#x27;;
+
+export const getProductVariantId = (product: ProductVariant): string =&gt; (product as any)?.variants[0].id || &#x27;&#x27;;
+
+export const getProductId = (product: ProductVariant): string =&gt; (product as any)?._id || &#x27;&#x27;;
+
+export const getProductOriginalId = (product): string =&gt; {
+  if (product &amp;&amp; product?._id) {
+    const buff = Buffer.from(product?._id, &#x27;base64&#x27;);
+    const decodedId = buff.toString(&#x27;ascii&#x27;);
+    const extractedInfo = decodedId.split(/[\s/]+/).pop();
+    return extractedInfo;
+  }
+  return &#x27;&#x27;;
+};
+
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export const getFormattedPrice = (price: number) =&gt; String(price);
+
+export const getProductSaleStatus = (product: ProductVariant): boolean =&gt; {
+  if (product &amp;&amp; (product.availableForSale)) {
+    return true;
+  }
+  return false;
+};
+export const getProductCoverImage = (product, size = &#x27;normal&#x27;) =&gt; {
+  let imgResolution = &#x27;600x600&#x27;;
+  if (size === &#x27;medium&#x27;) {
+    imgResolution = &#x27;295x295&#x27;;
+  } else if (size === &#x27;small&#x27;) {
+    imgResolution = &#x27;80x80&#x27;;
+  }
+  if (product &amp;&amp; product._coverImage &amp;&amp; product._coverImage.src) {
+    const imgPath = product._coverImage.src.substring(0, product._coverImage.src.lastIndexOf(&#x27;.&#x27;));
+    const imgext = product._coverImage.src.split(&#x27;.&#x27;).pop();
+    const resizedImg = imgPath + &#x27;_&#x27; + imgResolution + &#x27;.&#x27; + imgext;
+    return resizedImg;
+  }
+  return &#x27;https://cdn.shopify.com/s/files/1/0407/1902/4288/files/placeholder_&#x27; + imgResolution + &#x27;.jpg?v=1625742127&#x27;;
+};
+
+export const getProductCollections = (product, field = &#x27;all&#x27;) =&gt; {
+  if (!product) {
+    // @ts-ignore
+    return;
+  }
+  if (product.collections &amp;&amp; Object.keys(product.collections).length &gt; 0) {
+    const collections = [];
+    Object.values(product.collections).map((collection: Record&lt;string, unknown&gt;) =&gt; {
+      if (field === &#x27;all&#x27;) {
+        collections.push({
+          id: collection.id,
+          title: collection.title,
+          slug: collection.handle
+        });
+      } else {
+        collections.push(collection[field]);
+      }
+    });
+    return collections;
+  }
+  return [];
+};
+export const getPDPProductCoverImage = (product, size = &#x27;normal&#x27;) =&gt; {
+  let imgResolution = &#x27;600x600&#x27;;
+  if (size === &#x27;medium&#x27;) {
+    imgResolution = &#x27;295x295&#x27;;
+  } else if (size === &#x27;small&#x27;) {
+    imgResolution = &#x27;80x80&#x27;;
+  }
+  if (product &amp;&amp; product._coverImage &amp;&amp; product._coverImage.originalSrc) {
+    const imgPath = product._coverImage.originalSrc.substring(0, product._coverImage.originalSrc.lastIndexOf(&#x27;.&#x27;));
+    const imgext = product._coverImage.originalSrc.split(&#x27;.&#x27;).pop();
+    const resizedImg = imgPath + &#x27;_&#x27; + imgResolution + &#x27;.&#x27; + imgext;
+    return resizedImg;
+  }
+  return &#x27;https://cdn.shopify.com/s/files/1/0407/1902/4288/files/placeholder_&#x27; + imgResolution + &#x27;.jpg?v=1625742127&#x27;;
+};
+
+export const getProductStockStatus = (product: ProductVariant): boolean =&gt; {
+  if (product &amp;&amp; product.variantBySelectedOptions &amp;&amp; product.variantBySelectedOptions !== null) {
+    if (product.variantBySelectedOptions.quantityAvailable &gt; 0) {
+      return true;
+    }
+    return false;
+  } else if (product &amp;&amp; product.totalInventory &gt; 0) {
+    return true;
+  }
+  return false;
+};
+export const getProductStock = (product: ProductVariant): number =&gt; {
+  if (product &amp;&amp; product.variantBySelectedOptions &amp;&amp; product.variantBySelectedOptions !== null) {
+    return product.variantBySelectedOptions.quantityAvailable;
+  } else if (product &amp;&amp; product.totalInventory) {
+    return product.totalInventory;
+  }
+  return 0;
+};
+export const checkForWishlist = (product: ProductVariant): boolean =&gt; (product as any).isInWishlist ?? false;
+
+export const getBreadcrumbs = (product: ProductVariant): any =&gt; {
+  const breadCrumbs = [
+    {
+      text: &#x27;Home&#x27;,
+      route: {
+        link: &#x27;/&#x27;
+      }
+    }
+  ];
+  if (product &amp;&amp; product.productType) {
+    breadCrumbs.push({
+      text: product.productType,
+      route: {
+        link: &#x27;#&#x27;
+      }
+    });
+  }
+  if (product &amp;&amp; product.name) {
+    breadCrumbs.push({
+      text: getProductName(product),
+      route: {
+        link: &#x27;#&#x27;
+      }
+    });
+  }
+  return breadCrumbs;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getProductTotalReviews = (product: ProductVariant): number =&gt; 0;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getProductAverageRating = (product: ProductVariant): number =&gt; 0;
+
+const productGetters: ProductGetters&lt;ProductVariant, ProductVariantFilters&gt; = {
+  getName: getProductName,
+  getSlug: getProductSlug,
+  getPrice: getProductPrice,
+  getGallery: getProductGallery,
+  getCoverImage: getProductCoverImage,
+  getCollections: getProductCollections,
+  getVariantImage: getActiveVariantImage,
+  getFiltered: getProductFiltered,
+  getDiscountPercentage: getProductDiscountPercentage,
+  getFilteredSingle,
+  getProductOriginalId,
+  getOptions: getProductOptions,
+  getAttributes: getProductAttributes,
+  getDescription: getProductDescription,
+  getCategoryIds: getProductCategoryIds,
+  getId: getProductId,
+  getPDPCoverImage: getPDPProductCoverImage,
+  getVariantId: getProductVariantId,
+  getSaleStatus: getProductSaleStatus,
+  getStockStatus: getProductStockStatus,
+  getStock: getProductStock,
+  getFormattedPrice,
+  getTotalReviews: getProductTotalReviews,
+  getAverageRating: getProductAverageRating,
+  getBreadcrumbs,
+  getSelectedVariant
+};
+
+export default productGetters;
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:11,&quot;character&quot;:5,&quot;text&quot;:&quot;ProductVariantFilters&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:33,&quot;character&quot;:45,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:34,&quot;character&quot;:29,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:34,&quot;character&quot;:38,&quot;text&quot;:&quot;price&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:34,&quot;character&quot;:45,&quot;text&quot;:&quot;original&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:29,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:38,&quot;text&quot;:&quot;price&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:35,&quot;character&quot;:45,&quot;text&quot;:&quot;current&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:45,&quot;character&quot;:21,&quot;text&quot;:&quot;images&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:46,&quot;character&quot;:5,&quot;text&quot;:&quot;map&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:46,&quot;character&quot;:10,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:22,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:28,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:40,&quot;text&quot;:&quot;substring&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:53,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:59,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:71,&quot;text&quot;:&quot;lastIndexOf&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:48,&quot;character&quot;:21,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:48,&quot;character&quot;:27,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:48,&quot;character&quot;:39,&quot;text&quot;:&quot;split&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:48,&quot;character&quot;:50,&quot;text&quot;:&quot;pop&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:49,&quot;character&quot;:23,&quot;text&quot;:&quot;imgPath&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:49,&quot;character&quot;:47,&quot;text&quot;:&quot;imgext&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:50,&quot;character&quot;:21,&quot;text&quot;:&quot;imgPath&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:50,&quot;character&quot;:45,&quot;text&quot;:&quot;imgext&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:51,&quot;character&quot;:24,&quot;text&quot;:&quot;imgPath&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:51,&quot;character&quot;:48,&quot;text&quot;:&quot;imgext&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:59,&quot;character&quot;:38,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:60,&quot;character&quot;:6,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:61,&quot;character&quot;:21,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:61,&quot;character&quot;:29,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:61,&quot;character&quot;:41,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:62,&quot;character&quot;:8,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:62,&quot;character&quot;:16,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:62,&quot;character&quot;:44,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:62,&quot;character&quot;:52,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:63,&quot;character&quot;:19,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:63,&quot;character&quot;:27,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:63,&quot;character&quot;:52,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:63,&quot;character&quot;:58,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:25,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:33,&quot;text&quot;:&quot;images&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:64,&quot;character&quot;:41,&quot;text&quot;:&quot;length&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:65,&quot;character&quot;:10,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:65,&quot;character&quot;:18,&quot;text&quot;:&quot;images&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:65,&quot;character&quot;:28,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:65,&quot;character&quot;:44,&quot;text&quot;:&quot;productImg&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:74,&quot;character&quot;:35,&quot;text&quot;:&quot;products&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:74,&quot;character&quot;:45,&quot;text&quot;:&quot;filters&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:74,&quot;character&quot;:54,&quot;text&quot;:&quot;ProductVariantFilters&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:75,&quot;character&quot;:7,&quot;text&quot;:&quot;products&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:78,&quot;character&quot;:27,&quot;text&quot;:&quot;products&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:78,&quot;character&quot;:51,&quot;text&quot;:&quot;products&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:81,&quot;character&quot;:34,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:82,&quot;character&quot;:7,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:85,&quot;character&quot;:26,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:85,&quot;character&quot;:48,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:89,&quot;character&quot;:60,&quot;text&quot;:&quot;attribs&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:90,&quot;character&quot;:9,&quot;text&quot;:&quot;attribs&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:93,&quot;character&quot;:42,&quot;text&quot;:&quot;options&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:108,&quot;character&quot;:32,&quot;text&quot;:&quot;options&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:110,&quot;character&quot;:27,&quot;text&quot;:&quot;prev&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:110,&quot;character&quot;:33,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:29,&quot;text&quot;:&quot;prev&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:34,&quot;text&quot;:&quot;some&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:40,&quot;text&quot;:&quot;el&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:47,&quot;text&quot;:&quot;el&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:50,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:59,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:64,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:72,&quot;text&quot;:&quot;el&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:75,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:85,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:111,&quot;character&quot;:90,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:113,&quot;character&quot;:9,&quot;text&quot;:&quot;isAttributeExist&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:114,&quot;character&quot;:17,&quot;text&quot;:&quot;prev&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:114,&quot;character&quot;:23,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:117,&quot;character&quot;:11,&quot;text&quot;:&quot;prev&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:120,&quot;character&quot;:33,&quot;text&quot;:&quot;prev&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:120,&quot;character&quot;:39,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:121,&quot;character&quot;:7,&quot;text&quot;:&quot;prev&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:122,&quot;character&quot;:16,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:122,&quot;character&quot;:21,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:122,&quot;character&quot;:47,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:122,&quot;character&quot;:52,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:123,&quot;character&quot;:10,&quot;text&quot;:&quot;prev&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:123,&quot;character&quot;:15,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:123,&quot;character&quot;:20,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:125,&quot;character&quot;:8,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:125,&quot;character&quot;:15,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:125,&quot;character&quot;:20,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:8,&quot;text&quot;:&quot;label&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:15,&quot;text&quot;:&quot;curr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:126,&quot;character&quot;:20,&quot;text&quot;:&quot;label&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:134,&quot;character&quot;:5,&quot;text&quot;:&quot;reduce&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:146,&quot;character&quot;:94,&quot;text&quot;:&quot;_categoriesRef&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:148,&quot;character&quot;:90,&quot;text&quot;:&quot;variants&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:148,&quot;character&quot;:102,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:150,&quot;character&quot;:83,&quot;text&quot;:&quot;_id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:152,&quot;character&quot;:37,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:153,&quot;character&quot;:6,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:153,&quot;character&quot;:17,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:153,&quot;character&quot;:26,&quot;text&quot;:&quot;_id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:154,&quot;character&quot;:29,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:154,&quot;character&quot;:38,&quot;text&quot;:&quot;_id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:171,&quot;character&quot;:37,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:178,&quot;character&quot;:6,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:178,&quot;character&quot;:17,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:178,&quot;character&quot;:25,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:178,&quot;character&quot;:40,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:178,&quot;character&quot;:48,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:178,&quot;character&quot;:60,&quot;text&quot;:&quot;src&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:179,&quot;character&quot;:20,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:179,&quot;character&quot;:28,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:179,&quot;character&quot;:40,&quot;text&quot;:&quot;src&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:179,&quot;character&quot;:44,&quot;text&quot;:&quot;substring&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:179,&quot;character&quot;:57,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:179,&quot;character&quot;:65,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:179,&quot;character&quot;:77,&quot;text&quot;:&quot;src&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:179,&quot;character&quot;:81,&quot;text&quot;:&quot;lastIndexOf&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:180,&quot;character&quot;:19,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:180,&quot;character&quot;:27,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:180,&quot;character&quot;:39,&quot;text&quot;:&quot;src&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:180,&quot;character&quot;:43,&quot;text&quot;:&quot;split&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:180,&quot;character&quot;:54,&quot;text&quot;:&quot;pop&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:181,&quot;character&quot;:23,&quot;text&quot;:&quot;imgPath&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:181,&quot;character&quot;:61,&quot;text&quot;:&quot;imgext&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:187,&quot;character&quot;:38,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:188,&quot;character&quot;:7,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:192,&quot;character&quot;:6,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:192,&quot;character&quot;:14,&quot;text&quot;:&quot;collections&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:192,&quot;character&quot;:41,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:192,&quot;character&quot;:49,&quot;text&quot;:&quot;collections&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:194,&quot;character&quot;:18,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:194,&quot;character&quot;:26,&quot;text&quot;:&quot;collections&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:209,&quot;character&quot;:40,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:216,&quot;character&quot;:6,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:216,&quot;character&quot;:17,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:216,&quot;character&quot;:25,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:216,&quot;character&quot;:40,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:216,&quot;character&quot;:48,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:216,&quot;character&quot;:60,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:217,&quot;character&quot;:20,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:217,&quot;character&quot;:28,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:217,&quot;character&quot;:40,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:217,&quot;character&quot;:52,&quot;text&quot;:&quot;substring&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:217,&quot;character&quot;:65,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:217,&quot;character&quot;:73,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:217,&quot;character&quot;:85,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:217,&quot;character&quot;:97,&quot;text&quot;:&quot;lastIndexOf&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:218,&quot;character&quot;:19,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:218,&quot;character&quot;:27,&quot;text&quot;:&quot;_coverImage&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:218,&quot;character&quot;:39,&quot;text&quot;:&quot;originalSrc&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:218,&quot;character&quot;:51,&quot;text&quot;:&quot;split&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:218,&quot;character&quot;:62,&quot;text&quot;:&quot;pop&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:219,&quot;character&quot;:23,&quot;text&quot;:&quot;imgPath&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:219,&quot;character&quot;:61,&quot;text&quot;:&quot;imgext&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:226,&quot;character&quot;:25,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:226,&quot;character&quot;:61,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:227,&quot;character&quot;:16,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:227,&quot;character&quot;:41,&quot;text&quot;:&quot;quantityAvailable&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:237,&quot;character&quot;:25,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:237,&quot;character&quot;:61,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:238,&quot;character&quot;:19,&quot;text&quot;:&quot;variantBySelectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:238,&quot;character&quot;:44,&quot;text&quot;:&quot;quantityAvailable&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:244,&quot;character&quot;:87,&quot;text&quot;:&quot;isInWishlist&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/productGetters.ts&quot;,&quot;line&quot;:282,&quot;character&quot;:53,&quot;text&quot;:&quot;ProductVariantFilters&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Wed, 17 Nov 2021 20:11:53 GMT</p>
+    </body>
+  </html>
+  

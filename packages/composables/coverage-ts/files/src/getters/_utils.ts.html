@@ -1,0 +1,88 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>_utils.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/getters/_utils.ts</td><td class="">40.82%</td><td class="">87.27%</td><td class="">98</td><td class="">40</td><td class="">58</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { AgnosticAttribute } from &#x27;@vue-storefront/core&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export const getAttributeValue = (attribute) =&gt; {
+  switch (attribute.__typename) {
+    case &#x27;StringAttribute&#x27;:
+      return attribute.stringValue;
+    case &#x27;DateAttribute&#x27;:
+      return attribute.dateValue;
+    case &#x27;DateTimeAttribute&#x27;:
+      return attribute.dateTimeValue;
+    case &#x27;TimeAttribute&#x27;:
+      return attribute.timeValue;
+    case &#x27;NumberAttribute&#x27;:
+      return attribute.numberValue;
+    case &#x27;EnumAttribute&#x27;:
+    case &#x27;LocalizedEnumAttribute&#x27;:
+      return attribute.key;
+    case &#x27;LocalizedStringAttribute&#x27;:
+      return attribute.localizedString;
+    case &#x27;MoneyAttribute&#x27;:
+      return attribute.centAmount;
+    case &#x27;BooleanAttribute&#x27;:
+      return attribute.booleanValue;
+    case &#x27;ReferenceAttribute&#x27;:
+      return { typeId: attribute.typeId, id: attribute.id };
+    default:
+      return null;
+  }
+};
+
+export const formatAttributeList = (attributes: Array&lt;any&gt;): AgnosticAttribute[] =&gt;
+  attributes.map((attr) =&gt; {
+    return {
+      name: attr.name,
+      value: attr.values,
+      label: attr.name
+    };
+  });
+
+export const formatSelectedAttributeList = (attributes: Array&lt;any&gt;): AgnosticAttribute[] =&gt;
+  attributes.map((attr) =&gt; {
+    return {
+      name: attr.name,
+      value: attr.value,
+      label: attr.name
+    };
+  });
+
+export const capitalize = (s) =&gt; {
+  if (typeof s !== &#x27;string&#x27;) return &#x27;&#x27;;
+  return s.charAt(0).toUpperCase() + s.slice(1);
+};
+
+export const getVariantByAttributes = (products, attributes: any) =&gt; {
+  const configurationKeys = Object.keys(attributes);
+  return products.variants.find((variant) =&gt; {
+    const currentAttributes = formatSelectedAttributeList(
+      variant.selectedOptions
+    );
+    return configurationKeys.every((attrName) =&gt;
+      currentAttributes.find(
+        ({ name, value }) =&gt;
+          capitalize(attrName) === capitalize(name) &amp;&amp; attributes[attrName] === value
+      )
+    );
+  });
+};
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:5,&quot;character&quot;:34,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:6,&quot;character&quot;:10,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:6,&quot;character&quot;:20,&quot;text&quot;:&quot;__typename&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:8,&quot;character&quot;:13,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:8,&quot;character&quot;:23,&quot;text&quot;:&quot;stringValue&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:10,&quot;character&quot;:13,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:10,&quot;character&quot;:23,&quot;text&quot;:&quot;dateValue&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:12,&quot;character&quot;:13,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:12,&quot;character&quot;:23,&quot;text&quot;:&quot;dateTimeValue&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:13,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:14,&quot;character&quot;:23,&quot;text&quot;:&quot;timeValue&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:16,&quot;character&quot;:13,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:16,&quot;character&quot;:23,&quot;text&quot;:&quot;numberValue&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:13,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:23,&quot;text&quot;:&quot;key&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:13,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:23,&quot;text&quot;:&quot;localizedString&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:23,&quot;character&quot;:13,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:23,&quot;character&quot;:23,&quot;text&quot;:&quot;centAmount&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:25,&quot;character&quot;:13,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:25,&quot;character&quot;:23,&quot;text&quot;:&quot;booleanValue&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:15,&quot;text&quot;:&quot;typeId&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:23,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:33,&quot;text&quot;:&quot;typeId&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:41,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:45,&quot;text&quot;:&quot;attribute&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:27,&quot;character&quot;:55,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:34,&quot;character&quot;:18,&quot;text&quot;:&quot;attr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:6,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:12,&quot;text&quot;:&quot;attr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:36,&quot;character&quot;:17,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:37,&quot;character&quot;:6,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:37,&quot;character&quot;:13,&quot;text&quot;:&quot;attr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:37,&quot;character&quot;:18,&quot;text&quot;:&quot;values&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:38,&quot;character&quot;:6,&quot;text&quot;:&quot;label&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:38,&quot;character&quot;:13,&quot;text&quot;:&quot;attr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:38,&quot;character&quot;:18,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:43,&quot;character&quot;:18,&quot;text&quot;:&quot;attr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:45,&quot;character&quot;:6,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:45,&quot;character&quot;:12,&quot;text&quot;:&quot;attr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:45,&quot;character&quot;:17,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:46,&quot;character&quot;:6,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:46,&quot;character&quot;:13,&quot;text&quot;:&quot;attr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:46,&quot;character&quot;:18,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:6,&quot;text&quot;:&quot;label&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:13,&quot;text&quot;:&quot;attr&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:47,&quot;character&quot;:18,&quot;text&quot;:&quot;name&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:51,&quot;character&quot;:27,&quot;text&quot;:&quot;s&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:52,&quot;character&quot;:13,&quot;text&quot;:&quot;s&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:56,&quot;character&quot;:39,&quot;text&quot;:&quot;products&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:56,&quot;character&quot;:49,&quot;text&quot;:&quot;attributes&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:58,&quot;character&quot;:9,&quot;text&quot;:&quot;products&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:58,&quot;character&quot;:18,&quot;text&quot;:&quot;variants&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:58,&quot;character&quot;:27,&quot;text&quot;:&quot;find&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:58,&quot;character&quot;:33,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:60,&quot;character&quot;:6,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:60,&quot;character&quot;:14,&quot;text&quot;:&quot;selectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/_utils.ts&quot;,&quot;line&quot;:65,&quot;character&quot;:55,&quot;text&quot;:&quot;attributes&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Wed, 17 Nov 2021 20:11:53 GMT</p>
+    </body>
+  </html>
+  

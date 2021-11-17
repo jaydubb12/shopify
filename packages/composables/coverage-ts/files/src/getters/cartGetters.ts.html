@@ -1,0 +1,130 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>cartGetters.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="negative"><td class="">src/getters/cartGetters.ts</td><td class="">69.61%</td><td class="">87.27%</td><td class="">181</td><td class="">126</td><td class="">55</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import { CartGetters, AgnosticPrice, AgnosticTotals, AgnosticCoupon, AgnosticDiscount } from &#x27;@vue-storefront/core&#x27;;
+import { Cart, LineItem } from &#x27;@vue-storefront/shopify-api/src/types&#x27;;
+import { formatSelectedAttributeList } from &#x27;./_utils&#x27;;
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getCartItems = (cart: Cart): LineItem[] =&gt; {
+  return cart.lineItems;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getCartItemName = (product: any): string =&gt; product?.title || &#x27;Product\&#x27;s name&#x27;;
+export const getCartItemId = (product: any): string =&gt; product.id || &#x27;0&#x27;;
+export const getCartItemSlug = (product: any): string =&gt; {
+  return product.slug || &#x27;0&#x27;;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getCartItemImage = (product: any): string =&gt; {
+  if (product.variant &amp;&amp; product?.variant?.image !== null) {
+    const imgPath = product?.variant?.image?.src.substring(0, product?.variant.image.src.lastIndexOf(&#x27;.&#x27;));
+    const imgext = product?.variant?.image?.src.split(&#x27;.&#x27;).pop();
+    const cartImg = imgPath + &#x27;_120x120.&#x27; + imgext;
+    return cartImg;
+  }
+  return &#x27;&#x27;;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getCartItemPrice = (product: any): AgnosticPrice =&gt; {
+  return {
+    regular: product?.variant.compareAtPrice || null,
+    special: product?.variant.price || null
+  };
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getCartItemQty = (product: LineItem): number =&gt; product?.quantity;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getCartItemAttributes = (product: LineItem, filterByAttributeName?: Array&lt;string&gt;) =&gt; {
+  const formatAttedattributeList = formatSelectedAttributeList(product?.variant.selectedOptions);
+  if (formatAttedattributeList.length) {
+    const attribArr = [];
+    formatAttedattributeList.forEach((attr) =&gt; {
+      attribArr[attr.name] = attr.value;
+    });
+    return { ...attribArr };
+  }
+  return {};
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getCartItemSku = (product: any): string =&gt; product?.variant.sku || &#x27;-&#x27;;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getCartTotals = (cart: Cart): AgnosticTotals =&gt; {
+  if (cart &amp;&amp; cart !== null) {
+    return {
+      total: parseFloat(cart.totalPrice),
+      subtotal: parseFloat(cart.subtotalPrice)
+    };
+  }
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getCartShippingPrice = (cart: Cart): number =&gt; 0;
+
+export const getcheckoutURL = (cart: Cart): string =&gt; {
+  return cart.webUrl || &#x27;&#x27;;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getCartTotalItems = (cart: Cart): number =&gt; {
+  if (cart &amp;&amp; cart.lineItems &amp;&amp; cart.lineItems.length &gt; 0) {
+    return cart.lineItems.reduce((n, { quantity }) =&gt; n + quantity, 0);
+  }
+  return 0;
+};
+
+export const getFormattedPrice = (price: number) =&gt; String(price);
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getCoupons = (cart: Cart): AgnosticCoupon[] =&gt; [];
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
+export const getDiscounts = (cart: Cart): AgnosticDiscount[] =&gt; [];
+
+const cartGetters: CartGetters&lt;Cart, LineItem&gt; = {
+  getTotals: getCartTotals,
+  getShippingPrice: getCartShippingPrice,
+  getItems: getCartItems,
+  getItemName: getCartItemName,
+  getItemImage: getCartItemImage,
+  getItemId: getCartItemId,
+  getItemSlug: getCartItemSlug,
+  getItemPrice: getCartItemPrice,
+  getItemQty: getCartItemQty,
+  getItemAttributes: getCartItemAttributes,
+  getItemSku: getCartItemSku,
+  getFormattedPrice,
+  getTotalItems: getCartTotalItems,
+  getCoupons,
+  getDiscounts,
+  getcheckoutURL
+};
+
+export default cartGetters;
+</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:6,&quot;character&quot;:14,&quot;text&quot;:&quot;lineItems&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:10,&quot;character&quot;:32,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:10,&quot;character&quot;:57,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:10,&quot;character&quot;:66,&quot;text&quot;:&quot;title&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:11,&quot;character&quot;:30,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:11,&quot;character&quot;:55,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:11,&quot;character&quot;:63,&quot;text&quot;:&quot;id&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:12,&quot;character&quot;:32,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:13,&quot;character&quot;:9,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:13,&quot;character&quot;:17,&quot;text&quot;:&quot;slug&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:17,&quot;character&quot;:33,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:18,&quot;character&quot;:6,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:18,&quot;character&quot;:14,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:18,&quot;character&quot;:25,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:18,&quot;character&quot;:34,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:18,&quot;character&quot;:43,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:20,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:29,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:38,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:45,&quot;text&quot;:&quot;src&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:49,&quot;text&quot;:&quot;substring&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:62,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:71,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:79,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:85,&quot;text&quot;:&quot;src&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:19,&quot;character&quot;:89,&quot;text&quot;:&quot;lastIndexOf&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:19,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:28,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:37,&quot;text&quot;:&quot;image&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:44,&quot;text&quot;:&quot;src&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:48,&quot;text&quot;:&quot;split&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:20,&quot;character&quot;:59,&quot;text&quot;:&quot;pop&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:20,&quot;text&quot;:&quot;imgPath&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:21,&quot;character&quot;:44,&quot;text&quot;:&quot;imgext&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:28,&quot;character&quot;:33,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:30,&quot;character&quot;:13,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:30,&quot;character&quot;:22,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:30,&quot;character&quot;:30,&quot;text&quot;:&quot;compareAtPrice&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:31,&quot;character&quot;:13,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:31,&quot;character&quot;:22,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:31,&quot;character&quot;:30,&quot;text&quot;:&quot;price&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:41,&quot;character&quot;:80,&quot;text&quot;:&quot;selectedOptions&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:31,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:56,&quot;text&quot;:&quot;product&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:65,&quot;text&quot;:&quot;variant&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:53,&quot;character&quot;:73,&quot;text&quot;:&quot;sku&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:76,&quot;character&quot;:19,&quot;text&quot;:&quot;lineItems&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:76,&quot;character&quot;:37,&quot;text&quot;:&quot;lineItems&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:76,&quot;character&quot;:47,&quot;text&quot;:&quot;length&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:16,&quot;text&quot;:&quot;lineItems&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:26,&quot;text&quot;:&quot;reduce&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:34,&quot;text&quot;:&quot;n&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:39,&quot;text&quot;:&quot;quantity&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:54,&quot;text&quot;:&quot;n&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/getters/cartGetters.ts&quot;,&quot;line&quot;:77,&quot;character&quot;:58,&quot;text&quot;:&quot;quantity&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Wed, 17 Nov 2021 20:11:53 GMT</p>
+    </body>
+  </html>
+  
