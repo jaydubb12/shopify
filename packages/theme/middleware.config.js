@@ -1,7 +1,7 @@
 module.exports = {
   integrations: {
     shopify: {
-      location: '@borngroup/lightswitch-shopify-api/server',
+      location: '@vue-storefront/shopify-api/server',
       configuration: {
         api: {
           domain: 'jw-vuestorfront.myshopify.com',
