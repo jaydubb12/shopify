@@ -40,9 +40,17 @@ export default {
     SfLoader
   },
   props: {
-    title: String,
-    products: Array,
-    loading: Boolean
+    title: {
+      type: String,
+      default: ''
+    },
+    products: {
+      type: Array,
+    },
+    loading: {
+      type: Boolean,
+      default: false,
+    }
   },
   setup() {
     return { productGetters };
@@ -50,7 +58,7 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
+<style lang="scss" scoped>
 .section {
   margin-top: var(--spacer-base);
 }

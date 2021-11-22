@@ -71,9 +71,18 @@ export default {
     SfPrice
   },
   props: {
-    title: String,
-    products: Array,
-    loading: Boolean
+    title: {
+      type: String,
+      default: ''
+    },
+    products: {
+      type: Array,
+      required: true
+    },
+    loading: {
+      type: Boolean,
+      default: false,
+    }
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   setup() {
