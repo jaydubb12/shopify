@@ -4,8 +4,7 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended", // Does not include type checking
-    //"plugin:@typescript-eslint/recommended-requiring-type-checking", // High value rules for type checking
-    //"typed-fp",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking", // High value rules for type checking
     "plugin:import/recommended", // combination of import/errors and import/warnings
     "plugin:import/typescript", // enables ability to set import rules
     "plugin:vue/recommended",
@@ -13,7 +12,6 @@
   ],
   "plugins": [
     "@typescript-eslint",
-    //"functional",
     "import",
     "vue"
   ],
@@ -255,6 +253,7 @@
 
     // typescript
     "no-case-declarations": 0,
+    "strict": "off",
     "@typescript-eslint/require-await": 1,
     "@typescript-eslint/ban-ts-ignore": 0,
     "@typescript-eslint/ban-ts-comment": 0,
@@ -267,7 +266,7 @@
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/explicit-member-accessibility": 1,
     "@typescript-eslint/no-require-imports": 0, // settings for import vs require handled by other settings
-    "@typescript-eslint/restrict-plus-operands": 1,
+    "@typescript-eslint/restrict-plus-operands": "off",
     "@typescript-eslint/restrict-template-expressions": 1,
     "@typescript-eslint/no-duplicate-imports": "off", // settings maintained at global level
     "@typescript-eslint/no-explicit-any": 0,
@@ -292,7 +291,9 @@
     "@typescript-eslint/triple-slash-reference": "off",
     "@typescript-eslint/typedef": 1,
 
+
     // vue
-    "vue/no-unused-vars": 1
+    "vue/no-unused-vars": 1,
+    "vue/max-attributes-per-line": "off"
   }
 }
