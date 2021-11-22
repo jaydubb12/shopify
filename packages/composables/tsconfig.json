@@ -6,12 +6,12 @@
     "**/*.spec.ts"
   ],
   "compilerOptions": {
-    "allowUnreachableCode": false,
-    "outDir": "./lib",
-    "esModuleInterop": true,
-    "target": "es5",
+    "baseUrl": "./",
+    "lib": ["es6", "es7", "dom"],
+
     /* Module Resolution Options */
-    "module": "ES2015",
+    "module": "es6",
+    "target": "es6",
     "moduleResolution": "node",
     "declaration": true,                      /* Generates corresponding '.d.ts' file. */
     "importHelpers": true,
@@ -19,23 +19,36 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    /* Strict Type-Checking Options */
-    "strict": false,                        /* Enable all strict type-checking options. */
-    "noUncheckedIndexedAccess": true,
-    "noImplicitAny": false,                 /* Raise error on expressions and declarations with an implied 'any' type. */
-    "strictNullChecks": false,              /* Enable strict null checks. */
-    "strictFunctionTypes": false,           /* Enable strict checking of function types. */
-    "strictBindCallApply": true,           /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
-    "strictPropertyInitialization": false,  /* Enable strict checking of property initialization in classes. */
-    "noImplicitThis": true,                /* Raise error on 'this' expressions with an implied 'any' type. */
-    "alwaysStrict": false,                  /* Parse in strict mode and emit "use strict" for each source file. */
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "preserveSymlinks": true,                 /* Allows symlink resolution to real path */
+
+    /* Diagnostics */
+    "diagnostics": true,                    /* output compiler diagnostics */
+
+    /* Type Checking */
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,                  /* Report error when not all code paths in function return a value. */
+    "noImplicitAny": false,                      /* Raise error on expressions and declarations with an implied 'any' type. */
+    "noImplicitThis": true,                     /* Raise error on 'this' expressions with an implied 'any' type. */
+    "noUncheckedIndexedAccess": true,           /* Describe objects with unknown keys but known values  from index signatures */
+    "noUnusedLocals": true,                    /* Report errors on unused locals. */
+    "noUnusedParameters": false,                /* Report errors on unused parameters. */
+    "strict": false,                            /* Enable all strict type-checking options. */
+    "strictNullChecks": true,                  /* Enable strict null checks. */
+    "strictFunctionTypes": false,               /* Enable strict checking of function types. */
+    "strictBindCallApply": true,                /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
+    "strictPropertyInitialization": false,      /* Enable strict checking of property initialization in classes. */
+    "alwaysStrict": false,                      /* Parse in strict mode and emit "use strict" for each source file. */
+
+
+    /* Javascript Support */
+    "allowJs": false,
+    "checkJs": false,
 
     /* Additional Checks */
-    "noUnusedLocals": false,                /* Report errors on unused locals. */
-    "noUnusedParameters": true,            /* Report errors on unused parameters. */
-    "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
-    "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
-    "baseUrl": "./",
-    "lib": ["es6", "es7", "dom"],
-  },
+    "noFallthroughCasesInSwitch": true,        /* Report errors for fallthrough cases in switch statement. */
+    "isolatedModules": true                    /* Provides a warning when code cannot be correctly interpreted by a single-file transpiler */
+  }
 }

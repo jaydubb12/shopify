@@ -1,10 +1,12 @@
 /* istanbul ignore file */
-import {
+import type {
   Context,
-  useCartFactory,
   UseCartFactoryParams
 } from '@vue-storefront/core';
-import { Cart, CartItem, Coupon, Product } from '../types';
+import {
+  useCartFactory
+} from '@vue-storefront/core';
+import type { Cart, CartItem, Product } from '../types';
 
 const params: UseCartFactoryParams<Cart, CartItem, Product> = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
