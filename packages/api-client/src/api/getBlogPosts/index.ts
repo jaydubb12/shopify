@@ -1,8 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { CustomQuery } from '@vue-storefront/core';
+import type { CustomQuery } from '@vue-storefront/core';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+// @ts-ignore
+// todo remediate unused parameters issue
 export default async function getBlogPosts(context, params, customQuery?: CustomQuery) {
   // Use the built-in function
   const articlesQuery = context.client.graphQLClient.query((root) => {
@@ -24,6 +26,8 @@ export default async function getBlogPosts(context, params, customQuery?: Custom
     });
   });
   // Call the send method with the custom query
+  // @ts-ignore
+// todo remediate unused parameters issue
   context.client.graphQLClient.send(articlesQuery).then(({ model, articles }) => {
     if (model) {
       return model.articles;

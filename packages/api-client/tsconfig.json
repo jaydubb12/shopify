@@ -1,5 +1,52 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "../../tsconfig.base.json",
   "include": ["src"],
-  "exclude": ["node_modules", "lib"]
+  "exclude": ["node_modules", "lib"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "lib": ["es6", "es7", "dom"],
+
+    /* Module Resolution Options */
+    "module": "es6",
+    "target": "es6",
+    "moduleResolution": "node",
+    "declaration": true,                      /* Generates corresponding '.d.ts' file. */
+    "importHelpers": true,                    /* Causes helper functions to be imported from tslib */
+    "noEmitHelpers": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "preserveSymlinks": true,                 /* Allows symlink resolution to real path */
+
+    /* Diagnostics */
+    "diagnostics": true,                    /* output compiler diagnostics */
+
+    /* Type Checking */
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,                  /* Report error when not all code paths in function return a value. */
+    "noImplicitAny": false,                      /* Raise error on expressions and declarations with an implied 'any' type. */
+    "noImplicitThis": true,                     /* Raise error on 'this' expressions with an implied 'any' type. */
+    "noUncheckedIndexedAccess": true,           /* Describe objects with unknown keys but known values  from index signatures */
+    "noUnusedLocals": true,                    /* Report errors on unused locals. */
+    "noUnusedParameters": false,                /* Report errors on unused parameters. */
+    "strict": false,                            /* Enable all strict type-checking options. */
+    "strictNullChecks": true,                  /* Enable strict null checks. */
+    "strictFunctionTypes": false,               /* Enable strict checking of function types. */
+    "strictBindCallApply": true,                /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
+    "strictPropertyInitialization": false,      /* Enable strict checking of property initialization in classes. */
+    "alwaysStrict": false,                      /* Parse in strict mode and emit "use strict" for each source file. */
+
+
+    /* Javascript Support */
+    "allowJs": false,
+    "checkJs": false,
+
+    /* Additional Checks */
+    "noFallthroughCasesInSwitch": true,        /* Report errors for fallthrough cases in switch statement. */
+    "isolatedModules": true                    /* Provides a warning when code cannot be correctly interpreted by a single-file transpiler */
+  }
 }

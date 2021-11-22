@@ -1,4 +1,4 @@
-import { CustomQueryFn } from './../../types/Api';
+import type { CustomQueryFn } from './../../types/Api';
 
 const getCustomQuery = <T = any>(customQueryFn: CustomQueryFn<T>, params) => {
   const { defaultQuery, defaultVariables } = params;

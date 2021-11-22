@@ -1,17 +1,20 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { CustomQuery } from '@vue-storefront/core';
+import type { CustomQuery } from '@vue-storefront/core';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default async function getProduct(
   context,
   params,
+  // @ts-ignore
   customQuery?: CustomQuery
 ) {
   if (params.slug) {
     let chosenVariant = [];
     if (params.selectedOptions && Object.keys(params.selectedOptions).length > 0) {
+      // todo refactor to resolve type issue
+      // @ts-ignore
       chosenVariant = Object.entries(params.selectedOptions).map(k => ({ name: k[0], value: k[1] }));
     }
     const getProductByHandleQuery = context.client.graphQLClient.query(
@@ -125,8 +128,11 @@ export default async function getProduct(
         );
       }
     );
+
     return context.client.graphQLClient
       .send(getProductByHandleQuery)
+      // todo refactor or remove type issue, product never used
+      // @ts-ignore
       .then(({ model, product }) => {
         if (model) {
           return model.productByHandle;

@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { CustomQuery } from '@vue-storefront/core';
+import type { CustomQuery } from '@vue-storefront/core';
+// todo remediate ts issue where query is never read
+// @ts-ignore
 import { ordersQuery as query } from './../customerMutations/buildQueries';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

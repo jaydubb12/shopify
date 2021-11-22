@@ -1,7 +1,7 @@
 /* eslint-disable no-use-before-define */
-import { GetMeParams } from '../api/getMe';
+import type { GetMeParams } from '../api/getMe';
 // import { ShippingMethodData } from '../api/getShippingMethods';
-import {
+import type {
   Cart,
   // Order,
   // ShippingMethod,

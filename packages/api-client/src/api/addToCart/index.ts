@@ -1,6 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { CustomQuery } from '@vue-storefront/core';
+import type { CustomQuery } from '@vue-storefront/core';
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+/**
+ *
+ * @param context
+ * @param params
+ * @param _customQuery
+ */
 export default async function addToCart(context, params, _customQuery?: CustomQuery) {
   const { currentCart, product, quantity, customQuery } = params;
   // Existing Checkout ID
