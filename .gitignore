@@ -26,6 +26,8 @@ lib
 
 # Coverage directory used by tools like istanbul
 coverage
+coverage-ts
+*.ts.html
 
 # Editor directories and files
 .idea
@@ -35,3 +37,4 @@ coverage
 .DS_STORE
 
 !scripts/lib
+!/packages/api-client/coverage-ts/
