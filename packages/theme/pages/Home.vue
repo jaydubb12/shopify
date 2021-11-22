@@ -27,10 +27,11 @@
         </template>
       </SfBannerGrid>
     </LazyHydrate>
+
     <LazyHydrate when-visible>
       <RelatedProducts
-        :products="products"
-        :loading="productsLoading"
+        :products="relatedProducts"
+        :loading="relatedLoading"
         title="Match it with"
       />
     </LazyHydrate>
@@ -50,6 +51,7 @@
   </div>
 </template>
 <script type="module">
+/* eslint-disable vue/no-unused-components */
 import {
   SfHero,
   SfBanner,
@@ -67,13 +69,11 @@ import {
   useCart,
   productGetters
 } from '@vue-storefront/shopify';
-import {
-  computed
-} from '@nuxtjs/composition-api';
+import { computed, useRoute } from '@nuxtjs/composition-api';
 import { onSSR } from '@vue-storefront/core';
 import LazyHydrate from 'vue-lazy-hydration';
-import MobileStoreBanner from '~/components/MobileStoreBanner.vue';
-import RelatedProducts from '~/components/RelatedProducts.vue';
+import MobileStoreBanner from '../components/MobileStoreBanner.vue';
+import RelatedProducts from '../components/RelatedProducts.vue';
 
 export default {
   name: 'Home',
@@ -94,23 +94,29 @@ export default {
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   setup() {
-    const {
-      products: relatedProducts,
-      search: productsSearch,
-      loading: productsLoading
-    } = useProduct('relatedProducts');
+    const route = useRoute();
+    const { products, search } = useProduct('products');
+    const { products: relatedProducts, search: searchRelatedProducts, loading: relatedLoading } = useProduct('relatedProducts');
     const { cart, load: loadCart, addItem: addToCart, isInCart } = useCart();
 
+    const product = computed(() => productGetters.getFiltered(products.value, { master: true, attributes: route.value.query })[0]);
+
+    const updateFilter = (filter) => {
+      console.log(filter);
+    };
+
     onSSR(async () => {
-      await productsSearch({ limit: 8 });
+      await search({ id: route.value.params.id });
+      await searchRelatedProducts({ limit: 8 });
       await loadCart();
     });
     return {
-      products: computed(() =>
-        productGetters.getFiltered(relatedProducts.value, { master: true })
-      ),
+      updateFilter,
+      product,
+      products,
       getChkId: computed(() => cart.value.id),
-      productsLoading,
+      relatedProducts: computed(() => productGetters.getFiltered(relatedProducts.value, { master: true })),
+      relatedLoading,
       productGetters,
       addToCart,
       isInCart
@@ -233,7 +239,8 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
+<style lang="scss" scoped>
+@import '~@storefront-ui/vue/styles.scss';
 .article-meta h4 a {
   color: #111111;
   font-weight: 600;
