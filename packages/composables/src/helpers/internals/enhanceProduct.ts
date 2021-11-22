@@ -1,16 +1,15 @@
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-const enhanceProduct = (productResponse: Array<any>) => {
-  // @ts-ignore
+const enhanceProduct = (productResponse: any[]) => {
   if (Object.keys(productResponse).length === 0) return;
-  const enhancedProductResponse = productResponse.map((product) => ({
+  return productResponse.map((product) => ({
     ...product,
-    name: product.variantBySelectedOptions && product.variantBySelectedOptions !== null ? product.variantBySelectedOptions.title : product.title,
+    name: product.variantBySelectedOptions && true ? product.variantBySelectedOptions.title : product.title,
     images: product?.images,
     price: {
-      original: product.variantBySelectedOptions && product.variantBySelectedOptions !== null ? product.variantBySelectedOptions?.compareAtPriceV2?.amount : product.variants[0].compareAtPrice,
-      current: product.variantBySelectedOptions && product.variantBySelectedOptions !== null ? product.variantBySelectedOptions?.priceV2?.amount : product.variants[0].price
+      original: product.variantBySelectedOptions && true ? product.variantBySelectedOptions?.compareAtPriceV2?.amount : product.variants[0].compareAtPrice,
+      current: product.variantBySelectedOptions && true ? product.variantBySelectedOptions?.priceV2?.amount : product.variants[0].price
     },
-    available: product.variantBySelectedOptions && product.variantBySelectedOptions !== null ? product.variantBySelectedOptions?.quantityAvailable : product.variants[0].available,
+    available: product.variantBySelectedOptions && true ? product.variantBySelectedOptions?.quantityAvailable : product.variants[0].available,
     productType: product.productType,
     options: product.options,
     _id: product.id,
@@ -22,7 +21,6 @@ const enhanceProduct = (productResponse: Array<any>) => {
     _coverImage: product?.images[0],
     _mainPrice: product.variants[0].price
   }));
-  return enhancedProductResponse;
 };
 
 export default enhanceProduct;
