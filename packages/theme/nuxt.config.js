@@ -1,4 +1,4 @@
-import isomorphic_fetch from 'isomorphic-fetch';
+require('isomorphic-fetch'); // adds fetch as a global
 import webpack from 'webpack';
 import { version as version0 } from './package.json';
 
@@ -188,6 +188,7 @@ const config = {
         type: 'javascript/auto'
       });
     },
+    devtools: true, // allows vue-devtools inspection
     extractCSS: {
       ignoreOrder: true
     }
