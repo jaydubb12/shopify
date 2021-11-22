@@ -1,6 +1,6 @@
 {
   "include": ["**/*"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "static/sw.js"],
   "compilerOptions": {
     "target": "es2018",
     "module": "esnext",
@@ -12,6 +12,7 @@
     ],
     "esModuleInterop": true,
     "allowJs": true,
+    "checkJs": false,
     "sourceMap": true,
     "strict": false,
     "noEmit": true,
