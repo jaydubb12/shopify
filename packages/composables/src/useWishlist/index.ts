@@ -1,12 +1,17 @@
 /* istanbul ignore file */
-import {
+import type {
   Context,
-  useWishlistFactory,
   UseWishlistFactoryParams
 } from '@vue-storefront/core';
-import { ref, Ref } from '@nuxtjs/composition-api';
-import { Wishlist, WishlistProduct, Product } from '../types';
+import {
+  useWishlistFactory
+} from '@vue-storefront/core';
+import type { Ref } from '@nuxtjs/composition-api';
+import { ref } from '@nuxtjs/composition-api';
+import type { Wishlist, WishlistProduct, Product } from '../types';
 
+// todo remediate type issue with wishlist
+// @ts-ignore
 export const wishlist: Ref<Wishlist> = ref(null);
 
 const params: UseWishlistFactoryParams<Wishlist, WishlistProduct, Product> = {

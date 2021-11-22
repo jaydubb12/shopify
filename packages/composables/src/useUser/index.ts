@@ -8,6 +8,8 @@ import {
 import { User } from '../types';
 const params: UseUserFactoryParams<User, any, any> = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // todo refactor file
+  // @ts-ignore
   load: async (context: Context) => {
     // check for existing token, if yes user is logged in else logged out
     const appKey = context.$shopify.config.app.$config.appKey;
@@ -17,6 +19,8 @@ const params: UseUserFactoryParams<User, any, any> = {
     if (result) {
       customer = result.customer;
       if (customer) {
+        // todo fix type issue with token
+        // @ts-ignore
         customer.token = token;
       }
       return customer;
