@@ -1,4 +1,8 @@
 // api-client/rollup.js
+
+/**
+ * @type {import('rollup').RollupOptions}
+ */
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import replace from '@rollup/plugin-replace';

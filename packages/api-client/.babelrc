@@ -2,11 +2,13 @@
   "presets": [
    [ "@babel/preset-typescript",
     {
+      "bugfixes": false,
       "useBuiltIns": "usage",
       "corejs": 3,
+      "esmodules": true,
       "modules": "auto",
       "loose": true,
-      "bugfixes": false,
+      "spec": true,
       "debug": true
     }
    ]
