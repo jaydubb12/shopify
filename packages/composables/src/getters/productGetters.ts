@@ -1,13 +1,8 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import {
-  AgnosticMediaGalleryItem,
-  AgnosticAttribute,
-  AgnosticPrice,
-  ProductGetters
-} from '@vue-storefront/core';
-import { ProductVariant } from '@vue-storefront/shopify-api/src/types';
+import type { AgnosticAttribute, AgnosticMediaGalleryItem, AgnosticPrice, ProductGetters } from '@vue-storefront/core';
+import type { ProductVariant } from '@vue-storefront/shopify-api/src/types';
 import { enhanceProduct } from '../helpers/internals';
-import { formatAttributeList, capitalize } from './_utils';
+import { capitalize, formatAttributeList } from './_utils';
 
 type ProductVariantFilters = any
 
@@ -15,9 +10,12 @@ type ProductVariantFilters = any
 export const getProductName = (product: ProductVariant): string => product?.name || 'Product\'s name';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// todo to include validation of undefined
 // @ts-ignore
 export const getProductSlug = (product: ProductVariant): string => {
   if (product) {
+    // todo refactor to handle potential assignment as null
+    // @ts-ignore
     return product._slug;
   }
 };
@@ -60,7 +58,7 @@ export const getProductGallery = (product: ProductVariant): AgnosticMediaGallery
 export const getActiveVariantImage = (product) => {
   if (product) {
     let productImg = product._coverImage.originalSrc;
-    if (product.variantBySelectedOptions && product.variantBySelectedOptions !== null)
+    if (product.variantBySelectedOptions)
       productImg = product.variantBySelectedOptions.image.originalSrc;
     for (let i = 1; i < (product.images).length; i++) {
       if (product.images[i].originalSrc === productImg) {
@@ -91,8 +89,7 @@ export const getSelectedVariant = (product: ProductVariant, attribs) => {
   return attribs;
 };
 export const getProductOptions = (product: ProductVariant): Record<string, AgnosticAttribute | string> => {
-  const productOptions = (product as any).options;
-  return productOptions;
+  return (product as any).options;
 };
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const getProductAttributes = (products: ProductVariant, filterByAttributeName?: string[]): Record<string, AgnosticAttribute | string> => {
@@ -106,6 +103,8 @@ export const getProductAttributes = (products: ProductVariant, filterByAttribute
     return formatAttributeList(products.options);
   }; */
   const formatAttributes = (product: ProductVariant): AgnosticAttribute[] =>
+    // todo to include validation of undefined
+    // @ts-ignore
     formatAttributeList(product.options).filter((attribute) => filterByAttributeName ? filterByAttributeName.includes(attribute.name) : attribute);
 
   const reduceToUniques = (prev, curr) => {
@@ -155,6 +154,8 @@ export const getProductOriginalId = (product): string => {
     const buff = Buffer.from(product?._id, 'base64');
     const decodedId = buff.toString('ascii');
     const extractedInfo = decodedId.split(/[\s/]+/).pop();
+    // todo to include validation of undefined
+    // @ts-ignore
     return extractedInfo;
   }
   return '';
@@ -179,8 +180,7 @@ export const getProductCoverImage = (product, size = 'normal') => {
   if (product && product._coverImage && product._coverImage.src) {
     const imgPath = product._coverImage.src.substring(0, product._coverImage.src.lastIndexOf('.'));
     const imgext = product._coverImage.src.split('.').pop();
-    const resizedImg = imgPath + '_' + imgResolution + '.' + imgext;
-    return resizedImg;
+    return imgPath + '_' + imgResolution + '.' + imgext;
   }
   return 'https://cdn.shopify.com/s/files/1/0407/1902/4288/files/placeholder_' + imgResolution + '.jpg?v=1625742127';
 };
@@ -195,11 +195,19 @@ export const getProductCollections = (product, field = 'all') => {
     Object.values(product.collections).map((collection: Record<string, unknown>) => {
       if (field === 'all') {
         collections.push({
+          // todo refactor reference / set of collection type
+          // @ts-ignore
           id: collection.id,
+          // todo refactor reference / set of collection type
+          // @ts-ignore
           title: collection.title,
+          // todo refactor reference / set of collection type
+          // @ts-ignore
           slug: collection.handle
         });
       } else {
+        // todo refactor reference / set of collection type
+        // @ts-ignore
         collections.push(collection[field]);
       }
     });
@@ -224,18 +232,18 @@ export const getPDPProductCoverImage = (product, size = 'normal') => {
 };
 
 export const getProductStockStatus = (product: ProductVariant): boolean => {
-  if (product && product.variantBySelectedOptions && product.variantBySelectedOptions !== null) {
-    if (product.variantBySelectedOptions.quantityAvailable > 0) {
-      return true;
-    }
-    return false;
+  if (product && product.variantBySelectedOptions) {
+    return product.variantBySelectedOptions.quantityAvailable > 0;
+
+    // todo refactor to handle null / undefined condition
+    // @ts-ignore
   } else if (product && product.totalInventory > 0) {
     return true;
   }
   return false;
 };
 export const getProductStock = (product: ProductVariant): number => {
-  if (product && product.variantBySelectedOptions && product.variantBySelectedOptions !== null) {
+  if (product && product.variantBySelectedOptions) {
     return product.variantBySelectedOptions.quantityAvailable;
   } else if (product && product.totalInventory) {
     return product.totalInventory;
@@ -288,6 +296,8 @@ const productGetters: ProductGetters<ProductVariant, ProductVariantFilters> = {
   getCoverImage: getProductCoverImage,
   getCollections: getProductCollections,
   getVariantImage: getActiveVariantImage,
+  // todo refactor getFiltered Type association
+  // @ts-ignore
   getFiltered: getProductFiltered,
   getDiscountPercentage: getProductDiscountPercentage,
   getFilteredSingle,

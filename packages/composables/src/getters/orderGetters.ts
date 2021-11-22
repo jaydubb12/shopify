@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* istanbul ignore file */
 
-import { UserOrderGetters } from '@vue-storefront/core';
-import { Order, OrderItem } from '../types';
+import type { UserOrderGetters } from '@vue-storefront/core';
+import type { Order, OrderItem } from '../types';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const getDate = (order: any): any => {
@@ -89,6 +89,8 @@ const orderGetters: UserOrderGetters<Order, OrderItem> = {
   getId,
   getStatus,
   getPaymentStatus,
+  // todo refactor type assignment for null | number
+  // @ts-ignore
   getPrice,
   getShippingPrice,
   getItems,

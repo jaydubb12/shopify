@@ -8,7 +8,8 @@ import {
   AgnosticFacet
 } from '@vue-storefront/core';
 import { enhanceProduct, getSortedProducts } from '../helpers/internals';
-import { buildBreadcrumbs, buildFacets, reduceForGroupedFacets, reduceForFacets } from './../useFacet/_utils';
+import { buildBreadcrumbs, buildFacets, reduceForFacets } from './../useFacet/_utils';
+// import {reduceForGroupedFacets } from './../useFacet/_utils';
 import { getCategoryTree as buildCategoryTree } from './categoryGetters';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -29,6 +30,8 @@ const getSortOptions = (searchData): AgnosticSort => {
     { type: 'sort', id: 'price-down', value: 'Price: High to low', count: null }
   ].map(o => ({ ...o, selected: o.id === searchData.input.sort }));
   const selected = options.find(o => o.id === searchData.input.sort)?.id || 'latest';
+  // todo remediate type issue for options
+  // @ts-ignore
   return { options, selected };
 };
 
@@ -40,6 +43,8 @@ const getCategoryTree = (searchData) => {
   const allCats = searchData.data.categories;
   const formattedCats = [];
   for (let c = 0; c < allCats.length; c++) {
+    // todo remediate type assignment issue for agnostic facet
+    // @ts-ignore
     formattedCats.push(buildCategoryTree(searchData.data.categories[c]));
   }
   return formattedCats;
@@ -73,9 +78,13 @@ const getProducts = (searchData): any => {
   let catProducts = [];
   const sortBy = searchData.input.sort;
   if (!Array.isArray(searchData.data.categories)) {
+    // todo remediate type assignment issue for agnostic facet
+    // @ts-ignore
     catProducts = getSortedProducts(enhanceProduct(searchData.data.categories.products), sortBy);
   } else {
     const curCatIndex = identifyCurrentCat(searchData);
+    // todo remediate type assignment issue for agnostic facet
+    // @ts-ignore
     catProducts = getSortedProducts(enhanceProduct(searchData.data.categories[curCatIndex].products), sortBy);
   }
   const products = enhanceProduct(catProducts);

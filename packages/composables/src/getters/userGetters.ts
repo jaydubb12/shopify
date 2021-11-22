@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 
-import { UserGetters} from '@vue-storefront/core';
-import { User } from '../types';
+import type { UserGetters} from '@vue-storefront/core';
+import type { User } from '../types';
 
 export const getUserFirstName = (user: User): string => {
   if (user) {
@@ -32,6 +32,8 @@ export const getUserCleanId = (user: User): string => {
     const buff = Buffer.from(user.id, 'base64');
     const decodedId = buff.toString('ascii');
     const extractedInfo = decodedId.split(/[\s/]+/).pop();
+    // todo remediate typescript issue with extractedInfo
+    // @ts-ignore
     return extractedInfo;
   }
   return '';
