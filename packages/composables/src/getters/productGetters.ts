@@ -75,14 +75,14 @@ export const getProductFiltered = (products, filters: ProductVariantFilters | an
     return [];
   }
   products = Array.isArray(products) ? products : [products];
-  return Object.keys(products).length > 0 ? enhanceProduct(products) : [];
+  return (Object.keys(products).length > 0 ? enhanceProduct(products) : []) as ProductVariant[];
 };
 export const getFilteredSingle = (product) => {
   if (!product) {
     return [];
   }
   product = Array.isArray(product) ? product : [product];
-  return enhanceProduct(product);
+  return enhanceProduct(product) as ProductVariant[];
 };
 // @ts-ignore
 export const getSelectedVariant = (product: ProductVariant, attribs) => {

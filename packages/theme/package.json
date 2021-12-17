@@ -1,6 +1,6 @@
 {
   "name": "@vue-storefront/shopify-theme",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "yarn": true,
   "sideEffects": [
     ".css",
@@ -13,7 +13,10 @@
     "build:analyze": "nuxt build -a -m",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "test": "jest",
+    "test:e2e:open": "cypress open --config-file tests/e2e/cypress.json",
+    "test:e2e:run": "cypress run --config-file tests/e2e/cypress.json",
+    "test:e2e": "start-server-and-test dev http://localhost:3000 test:e2e:run"
   },
   "dependencies": {
     "@nuxtjs/composition-api": "^0.30.0",
@@ -23,8 +26,7 @@
     "@vue-storefront/middleware": "~2.5.0",
     "@vue-storefront/nuxt": "~2.5.0",
     "@vue-storefront/nuxt-theme": "~2.5.0",
-    "@vue-storefront/shopify": "1.0.6",
-    "@vue-storefront/shopify-api": "1.0.6",
+    "@vue-storefront/shopify": "1.0.8",
     "axios": "^0.24.0",
     "cookie-universal-nuxt": "^2.1.3",
     "core-js": "^3.19.1",
@@ -40,9 +42,11 @@
     "@vue-storefront/core": "^2.5.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
+    "cypress": "^9.1.0",
     "ejs": "^3.0.2",
-    "jest": "^24.1.0",
+    "jest": "^27.4.3",
     "lint-staged": "^11.1.2",
+    "start-server-and-test": "^1.14.0",
     "vue-jest": "^4.0.0-0",
     "webpack": "4.46.0"
   }

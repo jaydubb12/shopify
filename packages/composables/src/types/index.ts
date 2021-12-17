@@ -1,6 +1,16 @@
-/* eslint-disable @typescript-eslint/ban-types */
-import type { ProductVariant } from '@vue-storefront/shopify-api';
-export type { UseCategory, UseProduct } from '@vue-storefront/core';
+import { ProductVariant } from '@vue-storefront/shopify-api';
+import { ShopifyApolloContext } from '@vue-storefront/shopify-apollo'
+
+// New Types
+
+export interface Context {
+  $shopify: ShopifyApolloContext
+  [key: string]: any
+}
+
+
+// Old Types
+export { UseCategory, UseProduct } from '@vue-storefront/core';
 export type Category = Record<string, unknown>;
 
 export type User = {

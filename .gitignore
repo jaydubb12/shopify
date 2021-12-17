@@ -38,3 +38,9 @@ coverage-ts
 
 !scripts/lib
 !/packages/api-client/coverage-ts/
+
+packages/theme/.template
+
+tests/e2e/report
+
+docs/.vuepress/dist

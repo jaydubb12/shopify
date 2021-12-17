@@ -4,10 +4,6 @@ import { version as version0 } from './package.json';
 
 /** @type { import('@nuxt/types').NuxtConfig } */
 const config = {
-  server: {
-    port: 3001,
-    host: '0.0.0.0'
-  },
   publicRuntimeConfig: {
     appKey: 'vsf2spcon',
     appVersion: Date.now()
@@ -81,6 +77,7 @@ const config = {
       {
         generate: {
           replace: {
+            apollo: '@vue-storefront/shopify-apollo',
             apiClient: '@vue-storefront/shopify-api',
             composables: '@vue-storefront/shopify'
           }
