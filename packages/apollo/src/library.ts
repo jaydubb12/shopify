@@ -1,6 +1,7 @@
-import { ApolloClient, ApolloQueryResult, InMemoryCache } from "@apollo/client/core"
-import { IntegrationContext } from '@vue-storefront/core'
-import { ProductConnection } from "./shopify"
+import type { ApolloQueryResult} from '@apollo/client/core';
+import { ApolloClient, InMemoryCache } from '@apollo/client/core';
+import type { IntegrationContext } from '@vue-storefront/core';
+import type { ProductConnection } from './shopify';
 
 interface ShopifyApolloSettings {
   api: {
@@ -20,17 +21,16 @@ export function createShopifyApollo(settings: ShopifyApolloSettings) {
     headers: {
       'X-Shopify-Storefront-Access-Token': settings.api.storefrontAccessToken
     }
-  })
+  });
 
-  return client
+  return client;
 }
 
 export type ShopifyApolloClient = { apolloClient: ReturnType<typeof createShopifyApollo> }
 
-export * from './api'
+export * from './api';
 
-import type { ShopifyApolloAPIs } from './api'
-
+import type { ShopifyApolloAPIs } from './api';
 
 export type ShopifyApolloContext = IntegrationContext<ShopifyApolloClient, ShopifyApolloSettings, ShopifyApolloAPIs>
 

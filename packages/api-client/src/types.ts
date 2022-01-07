@@ -90,6 +90,21 @@ export type CartItem = {
   variant?: Maybe<Scalars['Array']>;
 }
 export type Wishlist = {}
+
+/**
+ * Properties used by customers to select a product variant.
+ * Products can have multiple options, like different sizes or colors.
+ */
+export type SelectedOption = {
+  __typename?: 'SelectedOption';
+
+  /** The product option’s name. */
+  name: Scalars['String'];
+
+  /** The product option’s value. */
+  value: Scalars['String'];
+};
+
 export type ProductVariant = {
   __typename?: 'ProductVariant';
   _id?: Maybe<Scalars['String']>;
@@ -101,6 +116,9 @@ export type ProductVariant = {
   images: Maybe<Scalars['Array']>;
   product?: Maybe<Scalars['Array']>;
   options: Maybe<Scalars['Array']>;
+
+  /** List of product options applied to the variant. */
+  selectedOptions: Array<SelectedOption>;
   variantBySelectedOptions?: Maybe<Scalars['Array']>;
   _coverImage: Maybe<Scalars['String']>;
   price: {

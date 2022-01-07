@@ -10,6 +10,11 @@
       "esnext.asynciterable",
       "dom"
     ],
+    "plugins": [
+      {
+        "name": "typescript-eslint-language-service"
+      }
+    ],
     "esModuleInterop": true,
     "allowJs": true,
     "checkJs": false,

@@ -26,7 +26,7 @@ lib
 
 # Coverage directory used by tools like istanbul
 coverage
-coverage-ts
+coverage-ts/**
 *.ts.html
 
 # Editor directories and files
@@ -36,11 +36,14 @@ coverage-ts
 # OS generated files
 .DS_STORE
 
-!scripts/lib
-!/packages/api-client/coverage-ts/
+scripts/lib
+/packages/api-client/coverage-ts/
 
 packages/theme/.template
 
 tests/e2e/report
 
 docs/.vuepress/dist
+
+/.yarn/install-state.gz
+

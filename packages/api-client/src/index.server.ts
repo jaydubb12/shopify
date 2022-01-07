@@ -23,7 +23,7 @@ import addAddress from './api/addAddress';
 import updateAddress from './api/updateAddress';
 import checkOut from './api/checkOut';
 
-import { createShopifyApollo, getShopifyApolloAPIs } from '@vue-storefront/shopify-apollo'
+import { createShopifyApollo, getShopifyApolloAPIs } from '@vue-storefront/shopify-apollo';
 
 const CustomClient = require('shopify-buy/index.unoptimized.umd.min.js');
 
@@ -33,9 +33,9 @@ const cookies = {
 };
 
 const onCreate = (settings) => {
-  const client = CustomClient.buildClient(settings.api)
+  const client = CustomClient.buildClient(settings.api);
 
-  client.apolloClient = createShopifyApollo(settings)
+  client.apolloClient = createShopifyApollo(settings);
 
   return ({
     config: {

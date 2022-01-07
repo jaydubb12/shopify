@@ -12,6 +12,11 @@
     /* Module Resolution Options */
     "module": "es6",
     "target": "es6",
+    "plugins": [
+      {
+        "name": "typescript-eslint-language-service"
+      }
+    ],
     "moduleResolution": "node",
     "declaration": true,                      /* Generates corresponding '.d.ts' file. */
     "importHelpers": true,
