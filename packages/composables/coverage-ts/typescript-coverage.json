@@ -123,552 +123,496 @@
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
       "line": 4,
-      "character": 55,
+      "character": 24,
+      "text": "productResponse",
+      "kind": 1
+    },
+    {
+      "file": "src/helpers/internals/enhanceProduct.ts",
+      "line": 7,
+      "character": 53,
+      "text": "productResponse",
+      "kind": 1
+    },
+    {
+      "file": "src/helpers/internals/enhanceProduct.ts",
+      "line": 7,
+      "character": 69,
+      "text": "map",
+      "kind": 1
+    },
+    {
+      "file": "src/helpers/internals/enhanceProduct.ts",
+      "line": 7,
+      "character": 74,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 5,
-      "character": 7,
-      "text": "product",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
-      "character": 4,
-      "text": "name",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
+      "line": 9,
       "character": 10,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
+      "line": 9,
       "character": 18,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
+      "line": 9,
       "character": 46,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
+      "line": 9,
       "character": 54,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
+      "line": 9,
       "character": 90,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
+      "line": 9,
       "character": 98,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
+      "line": 9,
       "character": 123,
       "text": "title",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
+      "line": 9,
       "character": 131,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 6,
+      "line": 9,
       "character": 139,
       "text": "title",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 7,
+      "line": 10,
       "character": 4,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 7,
+      "line": 10,
       "character": 12,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 7,
+      "line": 10,
       "character": 21,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
-      "character": 6,
-      "text": "original",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 16,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 24,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 52,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 60,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 96,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 104,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 130,
       "text": "compareAtPriceV2",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 148,
       "text": "amount",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 157,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 165,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 9,
+      "line": 12,
       "character": 177,
       "text": "compareAtPrice",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
-      "character": 6,
-      "text": "current",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 15,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 23,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 51,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 59,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 95,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 103,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 129,
       "text": "priceV2",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 138,
       "text": "amount",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 147,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 155,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 10,
+      "line": 13,
       "character": 167,
       "text": "price",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
-      "character": 4,
-      "text": "available",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 15,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 23,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 51,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 59,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 95,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 103,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 129,
       "text": "quantityAvailable",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 149,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 157,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 12,
+      "line": 15,
       "character": 169,
       "text": "available",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 13,
-      "character": 4,
-      "text": "productType",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 13,
+      "line": 16,
       "character": 17,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 13,
+      "line": 16,
       "character": 25,
       "text": "productType",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 14,
+      "line": 17,
       "character": 4,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 14,
+      "line": 17,
       "character": 13,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 14,
+      "line": 17,
       "character": 21,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 15,
-      "character": 4,
-      "text": "_id",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 15,
+      "line": 18,
       "character": 9,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 15,
+      "line": 18,
       "character": 17,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 16,
+      "line": 19,
       "character": 4,
       "text": "variantId",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 16,
+      "line": 19,
       "character": 15,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 16,
+      "line": 19,
       "character": 23,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 16,
+      "line": 19,
       "character": 35,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 17,
-      "character": 4,
-      "text": "_description",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 17,
+      "line": 20,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 17,
+      "line": 20,
       "character": 26,
       "text": "description",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 18,
-      "character": 4,
-      "text": "_descriptionHtml",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 18,
+      "line": 21,
       "character": 22,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 18,
+      "line": 21,
       "character": 30,
       "text": "descriptionHtml",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 20,
-      "character": 4,
-      "text": "_slug",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 20,
+      "line": 23,
       "character": 11,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 20,
+      "line": 23,
       "character": 19,
       "text": "handle",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 21,
-      "character": 4,
-      "text": "_coverImage",
-      "kind": 1
-    },
-    {
-      "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 21,
+      "line": 24,
       "character": 17,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 21,
+      "line": 24,
       "character": 26,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 22,
+      "line": 25,
       "character": 4,
       "text": "_mainPrice",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 22,
+      "line": 25,
       "character": 16,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 22,
+      "line": 25,
       "character": 24,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/helpers/internals/enhanceProduct.ts",
-      "line": 22,
+      "line": 25,
       "character": 36,
       "text": "price",
       "kind": 1
@@ -1256,1078 +1200,1057 @@
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 12,
+      "line": 14,
       "character": 27,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 12,
+      "line": 14,
       "character": 36,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 12,
+      "line": 14,
       "character": 43,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 12,
+      "line": 14,
       "character": 47,
       "text": "$config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 12,
+      "line": 14,
       "character": 55,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 26,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 35,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 42,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 46,
       "text": "$cookies",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 55,
       "text": "get",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 59,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 10,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 38,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 47,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 51,
       "text": "fetchCustomer",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 65,
       "text": "token",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 16,
+      "line": 18,
       "character": 8,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 17,
+      "line": 19,
       "character": 17,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 17,
+      "line": 19,
       "character": 24,
       "text": "customer",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 18,
-      "character": 10,
-      "text": "customer",
-      "kind": 1
-    },
-    {
-      "file": "src/useUser/index.ts",
-      "line": 19,
-      "character": 8,
-      "text": "customer",
-      "kind": 1
-    },
-    {
-      "file": "src/useUser/index.ts",
-      "line": 19,
-      "character": 17,
-      "text": "token",
-      "kind": 1
-    },
-    {
-      "file": "src/useUser/index.ts",
-      "line": 28,
+      "line": 32,
       "character": 27,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 28,
+      "line": 32,
       "character": 36,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 28,
+      "line": 32,
       "character": 43,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 28,
+      "line": 32,
       "character": 47,
       "text": "$config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 28,
+      "line": 32,
       "character": 55,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 29,
+      "line": 33,
       "character": 26,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 29,
+      "line": 33,
       "character": 35,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 29,
+      "line": 33,
       "character": 42,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 29,
+      "line": 33,
       "character": 46,
       "text": "$cookies",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 29,
+      "line": 33,
       "character": 55,
       "text": "get",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 29,
+      "line": 33,
       "character": 59,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 30,
+      "line": 34,
       "character": 12,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 30,
+      "line": 34,
       "character": 21,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 30,
+      "line": 34,
       "character": 28,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 30,
+      "line": 34,
       "character": 32,
       "text": "$cookies",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 30,
+      "line": 34,
       "character": 41,
       "text": "remove",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 30,
+      "line": 34,
       "character": 48,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 31,
+      "line": 35,
       "character": 18,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 31,
+      "line": 35,
       "character": 27,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 31,
+      "line": 35,
       "character": 31,
       "text": "signOut",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 31,
+      "line": 35,
       "character": 39,
       "text": "token",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 36,
+      "line": 40,
       "character": 54,
       "text": "updatedUserData",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 37,
+      "line": 41,
       "character": 27,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 37,
+      "line": 41,
       "character": 36,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 37,
+      "line": 41,
       "character": 43,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 37,
+      "line": 41,
       "character": 47,
       "text": "$config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 37,
+      "line": 41,
       "character": 55,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 38,
+      "line": 42,
       "character": 26,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 38,
+      "line": 42,
       "character": 35,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 38,
+      "line": 42,
       "character": 42,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 38,
+      "line": 42,
       "character": 46,
       "text": "$cookies",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 38,
+      "line": 42,
       "character": 55,
       "text": "get",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 38,
+      "line": 42,
       "character": 59,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 39,
+      "line": 43,
       "character": 18,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 39,
+      "line": 43,
       "character": 27,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 39,
+      "line": 43,
       "character": 31,
       "text": "editProfile",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 40,
+      "line": 44,
       "character": 6,
       "text": "token",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 41,
+      "line": 45,
       "character": 17,
       "text": "email",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 41,
+      "line": 45,
       "character": 24,
       "text": "updatedUserData",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 41,
+      "line": 45,
       "character": 40,
       "text": "email",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 42,
+      "line": 46,
       "character": 8,
       "text": "firstName",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 42,
+      "line": 46,
       "character": 19,
       "text": "updatedUserData",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 42,
+      "line": 46,
       "character": 35,
       "text": "firstName",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 43,
+      "line": 47,
       "character": 8,
       "text": "lastName",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 43,
+      "line": 47,
       "character": 18,
       "text": "updatedUserData",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 43,
+      "line": 47,
       "character": 34,
       "text": "lastName",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 49,
+      "line": 53,
       "character": 39,
       "text": "email",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 49,
+      "line": 53,
       "character": 46,
       "text": "userPassword",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 49,
+      "line": 53,
       "character": 60,
       "text": "firstName",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 49,
+      "line": 53,
       "character": 71,
       "text": "lastName",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 50,
+      "line": 54,
       "character": 10,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 50,
+      "line": 54,
       "character": 38,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 50,
+      "line": 54,
       "character": 47,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 50,
+      "line": 54,
       "character": 51,
       "text": "signUp",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 51,
+      "line": 55,
       "character": 6,
       "text": "email",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 52,
+      "line": 56,
       "character": 6,
       "text": "firstName",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 53,
+      "line": 57,
       "character": 6,
       "text": "lastName",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 54,
+      "line": 58,
       "character": 6,
       "text": "password",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 54,
+      "line": 58,
       "character": 16,
       "text": "userPassword",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 58,
+      "line": 62,
       "character": 14,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 58,
+      "line": 62,
       "character": 21,
       "text": "customerCreate",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 58,
+      "line": 62,
       "character": 36,
       "text": "customerUserErrors",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 58,
+      "line": 62,
       "character": 55,
       "text": "length",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 58,
+      "line": 62,
       "character": 65,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 58,
+      "line": 62,
       "character": 72,
       "text": "customerCreate",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 58,
+      "line": 62,
       "character": 87,
       "text": "customerUserErrors",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 58,
+      "line": 62,
       "character": 109,
       "text": "message",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 66,
+      "line": 70,
       "character": 35,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 66,
+      "line": 70,
       "character": 44,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 66,
+      "line": 70,
       "character": 48,
       "text": "forgotPassword",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 69,
+      "line": 73,
       "character": 15,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 69,
+      "line": 73,
       "character": 23,
       "text": "customerRecover",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 69,
+      "line": 73,
       "character": 40,
       "text": "customerUserErrors",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 69,
+      "line": 73,
       "character": 63,
       "text": "message",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 73,
+      "line": 77,
       "character": 10,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 73,
+      "line": 77,
       "character": 38,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 73,
+      "line": 77,
       "character": 47,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 73,
+      "line": 77,
       "character": 51,
       "text": "signIn",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 75,
+      "line": 79,
       "character": 14,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 75,
+      "line": 79,
       "character": 21,
       "text": "customerAccessTokenCreate",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 75,
+      "line": 79,
       "character": 47,
       "text": "customerAccessToken",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 75,
+      "line": 79,
       "character": 70,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 75,
+      "line": 79,
       "character": 77,
       "text": "customerAccessTokenCreate",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 75,
+      "line": 79,
       "character": 103,
       "text": "customerAccessToken",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 75,
+      "line": 79,
       "character": 123,
       "text": "accessToken",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 76,
+      "line": 80,
       "character": 14,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 76,
+      "line": 80,
       "character": 21,
       "text": "customerAccessTokenCreate",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 76,
+      "line": 80,
       "character": 47,
       "text": "customerUserErrors",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 76,
+      "line": 80,
       "character": 66,
       "text": "length",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 76,
+      "line": 80,
       "character": 76,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 76,
+      "line": 80,
       "character": 83,
       "text": "customerAccessTokenCreate",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 76,
+      "line": 80,
       "character": 109,
       "text": "customerUserErrors",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 76,
+      "line": 80,
       "character": 131,
       "text": "message",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 80,
+      "line": 84,
       "character": 29,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 80,
+      "line": 84,
       "character": 38,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 80,
+      "line": 84,
       "character": 45,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 80,
+      "line": 84,
       "character": 49,
       "text": "$config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 80,
+      "line": 84,
       "character": 57,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 81,
+      "line": 85,
       "character": 14,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 81,
+      "line": 85,
       "character": 23,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 81,
+      "line": 85,
       "character": 30,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 81,
+      "line": 85,
       "character": 34,
       "text": "$cookies",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 81,
+      "line": 85,
       "character": 43,
       "text": "set",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 81,
+      "line": 85,
       "character": 47,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 89,
+      "line": 93,
       "character": 27,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 89,
+      "line": 93,
       "character": 36,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 89,
+      "line": 93,
       "character": 43,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 89,
+      "line": 93,
       "character": 47,
       "text": "$config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 89,
+      "line": 93,
       "character": 55,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 90,
+      "line": 94,
       "character": 24,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 90,
+      "line": 94,
       "character": 33,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 90,
+      "line": 94,
       "character": 40,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 90,
+      "line": 94,
       "character": 44,
       "text": "$cookies",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 90,
+      "line": 94,
       "character": 53,
       "text": "get",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 90,
+      "line": 94,
       "character": 57,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 91,
+      "line": 95,
       "character": 10,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 91,
+      "line": 95,
       "character": 38,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 91,
+      "line": 95,
       "character": 47,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 91,
+      "line": 95,
       "character": 51,
       "text": "changePassword",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 91,
+      "line": 95,
       "character": 68,
       "text": "token",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 92,
+      "line": 96,
       "character": 12,
       "text": "result",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 92,
+      "line": 96,
       "character": 19,
       "text": "customerUpdate",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 92,
+      "line": 96,
       "character": 34,
       "text": "customerAccessToken",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 92,
+      "line": 96,
       "character": 54,
       "text": "accessToken",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 94,
+      "line": 98,
       "character": 8,
       "text": "token",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 95,
+      "line": 99,
       "character": 14,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 95,
+      "line": 99,
       "character": 23,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 95,
+      "line": 99,
       "character": 30,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 95,
+      "line": 99,
       "character": 34,
       "text": "$cookies",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 95,
+      "line": 99,
       "character": 43,
       "text": "set",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 95,
+      "line": 99,
       "character": 47,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useUser/index.ts",
-      "line": 95,
+      "line": 99,
       "character": 66,
       "text": "token",
       "kind": 1
@@ -3685,6 +3608,20 @@
     },
     {
       "file": "src/useUserShipping/index.ts",
+      "line": 101,
+      "character": 8,
+      "text": "isNewDefault",
+      "kind": 1
+    },
+    {
+      "file": "src/useUserShipping/index.ts",
+      "line": 107,
+      "character": 8,
+      "text": "isNewDefault",
+      "kind": 1
+    },
+    {
+      "file": "src/useUserShipping/index.ts",
       "line": 122,
       "character": 22,
       "text": "id",
@@ -3748,602 +3685,602 @@
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 11,
+      "line": 13,
       "character": 35,
       "text": "customQuery",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 27,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 36,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 43,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 47,
       "text": "$config",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 55,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 32,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 41,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 48,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 52,
       "text": "$cookies",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 61,
       "text": "get",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 65,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 15,
+      "line": 17,
       "character": 8,
       "text": "existngCartId",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 15,
+      "line": 17,
       "character": 39,
       "text": "existngCartId",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 16,
+      "line": 18,
       "character": 36,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 16,
+      "line": 18,
       "character": 45,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 16,
+      "line": 18,
       "character": 49,
       "text": "createCart",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 16,
+      "line": 18,
       "character": 62,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 16,
+      "line": 18,
       "character": 68,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 17,
+      "line": 19,
       "character": 15,
-      "text": "checkout",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 21,
-      "character": 36,
-      "text": "$shopify",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 21,
-      "character": 45,
-      "text": "api",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 21,
-      "character": 49,
-      "text": "checkOut",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 21,
-      "character": 58,
-      "text": "checkoutId",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 21,
-      "character": 70,
-      "text": "then",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 21,
-      "character": 76,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
       "line": 23,
-      "character": 13,
+      "character": 36,
+      "text": "$shopify",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 23,
+      "character": 45,
+      "text": "api",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 23,
+      "character": 49,
+      "text": "checkOut",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 23,
+      "character": 58,
+      "text": "checkoutId",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 23,
+      "character": 70,
+      "text": "then",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 23,
+      "character": 76,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
       "line": 25,
+      "character": 13,
+      "text": "checkout",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 27,
       "character": 37,
       "text": "plainResp",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 29,
+      "line": 31,
       "character": 60,
       "text": "quantity",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 30,
+      "line": 32,
       "character": 27,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 30,
+      "line": 32,
       "character": 36,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 30,
+      "line": 32,
       "character": 43,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 30,
+      "line": 32,
       "character": 47,
       "text": "$config",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 30,
+      "line": 32,
       "character": 55,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 31,
+      "line": 33,
       "character": 25,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 31,
+      "line": 33,
       "character": 34,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 31,
+      "line": 33,
       "character": 38,
       "text": "addToCart",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 31,
+      "line": 33,
       "character": 72,
       "text": "quantity",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 31,
+      "line": 33,
       "character": 97,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 31,
+      "line": 33,
       "character": 103,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 33,
+      "line": 35,
       "character": 14,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 33,
+      "line": 35,
       "character": 23,
       "text": "config",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 33,
+      "line": 35,
       "character": 30,
       "text": "app",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 33,
+      "line": 35,
       "character": 34,
       "text": "$cookies",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 33,
+      "line": 35,
       "character": 43,
       "text": "set",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 33,
+      "line": 35,
       "character": 47,
       "text": "appKey",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 34,
+      "line": 36,
       "character": 39,
-      "text": "checkout",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 42,
-      "character": 25,
-      "text": "$shopify",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 42,
-      "character": 34,
-      "text": "api",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 42,
-      "character": 38,
-      "text": "removeFromCart",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 42,
-      "character": 77,
-      "text": "then",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 42,
-      "character": 83,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
       "line": 44,
-      "character": 39,
-      "text": "checkout",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/index.ts",
-      "line": 52,
       "character": 25,
       "text": "$shopify",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 52,
+      "line": 44,
       "character": 34,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 52,
+      "line": 44,
       "character": 38,
-      "text": "updateCart",
+      "text": "removeFromCart",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 52,
-      "character": 83,
+      "line": 44,
+      "character": 77,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 52,
-      "character": 89,
+      "line": 44,
+      "character": 83,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 54,
+      "line": 46,
       "character": 39,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 86,
+      "line": 54,
+      "character": 25,
+      "text": "$shopify",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 54,
+      "character": 34,
+      "text": "api",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 54,
+      "character": 38,
+      "text": "updateCart",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 54,
+      "character": 83,
+      "text": "then",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 54,
+      "character": 89,
+      "text": "checkout",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 56,
+      "character": 39,
+      "text": "checkout",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/index.ts",
+      "line": 88,
       "character": 38,
       "text": "currentCart",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 86,
+      "line": 88,
       "character": 51,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 87,
+      "line": 89,
       "character": 10,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 89,
+      "line": 91,
       "character": 12,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 89,
+      "line": 91,
       "character": 23,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 89,
+      "line": 91,
       "character": 31,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 89,
+      "line": 91,
       "character": 59,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 89,
+      "line": 91,
       "character": 67,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 90,
+      "line": 92,
       "character": 22,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 90,
+      "line": 92,
       "character": 30,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 90,
+      "line": 92,
       "character": 55,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 92,
+      "line": 94,
       "character": 12,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 92,
+      "line": 94,
       "character": 20,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 93,
+      "line": 95,
       "character": 22,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 93,
+      "line": 95,
       "character": 30,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 93,
+      "line": 95,
       "character": 42,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 95,
+      "line": 97,
       "character": 12,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 95,
+      "line": 97,
       "character": 20,
       "text": "barcodes",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 97,
+      "line": 99,
       "character": 69,
       "text": "variantId",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 101,
+      "line": 103,
       "character": 15,
       "text": "currentCart",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 101,
+      "line": 103,
       "character": 27,
       "text": "lineItems",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 101,
+      "line": 103,
       "character": 37,
       "text": "find",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 101,
+      "line": 103,
       "character": 43,
       "text": "item",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 101,
+      "line": 103,
       "character": 52,
       "text": "item",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 101,
+      "line": 103,
       "character": 57,
       "text": "variant",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 101,
+      "line": 103,
       "character": 65,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/useCart/index.ts",
-      "line": 101,
+      "line": 103,
       "character": 72,
       "text": "variantId",
       "kind": 1
@@ -5043,98 +4980,98 @@
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 41,
+      "line": 43,
       "character": 80,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 53,
+      "line": 57,
       "character": 31,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 53,
+      "line": 57,
       "character": 56,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 53,
+      "line": 57,
       "character": 65,
       "text": "variant",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 53,
+      "line": 57,
       "character": 73,
       "text": "sku",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 76,
+      "line": 84,
       "character": 19,
       "text": "lineItems",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 76,
+      "line": 84,
       "character": 37,
       "text": "lineItems",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 76,
+      "line": 84,
       "character": 47,
       "text": "length",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 77,
+      "line": 85,
       "character": 16,
       "text": "lineItems",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 77,
+      "line": 85,
       "character": 26,
       "text": "reduce",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 77,
+      "line": 85,
       "character": 34,
       "text": "n",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 77,
+      "line": 85,
       "character": 39,
       "text": "quantity",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 77,
+      "line": 85,
       "character": 54,
       "text": "n",
       "kind": 1
     },
     {
       "file": "src/getters/cartGetters.ts",
-      "line": 77,
+      "line": 85,
       "character": 58,
       "text": "quantity",
       "kind": 1
@@ -5981,1290 +5918,1311 @@
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 14,
+      "line": 15,
       "character": 16,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 14,
+      "line": 15,
       "character": 81,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 18,
+      "line": 19,
       "character": 20,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 22,
+      "line": 23,
       "character": 24,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 29,
+      "line": 30,
       "character": 41,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 29,
+      "line": 30,
       "character": 52,
       "text": "input",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 29,
+      "line": 30,
       "character": 58,
       "text": "sort",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 30,
+      "line": 31,
       "character": 46,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 30,
+      "line": 31,
       "character": 57,
       "text": "input",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 30,
+      "line": 31,
       "character": 63,
       "text": "sort",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 35,
+      "line": 38,
       "character": 25,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 36,
+      "line": 39,
       "character": 7,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 36,
+      "line": 39,
       "character": 18,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 39,
+      "line": 42,
       "character": 18,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 39,
+      "line": 42,
       "character": 29,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 39,
+      "line": 42,
       "character": 34,
       "text": "categories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 41,
+      "line": 44,
       "character": 22,
       "text": "allCats",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 41,
+      "line": 44,
       "character": 30,
       "text": "length",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 42,
+      "line": 47,
       "character": 41,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 42,
+      "line": 47,
       "character": 52,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 42,
+      "line": 47,
       "character": 57,
       "text": "categories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 47,
+      "line": 52,
       "character": 28,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 48,
+      "line": 53,
       "character": 6,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 48,
+      "line": 53,
       "character": 17,
       "text": "input",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 52,
+      "line": 57,
       "character": 26,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 52,
+      "line": 57,
       "character": 37,
       "text": "input",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 52,
+      "line": 57,
       "character": 43,
       "text": "categorySlug",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 53,
+      "line": 58,
       "character": 24,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 53,
+      "line": 58,
       "character": 35,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 53,
+      "line": 58,
       "character": 40,
       "text": "categories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 57,
+      "line": 62,
       "character": 22,
       "text": "allCategories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 57,
+      "line": 62,
       "character": 36,
       "text": "length",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 59,
+      "line": 64,
       "character": 8,
       "text": "allCategories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 59,
+      "line": 64,
       "character": 39,
       "text": "curCategoryPage",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 68,
+      "line": 73,
       "character": 21,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 69,
+      "line": 74,
       "character": 6,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 69,
+      "line": 74,
       "character": 17,
       "text": "input",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 69,
+      "line": 74,
       "character": 35,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 69,
+      "line": 74,
       "character": 46,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 73,
+      "line": 78,
       "character": 17,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 73,
+      "line": 78,
       "character": 28,
       "text": "input",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 73,
+      "line": 78,
       "character": 34,
       "text": "sort",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 74,
+      "line": 79,
       "character": 21,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 74,
+      "line": 79,
       "character": 32,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 74,
+      "line": 79,
       "character": 37,
       "text": "categories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 75,
+      "line": 82,
       "character": 51,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 75,
+      "line": 82,
       "character": 62,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 75,
+      "line": 82,
       "character": 67,
       "text": "categories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 75,
+      "line": 82,
       "character": 78,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 77,
+      "line": 84,
       "character": 43,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 78,
+      "line": 87,
       "character": 51,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 78,
+      "line": 87,
       "character": 62,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 78,
+      "line": 87,
       "character": 67,
       "text": "categories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 78,
+      "line": 87,
       "character": 78,
       "text": "curCatIndex",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 78,
+      "line": 87,
       "character": 91,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 85,
+      "line": 94,
       "character": 23,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 86,
+      "line": 95,
       "character": 7,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 86,
+      "line": 95,
       "character": 18,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 90,
+      "line": 99,
       "character": 17,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 90,
+      "line": 99,
       "character": 28,
       "text": "input",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 90,
+      "line": 99,
       "character": 34,
       "text": "page",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 91,
+      "line": 100,
       "character": 26,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 91,
+      "line": 100,
       "character": 37,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 91,
+      "line": 100,
       "character": 42,
       "text": "categories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 91,
+      "line": 100,
       "character": 53,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 91,
+      "line": 100,
       "character": 62,
       "text": "length",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 91,
+      "line": 100,
       "character": 71,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 91,
+      "line": 100,
       "character": 82,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 91,
+      "line": 100,
       "character": 87,
       "text": "itemsPerPage",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 92,
+      "line": 101,
       "character": 16,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 92,
+      "line": 101,
       "character": 27,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 92,
+      "line": 101,
       "character": 32,
       "text": "categories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 92,
+      "line": 101,
       "character": 43,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 92,
+      "line": 101,
       "character": 52,
       "text": "length",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 93,
+      "line": 102,
       "character": 18,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 93,
+      "line": 102,
       "character": 29,
       "text": "input",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 93,
+      "line": 102,
       "character": 35,
       "text": "itemsPerPage",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 94,
+      "line": 103,
       "character": 17,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 94,
+      "line": 103,
       "character": 28,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 94,
+      "line": 103,
       "character": 33,
       "text": "perPageOptions",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 98,
+      "line": 107,
       "character": 24,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 99,
+      "line": 108,
       "character": 9,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 99,
+      "line": 108,
       "character": 21,
       "text": "input",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 99,
+      "line": 108,
       "character": 28,
       "text": "page",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 102,
+      "line": 111,
       "character": 24,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 103,
+      "line": 112,
       "character": 7,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 103,
+      "line": 112,
       "character": 18,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 108,
+      "line": 117,
       "character": 24,
       "text": "searchData",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 108,
+      "line": 117,
       "character": 35,
       "text": "data",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 108,
+      "line": 117,
       "character": 40,
       "text": "categories",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 108,
+      "line": 117,
       "character": 52,
       "text": "map",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 108,
+      "line": 117,
       "character": 56,
       "text": "b",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 108,
+      "line": 117,
       "character": 67,
       "text": "b",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 108,
+      "line": 117,
       "character": 81,
       "text": "b",
       "kind": 1
     },
     {
       "file": "src/getters/facetGetters.ts",
-      "line": 108,
+      "line": 117,
       "character": 83,
       "text": "link",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 11,
+      "line": 6,
       "character": 5,
       "text": "ProductVariantFilters",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 33,
+      "line": 31,
       "character": 45,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 34,
+      "line": 32,
       "character": 29,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 34,
+      "line": 32,
       "character": 38,
       "text": "price",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 34,
+      "line": 32,
       "character": 45,
       "text": "original",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 35,
+      "line": 33,
       "character": 29,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 35,
+      "line": 33,
       "character": 38,
       "text": "price",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 35,
+      "line": 33,
       "character": 45,
       "text": "current",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 45,
+      "line": 43,
       "character": 21,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 46,
+      "line": 44,
       "character": 5,
       "text": "map",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 46,
+      "line": 44,
       "character": 10,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 47,
+      "line": 45,
       "character": 22,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 47,
+      "line": 45,
       "character": 28,
       "text": "originalSrc",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 47,
+      "line": 45,
       "character": 40,
       "text": "substring",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 47,
+      "line": 45,
       "character": 53,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 47,
+      "line": 45,
       "character": 59,
       "text": "originalSrc",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 47,
+      "line": 45,
       "character": 71,
       "text": "lastIndexOf",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 48,
+      "line": 46,
       "character": 21,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 48,
+      "line": 46,
       "character": 27,
       "text": "originalSrc",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 48,
+      "line": 46,
       "character": 39,
       "text": "split",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 48,
+      "line": 46,
       "character": 50,
       "text": "pop",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 49,
+      "line": 47,
       "character": 23,
       "text": "imgPath",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 49,
+      "line": 47,
       "character": 47,
       "text": "imgext",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 50,
+      "line": 48,
       "character": 21,
       "text": "imgPath",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 50,
+      "line": 48,
       "character": 45,
       "text": "imgext",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 51,
+      "line": 49,
       "character": 24,
       "text": "imgPath",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 51,
+      "line": 49,
       "character": 48,
       "text": "imgext",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 59,
+      "line": 57,
       "character": 38,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 58,
+      "character": 6,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 59,
+      "character": 21,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 59,
+      "character": 29,
+      "text": "_coverImage",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 59,
+      "character": 41,
+      "text": "originalSrc",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 60,
+      "character": 8,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
       "line": 60,
-      "character": 6,
-      "text": "product",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 61,
-      "character": 21,
-      "text": "product",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 61,
-      "character": 29,
-      "text": "_coverImage",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 61,
-      "character": 41,
-      "text": "originalSrc",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 62,
-      "character": 8,
-      "text": "product",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 62,
       "character": 16,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 62,
-      "character": 44,
-      "text": "product",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 62,
-      "character": 52,
-      "text": "variantBySelectedOptions",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 63,
+      "line": 61,
       "character": 19,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 63,
+      "line": 61,
       "character": 27,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 63,
+      "line": 61,
       "character": 52,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 63,
+      "line": 61,
       "character": 58,
       "text": "originalSrc",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 64,
+      "line": 62,
       "character": 25,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 64,
+      "line": 62,
       "character": 33,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 64,
+      "line": 62,
       "character": 41,
       "text": "length",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 65,
+      "line": 63,
       "character": 10,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 65,
+      "line": 63,
       "character": 18,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 65,
+      "line": 63,
       "character": 28,
       "text": "originalSrc",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 65,
+      "line": 63,
       "character": 44,
       "text": "productImg",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 74,
+      "line": 72,
       "character": 35,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 74,
+      "line": 72,
       "character": 45,
       "text": "filters",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 74,
+      "line": 72,
       "character": 54,
       "text": "ProductVariantFilters",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 75,
+      "line": 73,
       "character": 7,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 78,
+      "line": 76,
       "character": 27,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 78,
+      "line": 76,
       "character": 51,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 81,
+      "line": 77,
+      "character": 60,
+      "text": "products",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 79,
       "character": 34,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 82,
+      "line": 80,
       "character": 7,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 85,
+      "line": 83,
       "character": 26,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 85,
+      "line": 83,
       "character": 48,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 89,
+      "line": 84,
+      "character": 24,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 87,
       "character": 60,
       "text": "attribs",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 90,
+      "line": 88,
       "character": 9,
       "text": "attribs",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 93,
-      "character": 42,
+      "line": 91,
+      "character": 26,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 108,
+      "line": 107,
       "character": 32,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 110,
+      "line": 109,
       "character": 27,
       "text": "prev",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 110,
+      "line": 109,
       "character": 33,
       "text": "curr",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 29,
       "text": "prev",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 34,
       "text": "some",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 40,
       "text": "el",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 47,
       "text": "el",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 50,
       "text": "name",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 59,
       "text": "curr",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 64,
       "text": "name",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 72,
       "text": "el",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 75,
       "text": "value",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 85,
       "text": "curr",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 111,
+      "line": 110,
       "character": 90,
       "text": "value",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 113,
+      "line": 112,
       "character": 9,
       "text": "isAttributeExist",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 114,
+      "line": 113,
       "character": 17,
       "text": "prev",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 114,
+      "line": 113,
       "character": 23,
       "text": "curr",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 117,
+      "line": 116,
       "character": 11,
       "text": "prev",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 120,
+      "line": 119,
       "character": 33,
       "text": "prev",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 120,
+      "line": 119,
       "character": 39,
       "text": "curr",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 121,
+      "line": 120,
       "character": 7,
       "text": "prev",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 122,
+      "line": 121,
       "character": 16,
       "text": "curr",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 122,
+      "line": 121,
       "character": 21,
       "text": "name",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 122,
+      "line": 121,
       "character": 47,
       "text": "curr",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 122,
+      "line": 121,
       "character": 52,
       "text": "value",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 123,
+      "line": 122,
       "character": 10,
       "text": "prev",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 123,
+      "line": 122,
       "character": 15,
       "text": "curr",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 123,
+      "line": 122,
       "character": 20,
       "text": "name",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 125,
+      "line": 124,
       "character": 8,
       "text": "value",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 124,
+      "character": 15,
+      "text": "curr",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 124,
+      "character": 20,
+      "text": "value",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 125,
+      "character": 8,
+      "text": "label",
       "kind": 1
     },
     {
@@ -7278,258 +7236,237 @@
       "file": "src/getters/productGetters.ts",
       "line": 125,
       "character": 20,
-      "text": "value",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 126,
-      "character": 8,
       "text": "label",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 126,
-      "character": 15,
-      "text": "curr",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 126,
-      "character": 20,
-      "text": "label",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 134,
+      "line": 133,
       "character": 5,
       "text": "reduce",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 146,
+      "line": 145,
       "character": 94,
       "text": "_categoriesRef",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 148,
+      "line": 147,
       "character": 90,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 148,
+      "line": 147,
       "character": 102,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 150,
+      "line": 149,
       "character": 83,
       "text": "_id",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 152,
+      "line": 151,
       "character": 37,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 153,
+      "line": 152,
       "character": 6,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 153,
+      "line": 152,
       "character": 17,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 153,
+      "line": 152,
       "character": 26,
       "text": "_id",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 154,
+      "line": 153,
       "character": 29,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 154,
+      "line": 153,
       "character": 38,
       "text": "_id",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 171,
+      "line": 172,
       "character": 37,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 178,
+      "line": 179,
       "character": 6,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 178,
+      "line": 179,
       "character": 17,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 178,
+      "line": 179,
       "character": 25,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 178,
+      "line": 179,
       "character": 40,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 178,
+      "line": 179,
       "character": 48,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 178,
+      "line": 179,
       "character": 60,
       "text": "src",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 179,
+      "line": 180,
       "character": 20,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 179,
+      "line": 180,
       "character": 28,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 179,
+      "line": 180,
       "character": 40,
       "text": "src",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 179,
+      "line": 180,
       "character": 44,
       "text": "substring",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 179,
+      "line": 180,
       "character": 57,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 179,
+      "line": 180,
       "character": 65,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 179,
+      "line": 180,
       "character": 77,
       "text": "src",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 179,
+      "line": 180,
       "character": 81,
       "text": "lastIndexOf",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 180,
+      "line": 181,
       "character": 19,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 180,
+      "line": 181,
       "character": 27,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 180,
+      "line": 181,
       "character": 39,
       "text": "src",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 180,
+      "line": 181,
       "character": 43,
       "text": "split",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 180,
+      "line": 181,
       "character": 54,
       "text": "pop",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 181,
-      "character": 23,
+      "line": 182,
+      "character": 11,
       "text": "imgPath",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 181,
-      "character": 61,
+      "line": 182,
+      "character": 49,
       "text": "imgext",
       "kind": 1
     },
@@ -7591,224 +7528,210 @@
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 209,
+      "line": 217,
       "character": 40,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 216,
+      "line": 224,
       "character": 6,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 216,
+      "line": 224,
       "character": 17,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 216,
+      "line": 224,
       "character": 25,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 216,
+      "line": 224,
       "character": 40,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 216,
+      "line": 224,
       "character": 48,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 216,
+      "line": 224,
       "character": 60,
       "text": "originalSrc",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 217,
+      "line": 225,
       "character": 20,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 217,
+      "line": 225,
       "character": 28,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 217,
+      "line": 225,
       "character": 40,
       "text": "originalSrc",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 217,
+      "line": 225,
       "character": 52,
       "text": "substring",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 217,
+      "line": 225,
       "character": 65,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 217,
+      "line": 225,
       "character": 73,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 217,
+      "line": 225,
       "character": 85,
       "text": "originalSrc",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 217,
+      "line": 225,
       "character": 97,
       "text": "lastIndexOf",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 218,
+      "line": 226,
       "character": 19,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 218,
+      "line": 226,
       "character": 27,
       "text": "_coverImage",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 218,
+      "line": 226,
       "character": 39,
       "text": "originalSrc",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 218,
+      "line": 226,
       "character": 51,
       "text": "split",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 218,
+      "line": 226,
       "character": 62,
       "text": "pop",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 219,
+      "line": 227,
       "character": 23,
       "text": "imgPath",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 219,
+      "line": 227,
       "character": 61,
       "text": "imgext",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 226,
+      "line": 234,
       "character": 25,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 226,
-      "character": 61,
-      "text": "variantBySelectedOptions",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 227,
-      "character": 16,
-      "text": "variantBySelectedOptions",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 227,
-      "character": 41,
-      "text": "quantityAvailable",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 237,
-      "character": 25,
-      "text": "variantBySelectedOptions",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 237,
-      "character": 61,
-      "text": "variantBySelectedOptions",
-      "kind": 1
-    },
-    {
-      "file": "src/getters/productGetters.ts",
-      "line": 238,
+      "line": 235,
       "character": 19,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 238,
+      "line": 235,
       "character": 44,
       "text": "quantityAvailable",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 244,
+      "line": 245,
+      "character": 25,
+      "text": "variantBySelectedOptions",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 246,
+      "character": 19,
+      "text": "variantBySelectedOptions",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 246,
+      "character": 44,
+      "text": "quantityAvailable",
+      "kind": 1
+    },
+    {
+      "file": "src/getters/productGetters.ts",
+      "line": 252,
       "character": 87,
       "text": "isInWishlist",
       "kind": 1
     },
     {
       "file": "src/getters/productGetters.ts",
-      "line": 282,
+      "line": 290,
       "character": 53,
       "text": "ProductVariantFilters",
       "kind": 1
@@ -7990,21 +7913,21 @@
     },
     {
       "file": "src/getters/userGetters.ts",
-      "line": 42,
+      "line": 44,
       "character": 39,
       "text": "tag",
       "kind": 1
     },
     {
       "file": "src/getters/userGetters.ts",
-      "line": 43,
+      "line": 45,
       "character": 13,
       "text": "tag",
       "kind": 1
     },
     {
       "file": "src/getters/userGetters.ts",
-      "line": 43,
+      "line": 45,
       "character": 17,
       "text": "value",
       "kind": 1
@@ -10044,6 +9967,48 @@
       "line": 55,
       "character": 69,
       "text": "sku",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/CurrentCart.ts",
+      "line": 13,
+      "character": 10,
+      "text": "data",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/CurrentCart.ts",
+      "line": 13,
+      "character": 33,
+      "text": "$shopify",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/CurrentCart.ts",
+      "line": 13,
+      "character": 42,
+      "text": "api",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/CurrentCart.ts",
+      "line": 13,
+      "character": 46,
+      "text": "createCart",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/CurrentCart.ts",
+      "line": 15,
+      "character": 9,
+      "text": "data",
+      "kind": 1
+    },
+    {
+      "file": "src/useCart/CurrentCart.ts",
+      "line": 15,
+      "character": 14,
+      "text": "cart",
       "kind": 1
     },
     {
@@ -12917,97 +12882,6 @@
       "kind": 1
     },
     {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 3,
-      "character": 66,
-      "text": "user",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 3,
-      "character": 79,
-      "text": "cart",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 3,
-      "character": 98,
-      "text": "cart",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 3,
-      "character": 104,
-      "text": "user",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 5,
-      "character": 10,
-      "text": "user",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 5,
-      "character": 16,
-      "text": "cart",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 13,
-      "character": 10,
-      "text": "data",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 13,
-      "character": 33,
-      "text": "$shopify",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 13,
-      "character": 42,
-      "text": "api",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 13,
-      "character": 46,
-      "text": "createCart",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 13,
-      "character": 61,
-      "text": "cart",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 15,
-      "character": 9,
-      "text": "data",
-      "kind": 1
-    },
-    {
-      "file": "src/useCart/CurrentCart.ts",
-      "line": 15,
-      "character": 14,
-      "text": "cart",
-      "kind": 1
-    },
-    {
       "file": "src/useUser/authenticate.ts",
       "line": 6,
       "character": 55,
@@ -13043,8 +12917,8 @@
       "kind": 1
     }
   ],
-  "percentage": 87.34546936557533,
-  "total": 14722,
-  "covered": 12859,
-  "uncovered": 1863
+  "percentage": 87.5899643505751,
+  "total": 14867,
+  "covered": 13022,
+  "uncovered": 1845
 }

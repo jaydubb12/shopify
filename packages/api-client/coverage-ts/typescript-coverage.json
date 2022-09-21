@@ -17,181 +17,139 @@
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 11,
+      "line": 12,
       "character": 6,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 11,
+      "line": 12,
       "character": 13,
       "text": "slug",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 13,
+      "line": 14,
       "character": 8,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 13,
+      "line": 14,
       "character": 15,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 13,
+      "line": 14,
       "character": 46,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 13,
+      "line": 14,
       "character": 53,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 14,
+      "line": 17,
       "character": 37,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 14,
+      "line": 17,
       "character": 44,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 16,
+      "line": 19,
       "character": 36,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 16,
+      "line": 19,
       "character": 44,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 16,
+      "line": 19,
       "character": 51,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 16,
+      "line": 19,
       "character": 65,
       "text": "query",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 17,
+      "line": 20,
       "character": 7,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 18,
+      "line": 21,
       "character": 8,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 18,
+      "line": 21,
       "character": 13,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 20,
+      "line": 23,
       "character": 20,
       "text": "handle",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 20,
+      "line": 23,
       "character": 28,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 20,
+      "line": 23,
       "character": 35,
       "text": "slug",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 21,
+      "line": 24,
       "character": 11,
       "text": "productByHandle",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 23,
-      "character": 12,
-      "text": "productByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 23,
-      "character": 28,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 24,
-      "character": 12,
-      "text": "productByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 24,
-      "character": 28,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 25,
-      "character": 12,
-      "text": "productByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 25,
-      "character": 28,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
       "line": 26,
       "character": 12,
       "text": "productByHandle",
@@ -290,463 +248,533 @@
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 32,
+      "line": 33,
+      "character": 12,
+      "text": "productByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 33,
+      "character": 28,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 34,
+      "character": 12,
+      "text": "productByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 34,
+      "character": 28,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 35,
+      "character": 12,
+      "text": "productByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 35,
+      "character": 28,
+      "text": "addField",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 35,
+      "character": 45,
+      "text": "seoData",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 36,
+      "character": 16,
+      "text": "seoData",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 36,
+      "character": 24,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 37,
+      "character": 16,
+      "text": "seoData",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 37,
+      "character": 24,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 39,
+      "character": 12,
+      "text": "productByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 39,
+      "character": 28,
+      "text": "addConnection",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 42,
+      "character": 15,
+      "text": "metafields",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 43,
+      "character": 16,
+      "text": "metafields",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 43,
+      "character": 27,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 44,
+      "character": 16,
+      "text": "metafields",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 44,
+      "character": 27,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 45,
+      "character": 16,
+      "text": "metafields",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 45,
+      "character": 27,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 46,
+      "character": 16,
+      "text": "metafields",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 46,
+      "character": 27,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 47,
+      "character": 16,
+      "text": "metafields",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 47,
+      "character": 27,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 48,
+      "character": 16,
+      "text": "metafields",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 48,
+      "character": 27,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 49,
+      "character": 16,
+      "text": "metafields",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 49,
+      "character": 27,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 52,
+      "character": 12,
+      "text": "productByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 52,
+      "character": 28,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 52,
       "character": 107,
       "text": "selectedVariant",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 33,
+      "line": 53,
       "character": 14,
       "text": "selectedVariant",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 33,
+      "line": 53,
       "character": 30,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 34,
+      "line": 54,
       "character": 14,
       "text": "selectedVariant",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 34,
+      "line": 54,
       "character": 30,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 35,
+      "line": 55,
       "character": 14,
       "text": "selectedVariant",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 35,
+      "line": 55,
       "character": 30,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 36,
+      "line": 56,
       "character": 14,
       "text": "selectedVariant",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 36,
+      "line": 56,
       "character": 30,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 37,
+      "line": 57,
       "character": 14,
       "text": "selectedVariant",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 37,
+      "line": 57,
       "character": 30,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 38,
+      "line": 58,
       "character": 14,
       "text": "selectedVariant",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 38,
+      "line": 58,
       "character": 30,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 38,
+      "line": 58,
       "character": 63,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 39,
+      "line": 59,
       "character": 16,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 39,
+      "line": 59,
       "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 40,
+      "line": 60,
       "character": 16,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 40,
+      "line": 60,
       "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 41,
+      "line": 61,
       "character": 16,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 41,
+      "line": 61,
       "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 43,
+      "line": 63,
       "character": 14,
       "text": "selectedVariant",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 43,
+      "line": 63,
       "character": 30,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 43,
+      "line": 63,
       "character": 51,
       "text": "price",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 44,
+      "line": 64,
       "character": 16,
       "text": "price",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 44,
+      "line": 64,
       "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 45,
+      "line": 65,
       "character": 16,
       "text": "price",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 45,
+      "line": 65,
       "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 47,
+      "line": 67,
       "character": 14,
       "text": "selectedVariant",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 47,
+      "line": 67,
       "character": 30,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 47,
+      "line": 67,
       "character": 60,
       "text": "price",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 48,
+      "line": 68,
       "character": 16,
       "text": "price",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 48,
+      "line": 68,
       "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 49,
+      "line": 69,
       "character": 16,
       "text": "price",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 49,
+      "line": 69,
       "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 52,
+      "line": 72,
       "character": 12,
       "text": "productByHandle",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 52,
+      "line": 72,
       "character": 28,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 52,
+      "line": 72,
       "character": 48,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 53,
+      "line": 73,
       "character": 14,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 53,
+      "line": 73,
       "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 54,
+      "line": 74,
       "character": 14,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 54,
+      "line": 74,
       "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 56,
+      "line": 76,
       "character": 12,
       "text": "productByHandle",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 56,
+      "line": 76,
       "character": 28,
       "text": "addConnection",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 59,
-      "character": 15,
-      "text": "collection",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 60,
-      "character": 16,
-      "text": "collection",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 60,
-      "character": 27,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 61,
-      "character": 16,
-      "text": "collection",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 61,
-      "character": 27,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 64,
-      "character": 12,
-      "text": "productByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 64,
-      "character": 28,
-      "text": "addConnection",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 67,
-      "character": 15,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 68,
-      "character": 16,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 68,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 69,
-      "character": 16,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 69,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 70,
-      "character": 16,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 70,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 71,
-      "character": 16,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 71,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 75,
-      "character": 12,
-      "text": "productByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 75,
-      "character": 28,
-      "text": "addConnection",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 78,
-      "character": 15,
-      "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 79,
-      "character": 16,
-      "text": "variants",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 79,
-      "character": 25,
-      "text": "add",
+      "character": 15,
+      "text": "collection",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 80,
       "character": 16,
-      "text": "variants",
+      "text": "collection",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 80,
-      "character": 25,
+      "character": 27,
       "text": "add",
       "kind": 1
     },
@@ -754,811 +782,762 @@
       "file": "src/api/getProduct/index.ts",
       "line": 81,
       "character": 16,
-      "text": "variants",
+      "text": "collection",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 81,
-      "character": 25,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 82,
-      "character": 16,
-      "text": "variants",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 82,
-      "character": 25,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 83,
-      "character": 16,
-      "text": "variants",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 83,
-      "character": 25,
+      "character": 27,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 84,
-      "character": 16,
-      "text": "variants",
+      "character": 12,
+      "text": "productByHandle",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 84,
-      "character": 25,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 86,
-      "character": 16,
-      "text": "variants",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 86,
-      "character": 25,
-      "text": "addField",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 86,
-      "character": 58,
-      "text": "image",
+      "character": 28,
+      "text": "addConnection",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 87,
-      "character": 18,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 87,
-      "character": 24,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 88,
-      "character": 18,
+      "character": 15,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 88,
-      "character": 24,
+      "character": 16,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 88,
+      "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 89,
-      "character": 18,
+      "character": 16,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 89,
-      "character": 24,
+      "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 90,
-      "character": 18,
+      "character": 16,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 90,
-      "character": 24,
+      "character": 22,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 93,
+      "line": 91,
+      "character": 16,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 91,
+      "character": 22,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 95,
+      "character": 12,
+      "text": "productByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 95,
+      "character": 28,
+      "text": "addConnection",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 98,
+      "character": 15,
+      "text": "variants",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 99,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 93,
+      "line": 99,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 100,
+      "character": 16,
+      "text": "variants",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 100,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 101,
+      "character": 16,
+      "text": "variants",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 101,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 102,
+      "character": 16,
+      "text": "variants",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 102,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 103,
+      "character": 16,
+      "text": "variants",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 103,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 104,
+      "character": 16,
+      "text": "variants",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 104,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 106,
+      "character": 16,
+      "text": "variants",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 106,
       "character": 25,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 93,
+      "line": 106,
+      "character": 58,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 107,
+      "character": 18,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 107,
+      "character": 24,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 108,
+      "character": 18,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 108,
+      "character": 24,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 109,
+      "character": 18,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 109,
+      "character": 24,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 110,
+      "character": 18,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 110,
+      "character": 24,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 113,
+      "character": 16,
+      "text": "variants",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 113,
+      "character": 25,
+      "text": "addField",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 113,
       "character": 58,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 94,
+      "line": 114,
       "character": 18,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 94,
+      "line": 114,
       "character": 34,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 95,
+      "line": 115,
       "character": 18,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 95,
+      "line": 115,
       "character": 34,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 98,
+      "line": 118,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 98,
+      "line": 118,
       "character": 25,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 98,
+      "line": 118,
       "character": 50,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 99,
+      "line": 119,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 99,
+      "line": 119,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 100,
+      "line": 120,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 100,
+      "line": 120,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 101,
+      "line": 121,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 101,
+      "line": 121,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 102,
+      "line": 122,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 102,
+      "line": 122,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 103,
+      "line": 123,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 103,
+      "line": 123,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 104,
+      "line": 124,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 104,
+      "line": 124,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 105,
+      "line": 125,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 105,
+      "line": 125,
       "character": 26,
       "text": "addConnection",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 108,
+      "line": 128,
       "character": 21,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 109,
+      "line": 129,
       "character": 22,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 109,
+      "line": 129,
       "character": 29,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 110,
+      "line": 130,
       "character": 22,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 110,
+      "line": 130,
       "character": 29,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 111,
+      "line": 131,
       "character": 22,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 111,
+      "line": 131,
       "character": 29,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 112,
+      "line": 132,
       "character": 22,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 112,
+      "line": 132,
       "character": 29,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 115,
+      "line": 135,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 115,
+      "line": 135,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 116,
+      "line": 136,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 116,
+      "line": 136,
       "character": 26,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 116,
+      "line": 136,
       "character": 51,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 117,
+      "line": 137,
       "character": 20,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 117,
+      "line": 137,
       "character": 28,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 118,
+      "line": 138,
       "character": 20,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 118,
+      "line": 138,
       "character": 28,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 127,
+      "line": 148,
       "character": 11,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 127,
+      "line": 148,
       "character": 19,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 127,
+      "line": 148,
       "character": 26,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 128,
+      "line": 149,
       "character": 7,
       "text": "send",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 128,
+      "line": 149,
       "character": 12,
       "text": "getProductByHandleQuery",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 129,
+      "line": 152,
       "character": 7,
       "text": "then",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 129,
-      "character": 15,
-      "text": "model",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 129,
-      "character": 22,
-      "text": "product",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 130,
-      "character": 12,
-      "text": "model",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 131,
-      "character": 17,
-      "text": "model",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 131,
-      "character": 23,
-      "text": "productByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 134,
-      "character": 13,
-      "text": "params",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 134,
-      "character": 20,
-      "text": "related",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 135,
-      "character": 40,
-      "text": "context",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 135,
-      "character": 48,
-      "text": "client",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 135,
-      "character": 55,
-      "text": "graphQLClient",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 135,
-      "character": 69,
-      "text": "query",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 136,
-      "character": 7,
-      "text": "root",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 137,
-      "character": 8,
-      "text": "root",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 137,
-      "character": 13,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 139,
-      "character": 20,
-      "text": "productId",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 139,
-      "character": 31,
-      "text": "params",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 139,
-      "character": 38,
-      "text": "productId",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 140,
-      "character": 11,
-      "text": "relatedProductsById",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 142,
-      "character": 12,
-      "text": "relatedProductsById",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 142,
-      "character": 32,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 143,
-      "character": 12,
-      "text": "relatedProductsById",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 143,
-      "character": 32,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 144,
-      "character": 12,
-      "text": "relatedProductsById",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 144,
-      "character": 32,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 145,
-      "character": 12,
-      "text": "relatedProductsById",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 145,
-      "character": 32,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 145,
-      "character": 52,
-      "text": "options",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 146,
-      "character": 14,
-      "text": "options",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 146,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 147,
-      "character": 14,
-      "text": "options",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 147,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 149,
-      "character": 12,
-      "text": "relatedProductsById",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 149,
-      "character": 32,
-      "text": "addConnection",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 152,
       "character": 15,
-      "text": "image",
+      "text": "model",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 152,
+      "character": 22,
+      "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 153,
-      "character": 16,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 153,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 154,
-      "character": 16,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 154,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 155,
-      "character": 16,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 155,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 156,
-      "character": 16,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 156,
-      "character": 22,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getProduct/index.ts",
-      "line": 159,
       "character": 12,
-      "text": "relatedProductsById",
+      "text": "model",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 154,
+      "character": 17,
+      "text": "model",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 154,
+      "character": 23,
+      "text": "productByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 157,
+      "character": 13,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 157,
+      "character": 20,
+      "text": "related",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 158,
+      "character": 40,
+      "text": "context",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 158,
+      "character": 48,
+      "text": "client",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 158,
+      "character": 55,
+      "text": "graphQLClient",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 158,
+      "character": 69,
+      "text": "query",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 159,
-      "character": 32,
-      "text": "addConnection",
+      "character": 7,
+      "text": "root",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 160,
+      "character": 8,
+      "text": "root",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 160,
+      "character": 13,
+      "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 162,
-      "character": 15,
-      "text": "collection",
+      "character": 20,
+      "text": "productId",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 162,
+      "character": 31,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 162,
+      "character": 38,
+      "text": "productId",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 163,
-      "character": 16,
-      "text": "collection",
+      "character": 11,
+      "text": "relatedProductsById",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 163,
-      "character": 27,
+      "line": 165,
+      "character": 12,
+      "text": "relatedProductsById",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 165,
+      "character": 32,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 164,
-      "character": 16,
-      "text": "collection",
+      "line": 166,
+      "character": 12,
+      "text": "relatedProductsById",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 164,
-      "character": 27,
+      "line": 166,
+      "character": 32,
       "text": "add",
       "kind": 1
     },
@@ -1573,873 +1552,1139 @@
       "file": "src/api/getProduct/index.ts",
       "line": 167,
       "character": 32,
-      "text": "addConnection",
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 168,
+      "character": 12,
+      "text": "relatedProductsById",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 168,
+      "character": 32,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 168,
+      "character": 52,
+      "text": "options",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 169,
+      "character": 14,
+      "text": "options",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 169,
+      "character": 22,
+      "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
       "line": 170,
+      "character": 14,
+      "text": "options",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 170,
+      "character": 22,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 172,
+      "character": 12,
+      "text": "relatedProductsById",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 172,
+      "character": 32,
+      "text": "addConnection",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 175,
+      "character": 15,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 176,
+      "character": 16,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 176,
+      "character": 22,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 177,
+      "character": 16,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 177,
+      "character": 22,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 178,
+      "character": 16,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 178,
+      "character": 22,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 179,
+      "character": 16,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 179,
+      "character": 22,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 182,
+      "character": 12,
+      "text": "relatedProductsById",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 182,
+      "character": 32,
+      "text": "addConnection",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 185,
+      "character": 15,
+      "text": "collection",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 186,
+      "character": 16,
+      "text": "collection",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 186,
+      "character": 27,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 187,
+      "character": 16,
+      "text": "collection",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 187,
+      "character": 27,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 190,
+      "character": 12,
+      "text": "relatedProductsById",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 190,
+      "character": 32,
+      "text": "addConnection",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 193,
       "character": 15,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 171,
+      "line": 194,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 171,
+      "line": 194,
       "character": 25,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 172,
+      "line": 195,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 172,
+      "line": 195,
       "character": 25,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 173,
+      "line": 196,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 173,
+      "line": 196,
       "character": 25,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 174,
+      "line": 197,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 174,
+      "line": 197,
       "character": 25,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 175,
+      "line": 198,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 175,
+      "line": 198,
       "character": 25,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 176,
+      "line": 199,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 176,
+      "line": 199,
       "character": 25,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 178,
+      "line": 201,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 178,
+      "line": 201,
       "character": 25,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 178,
+      "line": 201,
       "character": 58,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 179,
+      "line": 202,
       "character": 18,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 179,
+      "line": 202,
       "character": 24,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 180,
+      "line": 203,
       "character": 18,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 180,
+      "line": 203,
       "character": 24,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 181,
+      "line": 204,
       "character": 18,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 181,
+      "line": 204,
       "character": 24,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 182,
+      "line": 205,
       "character": 18,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 182,
+      "line": 205,
       "character": 24,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 185,
+      "line": 208,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 185,
+      "line": 208,
       "character": 25,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 185,
+      "line": 208,
       "character": 58,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 186,
+      "line": 209,
       "character": 18,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 186,
+      "line": 209,
       "character": 34,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 187,
+      "line": 210,
       "character": 18,
       "text": "selectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 187,
+      "line": 210,
       "character": 34,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 190,
+      "line": 213,
       "character": 16,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 190,
+      "line": 213,
       "character": 25,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 190,
+      "line": 213,
       "character": 50,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 191,
+      "line": 214,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 191,
+      "line": 214,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 192,
+      "line": 215,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 192,
+      "line": 215,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 193,
+      "line": 216,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 193,
+      "line": 216,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 194,
+      "line": 217,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 194,
+      "line": 217,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 195,
+      "line": 218,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 195,
+      "line": 218,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 196,
+      "line": 219,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 196,
+      "line": 219,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 197,
+      "line": 220,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 197,
+      "line": 220,
       "character": 26,
       "text": "addConnection",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 200,
+      "line": 223,
       "character": 21,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 201,
+      "line": 224,
       "character": 22,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 201,
+      "line": 224,
       "character": 29,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 202,
+      "line": 225,
       "character": 22,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 202,
+      "line": 225,
       "character": 29,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 203,
+      "line": 226,
       "character": 22,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 203,
+      "line": 226,
       "character": 29,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 204,
+      "line": 227,
       "character": 22,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 204,
+      "line": 227,
       "character": 29,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 207,
+      "line": 230,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 207,
+      "line": 230,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 208,
+      "line": 231,
       "character": 18,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 208,
+      "line": 231,
       "character": 26,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 208,
+      "line": 231,
       "character": 51,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 209,
+      "line": 232,
       "character": 20,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 209,
+      "line": 232,
       "character": 28,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 210,
+      "line": 233,
       "character": 20,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 210,
+      "line": 233,
       "character": 28,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 219,
+      "line": 242,
       "character": 11,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 219,
+      "line": 242,
       "character": 19,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 219,
+      "line": 242,
       "character": 26,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 220,
+      "line": 243,
       "character": 7,
       "text": "send",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 220,
+      "line": 243,
       "character": 12,
       "text": "getrelatedProductsByIdQuery",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 221,
+      "line": 244,
       "character": 7,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 221,
+      "line": 244,
       "character": 15,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 222,
+      "line": 245,
       "character": 12,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 223,
+      "line": 246,
       "character": 17,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 223,
+      "line": 246,
       "character": 23,
       "text": "productRecommendations",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 226,
+      "line": 249,
       "character": 13,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 226,
+      "line": 249,
       "character": 20,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 227,
+      "line": 250,
       "character": 17,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 227,
+      "line": 250,
       "character": 25,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 227,
+      "line": 250,
       "character": 32,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 227,
+      "line": 250,
       "character": 40,
       "text": "fetch",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 227,
+      "line": 250,
       "character": 46,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 227,
+      "line": 250,
       "character": 53,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 227,
+      "line": 250,
       "character": 57,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 227,
+      "line": 250,
       "character": 63,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 228,
+      "line": 251,
       "character": 13,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 231,
+      "line": 253,
+      "character": 13,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 253,
+      "character": 20,
+      "text": "ids",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 254,
       "character": 17,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 231,
+      "line": 254,
       "character": 25,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 231,
+      "line": 254,
       "character": 32,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 254,
+      "character": 40,
+      "text": "fetchMultiple",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 254,
+      "character": 54,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 254,
+      "character": 61,
+      "text": "ids",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 254,
+      "character": 66,
+      "text": "then",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 254,
+      "character": 72,
+      "text": "products",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 255,
+      "character": 13,
+      "text": "products",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 258,
+      "character": 17,
+      "text": "context",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 258,
+      "character": 25,
+      "text": "client",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 258,
+      "character": 32,
+      "text": "product",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getProduct/index.ts",
+      "line": 259,
       "character": 7,
       "text": "fetchQuery",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 20,
       "text": "first",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 28,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 35,
       "text": "limit",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 43,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 50,
       "text": "limit",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 63,
       "text": "sortKey",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 73,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 80,
       "text": "sortBy",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 89,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 232,
+      "line": 259,
       "character": 96,
       "text": "sortBy",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 233,
+      "line": 260,
       "character": 7,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 233,
+      "line": 260,
       "character": 13,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/api/getProduct/index.ts",
-      "line": 234,
+      "line": 261,
       "character": 15,
       "text": "products",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 5,
+      "line": 7,
       "character": 42,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 5,
+      "line": 7,
       "character": 51,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 6,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 13,
       "text": "slug",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 8,
+      "line": 10,
       "character": 11,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 8,
+      "line": 10,
       "character": 19,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 8,
+      "line": 10,
       "character": 26,
-      "text": "collection",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getCategory/index.ts",
-      "line": 8,
-      "character": 37,
-      "text": "fetchByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getCategory/index.ts",
-      "line": 8,
-      "character": 51,
-      "text": "params",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getCategory/index.ts",
-      "line": 8,
-      "character": 58,
-      "text": "slug",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getCategory/index.ts",
-      "line": 8,
-      "character": 64,
-      "text": "then",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getCategory/index.ts",
-      "line": 8,
-      "character": 70,
       "text": "collection",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
       "line": 10,
+      "character": 37,
+      "text": "fetchByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getCategory/index.ts",
+      "line": 10,
+      "character": 51,
+      "text": "params",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getCategory/index.ts",
+      "line": 10,
+      "character": 58,
+      "text": "slug",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getCategory/index.ts",
+      "line": 10,
+      "character": 64,
+      "text": "then",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getCategory/index.ts",
+      "line": 10,
+      "character": 70,
+      "text": "collection",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getCategory/index.ts",
+      "line": 12,
       "character": 13,
       "text": "collection",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 11,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 19,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 26,
       "text": "collection",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 37,
       "text": "fetchAll",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 48,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 54,
       "text": "collection",
       "kind": 1
     },
     {
       "file": "src/api/getCategory/index.ts",
-      "line": 15,
+      "line": 17,
       "character": 13,
       "text": "collection",
       "kind": 1
@@ -5092,104 +5337,76 @@
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 5,
+      "line": 7,
       "character": 43,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 5,
+      "line": 7,
       "character": 52,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 24,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 32,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 39,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 53,
       "text": "query",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 60,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 8,
+      "line": 10,
       "character": 4,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 8,
+      "line": 10,
       "character": 9,
       "text": "addConnection",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 8,
+      "line": 10,
       "character": 61,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 9,
-      "character": 6,
-      "text": "article",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getBlogPosts/index.ts",
-      "line": 9,
-      "character": 14,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getBlogPosts/index.ts",
-      "line": 10,
-      "character": 6,
-      "text": "article",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getBlogPosts/index.ts",
-      "line": 10,
-      "character": 14,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getBlogPosts/index.ts",
       "line": 11,
       "character": 6,
       "text": "article",
@@ -5240,47 +5457,47 @@
     {
       "file": "src/api/getBlogPosts/index.ts",
       "line": 14,
+      "character": 14,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getBlogPosts/index.ts",
+      "line": 15,
+      "character": 6,
+      "text": "article",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getBlogPosts/index.ts",
+      "line": 15,
+      "character": 14,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getBlogPosts/index.ts",
+      "line": 16,
+      "character": 6,
+      "text": "article",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getBlogPosts/index.ts",
+      "line": 16,
       "character": 14,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 14,
+      "line": 16,
       "character": 37,
       "text": "image",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 15,
-      "character": 8,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getBlogPosts/index.ts",
-      "line": 15,
-      "character": 14,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getBlogPosts/index.ts",
-      "line": 16,
-      "character": 8,
-      "text": "image",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getBlogPosts/index.ts",
-      "line": 16,
-      "character": 14,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getBlogPosts/index.ts",
       "line": 17,
       "character": 8,
       "text": "image",
@@ -5289,6 +5506,20 @@
     {
       "file": "src/api/getBlogPosts/index.ts",
       "line": 17,
+      "character": 14,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getBlogPosts/index.ts",
+      "line": 18,
+      "character": 8,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getBlogPosts/index.ts",
+      "line": 18,
       "character": 14,
       "text": "add",
       "kind": 1
@@ -5296,328 +5527,258 @@
     {
       "file": "src/api/getBlogPosts/index.ts",
       "line": 19,
+      "character": 8,
+      "text": "image",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getBlogPosts/index.ts",
+      "line": 19,
+      "character": 14,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getBlogPosts/index.ts",
+      "line": 21,
       "character": 6,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 19,
+      "line": 21,
       "character": 14,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 19,
+      "line": 21,
       "character": 40,
       "text": "author",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 20,
+      "line": 22,
       "character": 8,
       "text": "author",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 20,
+      "line": 22,
       "character": 15,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 21,
+      "line": 23,
       "character": 8,
       "text": "author",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 21,
+      "line": 23,
       "character": 15,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 26,
+      "line": 30,
       "character": 2,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 26,
+      "line": 30,
       "character": 10,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 26,
+      "line": 30,
       "character": 17,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 26,
+      "line": 30,
       "character": 31,
       "text": "send",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 26,
+      "line": 30,
       "character": 36,
       "text": "articlesQuery",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 26,
+      "line": 30,
       "character": 51,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 26,
+      "line": 30,
       "character": 59,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 26,
+      "line": 30,
       "character": 66,
       "text": "articles",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 27,
+      "line": 31,
       "character": 8,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 28,
+      "line": 32,
       "character": 13,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getBlogPosts/index.ts",
-      "line": 28,
+      "line": 32,
       "character": 19,
       "text": "articles",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 5,
-      "character": 39,
-      "text": "context",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 5,
-      "character": 48,
+      "line": 7,
+      "character": 2,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 7,
+      "line": 13,
       "character": 6,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 7,
+      "line": 13,
       "character": 13,
       "text": "slug",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 8,
-      "character": 30,
-      "text": "context",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 8,
+      "line": 16,
       "character": 38,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 8,
+      "line": 16,
       "character": 45,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 8,
+      "line": 16,
       "character": 59,
       "text": "query",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 8,
+      "line": 16,
       "character": 66,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 9,
+      "line": 17,
       "character": 6,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 9,
+      "line": 17,
       "character": 11,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 9,
+      "line": 17,
       "character": 41,
       "text": "handle",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 9,
+      "line": 17,
       "character": 49,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 9,
+      "line": 17,
       "character": 56,
       "text": "slug",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 9,
+      "line": 17,
       "character": 67,
       "text": "pageByHandle",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 10,
+      "line": 18,
       "character": 8,
       "text": "pageByHandle",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 10,
+      "line": 18,
       "character": 21,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 11,
+      "line": 19,
       "character": 8,
       "text": "pageByHandle",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 11,
-      "character": 21,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 12,
-      "character": 8,
-      "text": "pageByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 12,
-      "character": 21,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 13,
-      "character": 8,
-      "text": "pageByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 13,
-      "character": 21,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 14,
-      "character": 8,
-      "text": "pageByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 14,
-      "character": 21,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 15,
-      "character": 8,
-      "text": "pageByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 15,
-      "character": 21,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 16,
-      "character": 8,
-      "text": "pageByHandle",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 16,
+      "line": 19,
       "character": 21,
       "text": "add",
       "kind": 1
@@ -5625,328 +5786,377 @@
     {
       "file": "src/api/getPages/index.ts",
       "line": 20,
-      "character": 11,
-      "text": "context",
+      "character": 8,
+      "text": "pageByHandle",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
       "line": 20,
+      "character": 21,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getPages/index.ts",
+      "line": 21,
+      "character": 8,
+      "text": "pageByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getPages/index.ts",
+      "line": 21,
+      "character": 21,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getPages/index.ts",
+      "line": 22,
+      "character": 8,
+      "text": "pageByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getPages/index.ts",
+      "line": 22,
+      "character": 21,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getPages/index.ts",
+      "line": 23,
+      "character": 8,
+      "text": "pageByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getPages/index.ts",
+      "line": 23,
+      "character": 21,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getPages/index.ts",
+      "line": 24,
+      "character": 8,
+      "text": "pageByHandle",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getPages/index.ts",
+      "line": 24,
+      "character": 21,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/getPages/index.ts",
+      "line": 30,
       "character": 19,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 20,
+      "line": 30,
       "character": 26,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 20,
+      "line": 30,
       "character": 40,
       "text": "send",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 20,
+      "line": 30,
       "character": 45,
       "text": "pageByHandleQuery",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 20,
+      "line": 30,
       "character": 64,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 20,
+      "line": 30,
       "character": 72,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 20,
+      "line": 30,
       "character": 79,
       "text": "content",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 21,
+      "line": 31,
       "character": 13,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 21,
+      "line": 31,
       "character": 19,
       "text": "pageByHandle",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 24,
-      "character": 23,
-      "text": "context",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 24,
+      "line": 36,
       "character": 31,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 24,
+      "line": 36,
       "character": 38,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 24,
+      "line": 36,
       "character": 52,
       "text": "query",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 24,
+      "line": 36,
       "character": 59,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 25,
+      "line": 37,
       "character": 6,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 25,
+      "line": 37,
       "character": 11,
       "text": "addConnection",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 25,
+      "line": 37,
       "character": 44,
       "text": "first",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 25,
+      "line": 37,
       "character": 51,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 25,
+      "line": 37,
       "character": 58,
       "text": "limit",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 25,
+      "line": 37,
       "character": 66,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 25,
+      "line": 37,
       "character": 73,
       "text": "limit",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 25,
+      "line": 37,
       "character": 90,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 26,
+      "line": 38,
       "character": 8,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 26,
+      "line": 38,
       "character": 16,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 27,
+      "line": 39,
       "character": 8,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 27,
+      "line": 39,
       "character": 16,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 28,
+      "line": 40,
       "character": 8,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 28,
+      "line": 40,
       "character": 16,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 29,
+      "line": 41,
       "character": 8,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 29,
+      "line": 41,
       "character": 16,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 30,
+      "line": 42,
       "character": 8,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 30,
+      "line": 42,
       "character": 16,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 31,
+      "line": 43,
       "character": 8,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 31,
+      "line": 43,
       "character": 16,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 32,
+      "line": 44,
       "character": 8,
       "text": "article",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 32,
+      "line": 44,
       "character": 16,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 36,
-      "character": 11,
-      "text": "context",
-      "kind": 1
-    },
-    {
-      "file": "src/api/getPages/index.ts",
-      "line": 36,
+      "line": 50,
       "character": 19,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 36,
+      "line": 50,
       "character": 26,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 36,
+      "line": 50,
       "character": 40,
       "text": "send",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 36,
+      "line": 50,
       "character": 45,
       "text": "pagesQuery",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 36,
+      "line": 50,
       "character": 57,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 36,
+      "line": 50,
       "character": 65,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 36,
+      "line": 50,
       "character": 72,
       "text": "content",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 37,
+      "line": 51,
       "character": 10,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/getPages/index.ts",
-      "line": 38,
+      "line": 52,
       "character": 15,
       "text": "model",
       "kind": 1
@@ -6002,98 +6212,98 @@
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 17,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 25,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 15,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 23,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 30,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 39,
       "text": "updateLineItems",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 55,
       "text": "checkoutID",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 68,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 72,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 80,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 84,
       "text": "quantity",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 95,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 101,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/api/updateCart/index.ts",
-      "line": 10,
+      "line": 14,
       "character": 114,
       "text": "checkout",
       "kind": 1
@@ -6170,203 +6380,203 @@
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 3,
+      "line": 9,
       "character": 40,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 3,
+      "line": 9,
       "character": 49,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 4,
+      "line": 10,
       "character": 10,
       "text": "currentCart",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 4,
+      "line": 10,
       "character": 23,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 4,
+      "line": 10,
       "character": 32,
       "text": "quantity",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 4,
+      "line": 10,
       "character": 42,
       "text": "customQuery",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 6,
+      "line": 12,
       "character": 21,
       "text": "currentCart",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 6,
+      "line": 12,
       "character": 33,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 4,
       "text": "variantId",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 15,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 23,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 51,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 59,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 95,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 103,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 128,
       "text": "id",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 133,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 9,
+      "line": 15,
       "character": 141,
       "text": "variantId",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 10,
+      "line": 16,
       "character": 4,
       "text": "quantity",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 11,
+      "line": 17,
       "character": 4,
       "text": "customAttributes",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 11,
+      "line": 17,
       "character": 22,
       "text": "customQuery",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 14,
+      "line": 20,
       "character": 15,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 14,
+      "line": 20,
       "character": 23,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 14,
+      "line": 20,
       "character": 30,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 14,
+      "line": 20,
       "character": 39,
       "text": "addLineItems",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 14,
+      "line": 20,
       "character": 52,
       "text": "checkoutID",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 14,
+      "line": 20,
       "character": 80,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 14,
+      "line": 20,
       "character": 86,
       "text": "checkout",
       "kind": 1
     },
     {
       "file": "src/api/addToCart/index.ts",
-      "line": 14,
+      "line": 20,
       "character": 99,
       "text": "checkout",
       "kind": 1
@@ -7934,132 +8144,90 @@
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 6,
+      "line": 9,
       "character": 44,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 6,
+      "line": 9,
       "character": 53,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 7,
+      "line": 10,
       "character": 25,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 7,
+      "line": 10,
       "character": 33,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 7,
+      "line": 10,
       "character": 40,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 7,
+      "line": 10,
       "character": 54,
       "text": "query",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 8,
+      "line": 11,
       "character": 5,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 9,
+      "line": 12,
       "character": 6,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 9,
+      "line": 12,
       "character": 11,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 11,
+      "line": 14,
       "character": 18,
       "text": "customerAccessToken",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 11,
+      "line": 14,
       "character": 39,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 12,
+      "line": 15,
       "character": 9,
       "text": "customerInfo",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 13,
-      "character": 10,
-      "text": "customerInfo",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchCustomer/index.ts",
-      "line": 13,
-      "character": 23,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchCustomer/index.ts",
-      "line": 14,
-      "character": 10,
-      "text": "customerInfo",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchCustomer/index.ts",
-      "line": 14,
-      "character": 23,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchCustomer/index.ts",
-      "line": 15,
-      "character": 10,
-      "text": "customerInfo",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchCustomer/index.ts",
-      "line": 15,
-      "character": 23,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchCustomer/index.ts",
       "line": 16,
       "character": 10,
       "text": "customerInfo",
@@ -8130,209 +8298,223 @@
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 25,
+      "line": 21,
+      "character": 10,
+      "text": "customerInfo",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchCustomer/index.ts",
+      "line": 21,
+      "character": 23,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchCustomer/index.ts",
+      "line": 22,
+      "character": 10,
+      "text": "customerInfo",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchCustomer/index.ts",
+      "line": 22,
+      "character": 23,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchCustomer/index.ts",
+      "line": 23,
+      "character": 10,
+      "text": "customerInfo",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchCustomer/index.ts",
+      "line": 23,
+      "character": 23,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchCustomer/index.ts",
+      "line": 28,
       "character": 9,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 25,
+      "line": 28,
       "character": 17,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 25,
+      "line": 28,
       "character": 24,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 26,
+      "line": 29,
       "character": 5,
       "text": "send",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 26,
+      "line": 29,
       "character": 10,
       "text": "getCustomeInfo",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 27,
+      "line": 30,
       "character": 5,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 27,
+      "line": 30,
       "character": 13,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 27,
+      "line": 30,
       "character": 20,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 28,
+      "line": 31,
       "character": 10,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/fetchCustomer/index.ts",
-      "line": 29,
+      "line": 32,
       "character": 15,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 6,
+      "line": 8,
       "character": 42,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 6,
+      "line": 8,
       "character": 51,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 28,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 36,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 43,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 7,
+      "line": 9,
       "character": 57,
       "text": "query",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 8,
+      "line": 10,
       "character": 5,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 9,
+      "line": 11,
       "character": 6,
       "text": "root",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 9,
+      "line": 11,
       "character": 11,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 11,
+      "line": 13,
       "character": 18,
       "text": "customerAccessToken",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 11,
+      "line": 13,
       "character": 39,
       "text": "params",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 12,
+      "line": 14,
       "character": 9,
       "text": "customerOrder",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 10,
       "text": "customerOrder",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 13,
+      "line": 15,
       "character": 24,
       "text": "addConnection",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 16,
+      "line": 18,
       "character": 13,
       "text": "order",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 17,
-      "character": 14,
-      "text": "order",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 17,
-      "character": 20,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 18,
-      "character": 14,
-      "text": "order",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 18,
-      "character": 20,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
       "line": 19,
       "character": 14,
       "text": "order",
@@ -8397,41 +8579,55 @@
     {
       "file": "src/api/fetchOrders/index.ts",
       "line": 23,
+      "character": 20,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 24,
+      "character": 14,
+      "text": "order",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 24,
+      "character": 20,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 25,
+      "character": 14,
+      "text": "order",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 25,
       "character": 20,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 23,
+      "line": 25,
       "character": 55,
       "text": "curTotPrice",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 24,
+      "line": 26,
       "character": 16,
       "text": "curTotPrice",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 24,
-      "character": 28,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 25,
-      "character": 16,
-      "text": "curTotPrice",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 25,
+      "line": 26,
       "character": 28,
       "text": "add",
       "kind": 1
@@ -8439,48 +8635,48 @@
     {
       "file": "src/api/fetchOrders/index.ts",
       "line": 27,
+      "character": 16,
+      "text": "curTotPrice",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 27,
+      "character": 28,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 29,
       "character": 14,
       "text": "order",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 27,
+      "line": 29,
       "character": 20,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 27,
+      "line": 29,
       "character": 53,
       "text": "curTotTax",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 28,
+      "line": 30,
       "character": 16,
       "text": "curTotTax",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 28,
-      "character": 26,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 29,
-      "character": 16,
-      "text": "curTotTax",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 29,
+      "line": 30,
       "character": 26,
       "text": "add",
       "kind": 1
@@ -8488,48 +8684,48 @@
     {
       "file": "src/api/fetchOrders/index.ts",
       "line": 31,
+      "character": 16,
+      "text": "curTotTax",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 31,
+      "character": 26,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 33,
       "character": 14,
       "text": "order",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 31,
+      "line": 33,
       "character": 20,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 31,
+      "line": 33,
       "character": 58,
       "text": "curSubTotPrice",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 32,
+      "line": 34,
       "character": 16,
       "text": "curSubTotPrice",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 32,
-      "character": 31,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 33,
-      "character": 16,
-      "text": "curSubTotPrice",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 33,
+      "line": 34,
       "character": 31,
       "text": "add",
       "kind": 1
@@ -8537,54 +8733,40 @@
     {
       "file": "src/api/fetchOrders/index.ts",
       "line": 35,
+      "character": 16,
+      "text": "curSubTotPrice",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 35,
+      "character": 31,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 37,
       "character": 14,
       "text": "order",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 35,
+      "line": 37,
       "character": 20,
       "text": "addConnection",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 35,
+      "line": 37,
       "character": 72,
       "text": "Lineitem",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 36,
-      "character": 16,
-      "text": "Lineitem",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 36,
-      "character": 25,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 37,
-      "character": 16,
-      "text": "Lineitem",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 37,
-      "character": 25,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
       "line": 38,
       "character": 16,
       "text": "Lineitem",
@@ -8593,41 +8775,55 @@
     {
       "file": "src/api/fetchOrders/index.ts",
       "line": 38,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 39,
+      "character": 16,
+      "text": "Lineitem",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 39,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 40,
+      "character": 16,
+      "text": "Lineitem",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 40,
       "character": 25,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 38,
+      "line": 40,
       "character": 61,
       "text": "originaldPrice",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 39,
+      "line": 41,
       "character": 18,
       "text": "originaldPrice",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 39,
-      "character": 33,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 40,
-      "character": 18,
-      "text": "originaldPrice",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 40,
+      "line": 41,
       "character": 33,
       "text": "add",
       "kind": 1
@@ -8635,83 +8831,83 @@
     {
       "file": "src/api/fetchOrders/index.ts",
       "line": 42,
+      "character": 18,
+      "text": "originaldPrice",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 42,
+      "character": 33,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 44,
       "character": 16,
       "text": "Lineitem",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 42,
+      "line": 44,
       "character": 25,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 42,
+      "line": 44,
       "character": 50,
       "text": "variant",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 43,
+      "line": 45,
       "character": 18,
       "text": "variant",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 43,
+      "line": 45,
       "character": 26,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 44,
+      "line": 46,
       "character": 18,
       "text": "variant",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 44,
+      "line": 46,
       "character": 26,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 44,
+      "line": 46,
       "character": 51,
       "text": "parentProduct",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 45,
+      "line": 47,
       "character": 20,
       "text": "parentProduct",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 45,
-      "character": 34,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 46,
-      "character": 20,
-      "text": "parentProduct",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 46,
+      "line": 47,
       "character": 34,
       "text": "add",
       "kind": 1
@@ -8719,173 +8915,159 @@
     {
       "file": "src/api/fetchOrders/index.ts",
       "line": 48,
+      "character": 20,
+      "text": "parentProduct",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 48,
+      "character": 34,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 50,
       "character": 18,
       "text": "variant",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 48,
+      "line": 50,
       "character": 26,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 48,
+      "line": 50,
       "character": 49,
       "text": "parentProduct",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 49,
+      "line": 51,
       "character": 20,
       "text": "parentProduct",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 49,
+      "line": 51,
       "character": 34,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 50,
+      "line": 52,
       "character": 20,
       "text": "parentProduct",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 50,
+      "line": 52,
       "character": 34,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 54,
+      "line": 56,
       "character": 14,
       "text": "order",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 54,
+      "line": 56,
       "character": 20,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 54,
+      "line": 56,
       "character": 60,
       "text": "trackingInfo",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 55,
+      "line": 57,
       "character": 16,
       "text": "trackingInfo",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 55,
+      "line": 57,
       "character": 29,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 55,
+      "line": 57,
       "character": 59,
       "text": "tracking",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 56,
+      "line": 58,
       "character": 18,
       "text": "tracking",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 56,
+      "line": 58,
       "character": 27,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 57,
+      "line": 59,
       "character": 18,
       "text": "tracking",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 57,
+      "line": 59,
       "character": 27,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 60,
+      "line": 62,
       "character": 14,
       "text": "order",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 60,
+      "line": 62,
       "character": 20,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 60,
+      "line": 62,
       "character": 53,
       "text": "saddress",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 61,
-      "character": 16,
-      "text": "saddress",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 61,
-      "character": 25,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 62,
-      "character": 16,
-      "text": "saddress",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
-      "line": 62,
-      "character": 25,
-      "text": "add",
-      "kind": 1
-    },
-    {
-      "file": "src/api/fetchOrders/index.ts",
       "line": 63,
       "character": 16,
       "text": "saddress",
@@ -8894,6 +9076,20 @@
     {
       "file": "src/api/fetchOrders/index.ts",
       "line": 63,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 64,
+      "character": 16,
+      "text": "saddress",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 64,
       "character": 25,
       "text": "add",
       "kind": 1
@@ -8901,118 +9097,132 @@
     {
       "file": "src/api/fetchOrders/index.ts",
       "line": 65,
+      "character": 16,
+      "text": "saddress",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 65,
+      "character": 25,
+      "text": "add",
+      "kind": 1
+    },
+    {
+      "file": "src/api/fetchOrders/index.ts",
+      "line": 67,
       "character": 14,
       "text": "order",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 65,
+      "line": 67,
       "character": 20,
       "text": "addField",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 65,
+      "line": 67,
       "character": 58,
       "text": "TotalShippingPrice",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 66,
+      "line": 68,
       "character": 16,
       "text": "TotalShippingPrice",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 66,
+      "line": 68,
       "character": 35,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 67,
+      "line": 69,
       "character": 16,
       "text": "TotalShippingPrice",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 67,
+      "line": 69,
       "character": 35,
       "text": "add",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 75,
+      "line": 77,
       "character": 9,
       "text": "context",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 75,
+      "line": 77,
       "character": 17,
       "text": "client",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 75,
+      "line": 77,
       "character": 24,
       "text": "graphQLClient",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 76,
+      "line": 78,
       "character": 5,
       "text": "send",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 76,
+      "line": 78,
       "character": 10,
       "text": "getCustomerOrders",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 77,
+      "line": 79,
       "character": 5,
       "text": "then",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 77,
+      "line": 79,
       "character": 13,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 77,
+      "line": 79,
       "character": 20,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 78,
+      "line": 80,
       "character": 10,
       "text": "model",
       "kind": 1
     },
     {
       "file": "src/api/fetchOrders/index.ts",
-      "line": 79,
+      "line": 81,
       "character": 15,
       "text": "model",
       "kind": 1
@@ -9565,84 +9775,98 @@
     },
     {
       "file": "src/index.server.ts",
-      "line": 29,
+      "line": 34,
       "character": 18,
       "text": "settings",
       "kind": 1
     },
     {
       "file": "src/index.server.ts",
-      "line": 31,
-      "character": 4,
-      "text": "config",
-      "kind": 1
-    },
-    {
-      "file": "src/index.server.ts",
-      "line": 33,
-      "character": 9,
-      "text": "settings",
-      "kind": 1
-    },
-    {
-      "file": "src/index.server.ts",
       "line": 35,
-      "character": 4,
-      "text": "client",
-      "kind": 1
-    },
-    {
-      "file": "src/index.server.ts",
-      "line": 35,
-      "character": 12,
+      "character": 17,
       "text": "CustomClient",
       "kind": 1
     },
     {
       "file": "src/index.server.ts",
       "line": 35,
-      "character": 25,
+      "character": 30,
       "text": "buildClient",
       "kind": 1
     },
     {
       "file": "src/index.server.ts",
       "line": 35,
-      "character": 37,
+      "character": 42,
       "text": "settings",
       "kind": 1
     },
     {
       "file": "src/index.server.ts",
       "line": 35,
-      "character": 46,
+      "character": 51,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/index.server.ts",
-      "line": 36,
+      "line": 37,
+      "character": 2,
+      "text": "client",
+      "kind": 1
+    },
+    {
+      "file": "src/index.server.ts",
+      "line": 37,
+      "character": 9,
+      "text": "apolloClient",
+      "kind": 1
+    },
+    {
+      "file": "src/index.server.ts",
+      "line": 40,
+      "character": 4,
+      "text": "config",
+      "kind": 1
+    },
+    {
+      "file": "src/index.server.ts",
+      "line": 42,
+      "character": 9,
+      "text": "settings",
+      "kind": 1
+    },
+    {
+      "file": "src/index.server.ts",
+      "line": 44,
+      "character": 4,
+      "text": "client",
+      "kind": 1
+    },
+    {
+      "file": "src/index.server.ts",
+      "line": 45,
       "character": 4,
       "text": "cookies",
       "kind": 1
     },
     {
       "file": "src/index.server.ts",
-      "line": 36,
+      "line": 45,
       "character": 14,
       "text": "settings",
       "kind": 1
     },
     {
       "file": "src/index.server.ts",
-      "line": 36,
+      "line": 45,
       "character": 23,
       "text": "api",
       "kind": 1
     },
     {
       "file": "src/index.server.ts",
-      "line": 36,
+      "line": 45,
       "character": 28,
       "text": "cookies",
       "kind": 1
@@ -9810,70 +10034,70 @@
     },
     {
       "file": "src/types.ts",
-      "line": 100,
+      "line": 115,
       "character": 2,
       "text": "images",
       "kind": 1
     },
     {
       "file": "src/types.ts",
-      "line": 101,
+      "line": 116,
       "character": 2,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/types.ts",
-      "line": 102,
+      "line": 117,
       "character": 2,
       "text": "options",
       "kind": 1
     },
     {
       "file": "src/types.ts",
-      "line": 103,
+      "line": 121,
       "character": 2,
       "text": "variantBySelectedOptions",
       "kind": 1
     },
     {
       "file": "src/types.ts",
-      "line": 109,
+      "line": 127,
       "character": 2,
       "text": "variants",
       "kind": 1
     },
     {
       "file": "src/types.ts",
-      "line": 126,
+      "line": 144,
       "character": 2,
       "text": "customAttributes",
       "kind": 1
     },
     {
       "file": "src/types.ts",
-      "line": 127,
+      "line": 145,
       "character": 2,
       "text": "discountAllocations",
       "kind": 1
     },
     {
       "file": "src/types.ts",
-      "line": 145,
+      "line": 163,
       "character": 4,
       "text": "priceV2",
       "kind": 1
     },
     {
       "file": "src/types.ts",
-      "line": 146,
+      "line": 164,
       "character": 4,
       "text": "product",
       "kind": 1
     },
     {
       "file": "src/types.ts",
-      "line": 152,
+      "line": 170,
       "character": 4,
       "text": "selectedOptions",
       "kind": 1
@@ -13148,8 +13372,8 @@
       "kind": 1
     }
   ],
-  "percentage": 85.8998423305053,
-  "total": 13319,
-  "covered": 11441,
-  "uncovered": 1878
+  "percentage": 85.7196261682243,
+  "total": 13375,
+  "covered": 11465,
+  "uncovered": 1910
 }
